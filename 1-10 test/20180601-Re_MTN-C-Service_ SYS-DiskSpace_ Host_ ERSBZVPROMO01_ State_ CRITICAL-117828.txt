@@ -1,0 +1,36 @@
+Subject: Re: MTN-C-Service: SYS-DiskSpace, Host: ERSBZVPROMO01, State: CRITICAL
+From: Barun Kumar Das <barun.kumar.das@seamless.se>
+Date: 6/1/2018 11:11 AM
+To: SDS NOC <sds.noc@seamless.se>
+CC: Amarendra Sarangi <amarendra.sarangi@seamless.se>, Debadrita Sarkar <debadrita.sarkar@seamless.se>, Muhammad Sabihullah <muhammad.sabihullah@seamless.se>
+
+It's resolved.
+
+ 
+Barun Das - Sr. Systems Engineer
+Mobile: +91 8697741044
+Address: Vasagatan 7, 111 20 Stockholm, Sweden
+Switchboard: +46 8 58 63 34 69
+Web: www.sds.seamless.se
+  
+
+On Fri, Jun 1, 2018 at 11:15 AM, SDS NOC <sds.noc@seamless.se> wrote:
+
+    Hi Team,
+
+    We have received the subjected warnings.Please do the needful accordingly.
+
+
+
+
+    -- 
+
+
+    Muhammad Abdullah - NOC ENGINEER
+    Mobile: +92-314-5794370
+    Address: Vasagatan 7, 111 20 Stockholm, Sweden
+    Switchboard: +46 8 58 63 34 69
+    Web: www.sds.seamless.se
+      
+
+

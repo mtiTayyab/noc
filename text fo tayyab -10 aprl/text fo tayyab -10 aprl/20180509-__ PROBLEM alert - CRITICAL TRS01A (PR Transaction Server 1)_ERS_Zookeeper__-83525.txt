@@ -1,0 +1,20 @@
+Subject: ** PROBLEM alert - CRITICAL TRS01A (PR Transaction Server 1)/ERS_Zookeeper**
+From: nagios@bjmtn-stg01.localdomain
+Date: 5/9/2018 4:13 PM
+To: sds.noc@seamless.se
+
+***Seamless Support for MTN BENIN - Notification***
+
+Notification Type: PROBLEM
+
+Service: ERS_Zookeeper
+Host: TRS01A (PR Transaction Server 1)
+Address: 10.77.73.206
+State: CRITICAL
+
+Date/Time: Wed May 9 12:13:51 WAT 2018
+
+Additional Info:
+
+Zookeper is stopped
+

@@ -1,0 +1,20 @@
+Subject: ** [SY-MTN] - ACKNOWLEDGEMENT alert - CRITICAL syedb01f-ERS_Supportsystem**
+From: nagios@SYRIA.STG01 (nagios)
+Date: 3/22/2018 3:29 AM
+To: sds.noc@seamless.se
+
+***Seamless Support for MTN Syria - Notification***
+
+Notification Type: ACKNOWLEDGEMENT
+
+Service: ERS_Supportsystem
+Host: syedb01f
+Address: 10.10.51.26
+State: CRITICAL
+
+Date/Time: Thu Mar 22 00:29:27 EET 2018
+
+Additional Info:
+
+Check Support System.
+

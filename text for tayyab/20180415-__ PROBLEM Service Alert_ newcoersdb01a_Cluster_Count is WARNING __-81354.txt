@@ -1,0 +1,20 @@
+Subject: ** PROBLEM Service Alert: newcoersdb01a/Cluster_Count is WARNING **
+From: nagios@newcoersstg01a.localdomain
+Date: 4/15/2018 5:49 AM
+To: sds.noc@seamless.se
+
+***** Nagios *****
+
+Notification Type: PROBLEM
+
+Service: Cluster_Count
+Host: newcoersdb01a
+Address: 10.160.33.8
+State: WARNING
+
+Date/Time: Sat Apr 14 20:49:11 EDT 2018
+
+Additional Info:
+
+WARNING: number of NODES = 4
+

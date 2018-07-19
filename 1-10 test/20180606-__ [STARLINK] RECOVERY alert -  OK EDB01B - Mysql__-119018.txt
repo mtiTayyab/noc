@@ -1,0 +1,20 @@
+Subject: ** [STARLINK] RECOVERY alert - OK EDB01B - Mysql**
+From: nagios@localhost.localdomain
+Date: 6/6/2018 12:41 PM
+To: sds.noc@seamless.se
+
+***Seamless Support STARLINK - Notification***
+
+Notification Type: RECOVERY
+
+Service: Mysql
+Host: EDB01B
+Address: 192.168.10.41
+State: OK
+
+Date/Time: Wed Jun 6 10:41:16 AST 2018
+
+Additional Info:
+
+Uptime: 4415762  Threads: 1  Questions: 42775106  Slow queries: 0  Opens: 50  Flush tables: 1  Open tables: 113  Queries per second avg: 9.686 Slave IO: Yes Slave SQL: Yes Seconds Behind Master: 0
+

@@ -1,0 +1,7 @@
+Subject: Warning: PROBLEM: Free disk space is less than 20% on volume /opt/apache-tomcat-6.0.53/webapps/ers-logs/TNB-BSNEWCOCONFIGA25-ATN-agent1
+From: zabbix@nagios01.infra.ts (Zabbix Monitoring System)
+Date: 6/4/2018 9:46 PM
+To: sds.noc@seamless.se
+
+
+	558 bytes

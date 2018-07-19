@@ -1,0 +1,20 @@
+Subject: ** [SY-MTN] - RECOVERY alert - OK sytrs01c-ERS_Check_Air3**
+From: nagios@SYRIA.STG01 (nagios)
+Date: 3/23/2018 8:07 AM
+To: sds.noc@seamless.se
+
+***Seamless Support for MTN Syria - Notification***
+
+Notification Type: RECOVERY
+
+Service: ERS_Check_Air3
+Host: sytrs01c
+Address: 10.10.51.27
+State: OK
+
+Date/Time: Fri Mar 23 05:07:59 EET 2018
+
+Additional Info:
+
+OK - Response Code 0 received from AIR http://10.10.16.16:10010/Air
+

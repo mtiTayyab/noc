@@ -1,0 +1,20 @@
+Subject: ** [SY-MTN] - PROBLEM alert - WARNING sytrs01c-ERS_Check_Air3**
+From: nagios@SYRIA.STG01 (nagios)
+Date: 3/21/2018 5:06 AM
+To: sds.noc@seamless.se
+
+***Seamless Support for MTN Syria - Notification***
+
+Notification Type: PROBLEM
+
+Service: ERS_Check_Air3
+Host: sytrs01c
+Address: 10.10.51.27
+State: WARNING
+
+Date/Time: Wed Mar 21 02:06:57 EET 2018
+
+Additional Info:
+
+NRPE: Unable to read output
+

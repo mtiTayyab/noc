@@ -1,0 +1,20 @@
+Subject: **[ERS-BANKSYSTEM-NEW] RECOVERY alert - OK ATM1/Check_Tre_Oplink_Peakhour_Trans**
+From: nagios@jrf-prd-banksystem-atm4.seamless.internal
+Date: 4/12/2018 5:14 PM
+To: sds.noc@seamless.se
+
+***Seamless Support - Notification for SE Bank System ***
+
+Notification Type: RECOVERY
+
+Service: Check_Tre_Oplink_Peakhour_Trans
+Host: ATM1
+Address: 10.0.68.197
+State: OK
+
+Date/Time: Thu Apr 12 14:14:22 CEST 2018
+
+Additional Info:
+
+QUERY OK: select if(count(*)0,0,1) from transactions where StartTime  (now()-INTERVAL 20 MINUTE) and StartTime  now() and resultCode=00 and transactionType = 120 and TRIM(substring(ResponseData,71,3)) in (050,051): returned 0.000000
+

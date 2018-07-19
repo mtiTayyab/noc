@@ -1,0 +1,20 @@
+Subject: ** PROBLEM alert - CRITICAL erskvm-gw02b (DR GW Server 2)/SMSGW Queue**
+From: nagios@bjmtn-stg01.localdomain
+Date: 5/9/2018 11:59 AM
+To: sds.noc@seamless.se
+
+***Seamless Support for MTN BENIN - Notification***
+
+Notification Type: PROBLEM
+
+Service: SMSGW Queue
+Host: erskvm-gw02b (DR GW Server 2)
+Address: 10.77.33.203
+State: CRITICAL
+
+Date/Time: Wed May 9 07:59:45 WAT 2018
+
+Additional Info:
+
+Critical: Queueing Detected SMSBOX - CRITICAL: Queue/Sent:292829/4859 SMSC_DR - OK: Queue/Sent:0/4859
+

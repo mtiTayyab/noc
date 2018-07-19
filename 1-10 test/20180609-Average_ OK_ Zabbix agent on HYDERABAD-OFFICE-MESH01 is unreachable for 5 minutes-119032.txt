@@ -1,0 +1,7 @@
+Subject: Average: OK: Zabbix agent on HYDERABAD-OFFICE-MESH01 is unreachable for 5 minutes
+From: zabbix@nagios01.infra.ts (Zabbix Monitoring System)
+Date: 6/9/2018 2:22 PM
+To: sds.noc@seamless.se
+
+
+	341 bytes

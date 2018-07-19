@@ -1,0 +1,7 @@
+Subject: Information: OK: Tools02 has just been restarted
+From: zabbix@nagios01.infra.ts (Zabbix Monitoring System)
+Date: 5/17/2018 7:42 AM
+To: sds.noc@seamless.se
+
+
+	300 bytes

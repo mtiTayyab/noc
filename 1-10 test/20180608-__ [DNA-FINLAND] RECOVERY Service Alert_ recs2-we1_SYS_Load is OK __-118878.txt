@@ -1,0 +1,20 @@
+Subject: ** [DNA-FINLAND] RECOVERY Service Alert: recs2-we1/SYS_Load is OK **
+From: nagios@recs2-test.s.dnaip.fi
+Date: 6/8/2018 9:05 AM
+To: sds.noc@seamless.se
+
+***** Nagios *****
+
+Notification Type: RECOVERY
+
+Service: SYS_Load
+Host: recs2-we1
+Address: 193.143.80.133
+State: OK
+
+Date/Time: Fri Jun 8 07:05:07 EEST 2018
+
+Additional Info:
+
+OK - load average: 0.12, 0.56, 3.40
+

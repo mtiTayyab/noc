@@ -1,0 +1,7 @@
+Subject: Forwarded Message from 590
+From: sds.noc.pk@gmail.com
+Date: 6/5/2018 2:35 AM
+To: sds.noc@seamless.se
+
+MTNZ: TOTAL-PROCS, Host: gw02b, State: OK, Date:06-04-2018-23:35:24
+

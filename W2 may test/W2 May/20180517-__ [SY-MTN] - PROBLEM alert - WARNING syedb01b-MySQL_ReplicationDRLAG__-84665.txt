@@ -1,0 +1,20 @@
+Subject: ** [SY-MTN] - PROBLEM alert - WARNING syedb01b-MySQL_ReplicationDRLAG**
+From: nagios@SYRIA.STG01 (nagios)
+Date: 5/17/2018 4:39 PM
+To: sds.noc@seamless.se
+
+***Seamless Support for MTN Syria - Notification***
+
+Notification Type: PROBLEM
+
+Service: MySQL_ReplicationDRLAG
+Host: syedb01b
+Address: 10.10.51.22
+State: WARNING
+
+Date/Time: Thu May 17 14:39:36 EEST 2018
+
+Additional Info:
+
+WARNING - Slave is 11 seconds behind master
+

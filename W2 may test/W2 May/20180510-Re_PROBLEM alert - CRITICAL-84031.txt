@@ -1,0 +1,41 @@
+Subject: Re: PROBLEM alert - CRITICAL
+From: Emmanuel Avisseh <eli.avisseh@seamless.se>
+Date: 5/10/2018 3:51 PM
+To: Mohammad Abdullah <mohammad.abdullah@seamless.se>
+CC: Nanaba Michel Gyamfi <michael.gyamfi@seamless.se>, SDS NOC <sds.noc@seamless.se>, Muhammad Sabihullah <muhammad.sabihullah@seamless.se>, Duchet Kalangana <duchet.kalangana@seamless.se>, Emmanuel Avisseh <eli.avisseh@seamless.se>
+
+++ Essien.
+
+Hi NOC, please copy Essien and Prince in alerts henceforth.
+
+Thank you.
+
+
+ 
+Emmanuel Avisseh - Team Lead, Customer Operations
+Mobile: +233 24470 5522
+Address: Vasagatan 7, 111 20 Stockholm, Sweden
+Switchboard: +46 8 58 63 34 69
+Web: www.sds.seamless.se
+  
+
+
+
+
+> On 10 May 2018, at 10:50, Mohammad Abdullah <mohammad.abdullah@seamless.se> wrote:
+>
+> Hi,
+> We are receiving subjected critical alerts continuously. Please do the needful accordingly.
+> <image.png>
+>
+>
+> -- 
+>
+>
+> Muhammad Abdullah - NOC ENGINEER
+> Mobile: +92-314-5794370
+> Address: Vasagatan 7, 111 20 Stockholm, Sweden
+> Switchboard: +46 8 58 63 34 69
+> Web: www.sds.seamless.se
+>   
+

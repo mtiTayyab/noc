@@ -1,0 +1,7 @@
+Subject: Forwarded Message from +276408
+From: sds.noc.pk@gmail.com
+Date: 6/5/2018 7:49 PM
+To: sds.noc@seamless.se
+
+SE-BANK-SYSTEM: Host: ATM1 check_danskebank_MQ_Sessions State: CRITICAL Date:06-05-2018-16:49:43
+

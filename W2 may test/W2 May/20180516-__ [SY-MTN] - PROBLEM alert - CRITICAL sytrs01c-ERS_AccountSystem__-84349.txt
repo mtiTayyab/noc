@@ -1,0 +1,20 @@
+Subject: ** [SY-MTN] - PROBLEM alert - CRITICAL sytrs01c-ERS_AccountSystem**
+From: nagios@SYRIA.STG01 (nagios)
+Date: 5/16/2018 4:53 AM
+To: sds.noc@seamless.se
+
+***Seamless Support for MTN Syria - Notification***
+
+Notification Type: PROBLEM
+
+Service: ERS_AccountSystem
+Host: sytrs01c
+Address: 10.10.51.27
+State: CRITICAL
+
+Date/Time: Wed May 16 02:53:48 EEST 2018
+
+Additional Info:
+
+Connection refused
+

@@ -1,0 +1,7 @@
+Subject: Forwarded Message from MTN-Benin
+From: sds.noc.pk@gmail.com
+Date: 5/8/2018 3:35 PM
+To: sds.noc@seamless.se
+
+MTN-Benin-Service: ERS GCTLOAD PROCESS, Host: erskvm-gw02b, State: CRITICAL, Date:05-08-2018-11:28:18
+

@@ -1,0 +1,20 @@
+Subject: ** [SY-MTN] - RECOVERY alert - OK syedb01b-MySQL_Replication**
+From: nagios@SYRIA.STG01 (nagios)
+Date: 5/17/2018 4:42 PM
+To: sds.noc@seamless.se
+
+***Seamless Support for MTN Syria - Notification***
+
+Notification Type: RECOVERY
+
+Service: MySQL_Replication
+Host: syedb01b
+Address: 10.10.51.22
+State: OK
+
+Date/Time: Thu May 17 14:42:35 EEST 2018
+
+Additional Info:
+
+Uptime: 3592946  Threads: 12  Questions: 271727487  Slow queries: 2575  Opens: 212  Flush tables: 1  Open tables: 206  Queries per second avg: 75.628 Slave IO: Yes Slave SQL: Yes Seconds Behind Master: 0
+

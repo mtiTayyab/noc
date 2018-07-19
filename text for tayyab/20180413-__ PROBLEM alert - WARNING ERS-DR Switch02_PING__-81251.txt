@@ -1,0 +1,21 @@
+Subject: ** PROBLEM alert - WARNING ERS-DR Switch02/PING**
+From: MTNCI EVD Support <EVDInfo.CI@mtn.com>
+Date: 4/13/2018 5:00 PM
+To: <sds.noc@seamless.se>
+
+***MTN Cote d’Ivoire EVD System - NMS Notification***
+
+Notification Type: PROBLEM
+
+Service: PING
+Host: ERS-DR Switch02
+Address: 10.18.57.30
+State: WARNING
+
+Date/Time: Fri Apr 13 12:00:37 GMT 2018
+
+Additional Info:
+
+PING WARNING - Packet loss = 37%, RTA = 5.07 ms
+“The information contained in this message is intended solely for the individual to whom it is specifically and originally addressed. This message and its contents may contain confidential or privileged information from MTN Group. If you are not the intended recipient, you are hereby notified that any disclosure or distribution, is strictly prohibited. If you receive this email in error, please notify MTN Group immediately and delete it. MTN Group does not accept any liability or responsibility if action is taken in reliance on the contents of this information . Note that all personal emails are not authorized by MTN Group. ”
+

@@ -1,0 +1,27 @@
+Subject: URGENT! The connection between Seamless and Handelsbanken is down.
+From: mainframe via SDS NOC <sds.noc@seamless.se>
+Date: 5/18/2018 9:25 PM
+To: support@seamless.se
+CC: PEBJ10@HANDELSBANKEN.SE, Lars-Goran Larsson <lala04@handelsbanken.se>, debadrita.sarkar@seamless.se, sds.noc@seamless.se, Anders Wellermark <anwe49@handelsbanken.se>
+Reply-to: mainframe@handelsbanken.se
+
+
+
+The connection between Seamless and Handelsbanken is down.
+Please investigate if you are experiencing any degredation or failure in your services,
+if so please report to us with Problem description and estimated time for solution.
+Is seems to be Tele2Comviq.
+
+
+_________________________________
+Med vänlig hälsning/Best Regards
+
+Svenska Handelsbanken
+CDOC-P
+mainframe@handelsbanken.se
++4687011088
+
+
+
+Mikael Johansson
+

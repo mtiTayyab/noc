@@ -1,0 +1,20 @@
+Subject: ** PROBLEM Service Alert: newcoersweb02a/SYS-FREERAM is WARNING **
+From: nagios@newcoersstg01a.localdomain
+Date: 5/2/2018 11:06 AM
+To: sds.noc@seamless.se
+
+***** Nagios *****
+
+Notification Type: PROBLEM
+
+Service: SYS-FREERAM
+Host: newcoersweb02a
+Address: 10.160.33.110
+State: WARNING
+
+Date/Time: Wed May 2 02:06:06 EDT 2018
+
+Additional Info:
+
+RAM WARNING: 12% ram free (29893/32110 MB used)
+

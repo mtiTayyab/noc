@@ -1,0 +1,20 @@
+Subject: ** [YE-MTN] PROBLEM alert - CRITICAL YTRS01A - ERS_Busy**
+From: nagios <nagios@YTRS02B.localdomain>
+Date: 3/31/2018 10:18 PM
+To: <sds.noc@seamless.se>
+
+***Seamless Support MTN YEMEN - Notification***
+
+Notification Type: PROBLEM
+
+Service: ERS_Busy
+Host: YTRS01A
+Address: 172.16.20.42
+State: CRITICAL
+
+Date/Time: Sat Mar 31 20:18:59 AST 2018
+
+Additional Info:
+
+CRITICAL: BUSY_criticals=9
+

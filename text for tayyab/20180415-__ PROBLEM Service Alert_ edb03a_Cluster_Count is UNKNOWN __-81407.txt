@@ -1,0 +1,20 @@
+Subject: ** PROBLEM Service Alert: edb03a/Cluster_Count is UNKNOWN **
+From: nagios@newcoersstg01a.localdomain
+Date: 4/15/2018 9:32 AM
+To: sds.noc@seamless.se
+
+***** Nagios *****
+
+Notification Type: PROBLEM
+
+Service: Cluster_Count
+Host: edb03a
+Address: 10.160.39.14
+State: UNKNOWN
+
+Date/Time: Sun Apr 15 00:32:51 EDT 2018
+
+Additional Info:
+
+UNKNOWN: wsrep_flow_control_paused is empty
+

@@ -1,0 +1,20 @@
+Subject: ** PROBLEM alert - CRITICAL gw01a/TOTAL-PROCS**
+From: MTN Zambia EVD Support <EVDAlerts.ZM@mtn.com>
+Date: 5/5/2018 7:28 AM
+To: <sds.noc@seamless.se>
+
+***MTN Zambia EVD System - NMS Notification***
+
+Notification Type: PROBLEM
+
+Service: TOTAL-PROCS
+Host: gw01a
+Address: 10.110.80.103
+State: CRITICAL
+
+Date/Time: Sat May 5 04:28:34 CAT 2018
+
+Additional Info:
+
+CHECK_NRPE STATE CRITICAL: Socket timeout after 10 seconds.
+

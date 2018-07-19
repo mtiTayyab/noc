@@ -1,0 +1,7 @@
+Subject: Forwarded Message from +534902
+From: sds.noc.pk@gmail.com
+Date: 6/9/2018 11:53 PM
+To: sds.noc@seamless.se
+
+SE-BANK-SYSTEM: Host: ATM1 check_danskebank_MQ_Sessions State: OK Date:06-09-2018-20:24:04
+

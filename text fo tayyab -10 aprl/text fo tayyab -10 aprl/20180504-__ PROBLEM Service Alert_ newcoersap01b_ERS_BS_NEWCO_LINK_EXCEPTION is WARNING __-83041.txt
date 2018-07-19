@@ -1,0 +1,20 @@
+Subject: ** PROBLEM Service Alert: newcoersap01b/ERS_BS_NEWCO_LINK_EXCEPTION is WARNING **
+From: nagios@newcoersstg01a.localdomain
+Date: 5/4/2018 4:10 PM
+To: sds.noc@seamless.se
+
+***** Nagios *****
+
+Notification Type: PROBLEM
+
+Service: ERS_BS_NEWCO_LINK_EXCEPTION
+Host: newcoersap01b
+Address: 10.160.33.17
+State: WARNING
+
+Date/Time: Fri May 4 07:10:38 EDT 2018
+
+Additional Info:
+
+Log errors: Caused by: javax.xml.bind.UnmarshalException
+

@@ -1,0 +1,20 @@
+Subject: ** PROBLEM Service Alert: newcoersap01b/ERS_BS_NEWCO_LINK_EXCEPTION is WARNING **
+From: nagios@newcoersstg01a.localdomain
+Date: 4/5/2018 5:14 PM
+To: sds.noc@seamless.se
+
+***** Nagios *****
+
+Notification Type: PROBLEM
+
+Service: ERS_BS_NEWCO_LINK_EXCEPTION
+Host: newcoersap01b
+Address: 10.160.33.17
+State: WARNING
+
+Date/Time: Thu Apr 5 08:14:03 EDT 2018
+
+Additional Info:
+
+Log errors: Caused by: java.net.SocketTimeoutException: SocketTimeoutException invoking https://portalservice.newcomobile.com/SeamlessWebService.asmx: Read timed out
+

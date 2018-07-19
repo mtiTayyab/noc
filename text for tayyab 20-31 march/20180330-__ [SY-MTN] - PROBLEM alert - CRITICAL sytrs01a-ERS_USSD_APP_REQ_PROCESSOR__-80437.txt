@@ -1,0 +1,20 @@
+Subject: ** [SY-MTN] - PROBLEM alert - CRITICAL sytrs01a-ERS_USSD_APP_REQ_PROCESSOR**
+From: nagios@SYRIA.STG01 (nagios)
+Date: 3/30/2018 3:40 AM
+To: sds.noc@seamless.se
+
+***Seamless Support for MTN Syria - Notification***
+
+Notification Type: PROBLEM
+
+Service: ERS_USSD_APP_REQ_PROCESSOR
+Host: sytrs01a
+Address: 10.10.51.21
+State: CRITICAL
+
+Date/Time: Fri Mar 30 01:40:21 EEST 2018
+
+Additional Info:
+
+FILE_AGE CRITICAL: /var/seamless/log/sy-mtn-ussdapp/sy-mtn-ussdapp.log is 1954 seconds old and 1337740 bytes
+

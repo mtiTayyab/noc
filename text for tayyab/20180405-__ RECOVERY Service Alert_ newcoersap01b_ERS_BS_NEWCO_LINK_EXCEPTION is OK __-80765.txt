@@ -1,0 +1,20 @@
+Subject: ** RECOVERY Service Alert: newcoersap01b/ERS_BS_NEWCO_LINK_EXCEPTION is OK **
+From: nagios@newcoersstg01a.localdomain
+Date: 4/5/2018 5:17 PM
+To: sds.noc@seamless.se
+
+***** Nagios *****
+
+Notification Type: RECOVERY
+
+Service: ERS_BS_NEWCO_LINK_EXCEPTION
+Host: newcoersap01b
+Address: 10.160.33.17
+State: OK
+
+Date/Time: Thu Apr 5 08:17:03 EDT 2018
+
+Additional Info:
+
+OK: No log errors found
+

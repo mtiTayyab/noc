@@ -1,0 +1,7 @@
+Subject: Average: OK: LAHORE-OFFICE-MESH01 is unavailable by ICMP
+From: zabbix@nagios01.infra.ts (Zabbix Monitoring System)
+Date: 6/7/2018 10:50 PM
+To: sds.noc@seamless.se
+
+
+	310 bytes

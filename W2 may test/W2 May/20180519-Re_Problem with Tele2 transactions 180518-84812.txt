@@ -1,0 +1,75 @@
+Subject: Re: Problem with Tele2 transactions 180518
+From: mainframe via SDS NOC <sds.noc@seamless.se>
+Date: 5/19/2018 8:58 AM
+To: Robin Malmros <robin.malmros@eproducts.se>
+CC: "tele2-notifications@eproducts.se" <tele2-notifications@eproducts.se>
+Reply-to: mainframe@handelsbanken.se
+
+Hej!
+
+Tänkte bara hojta och kolla hur det ser ut med detta? Vi har inga larm hos oss som indikerar på att det är problem fortfarande men det vore grymt att få en uppdatering av er samt Tele2.
+
+_________________________________
+Med vänlig hälsning/Best Regards
+
+Svenska Handelsbanken
+CDOC-P
+mainframe@handelsbanken.se
++4687011088
+
+
+
+Noshin Davarasl Bandarabbasi
+
+
+
+Status:	Öppen
+
+Från:	Robin Malmros <robin.malmros@eproducts.se> den 2018-05-18 16:32 GMT
+
+
+
+Till:	"tele2-notifications@eproducts.se" <tele2-notifications@eproducts.se>
+Kopia:
+Ärende:	Problem with Tele2 transactions 180518
+
+
+Hej,
+
+Tele2 upplever problem vilket gör att alla transaktioner (Tele2) fallerar i Bank TopUp just nu.
+
+Tele2 är medvetna om problemet och undersöker det med hög prioritet.
+
+Vi återkommer så snart vi har fått mer information.
+
+Med vänliga hälsningar
+eProducts
+--
+Robin Malmros
+Key Account Manager
+
+/var/folders/7j/qnh5yvrj7pd004pkxkv_w3qw0000gn/T/com.microsoft.Outlook/WebArchiveCopyPasteTempFiles/eproducts_logo_color-dark.png
+
+Invuo eProducts Sweden AB
+P.O. Box 6234, 102 34 Stockholm, Sweden
+Visiting Address: Kungstensgatan 60, 113 29 Stockholm, Sweden
+Mobile: +46 768 307 300
+Mail: robin.malmros@eproducts.se
+Switchboard: +46 8 564 878 00
+eproducts.se invuo.com
+
+
+
+
+_________________________________
+Med vänlig hälsning/Best Regards
+
+Svenska Handelsbanken
+CDOC-P
+mainframe@handelsbanken.se
++4687011088
+
+
+
+Noshin Davarasl Bandarabbasi
+

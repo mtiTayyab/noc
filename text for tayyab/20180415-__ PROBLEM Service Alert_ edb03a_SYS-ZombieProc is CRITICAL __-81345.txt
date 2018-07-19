@@ -1,0 +1,20 @@
+Subject: ** PROBLEM Service Alert: edb03a/SYS-ZombieProc is CRITICAL **
+From: nagios@newcoersstg01a.localdomain
+Date: 4/15/2018 5:43 AM
+To: sds.noc@seamless.se
+
+***** Nagios *****
+
+Notification Type: PROBLEM
+
+Service: SYS-ZombieProc
+Host: edb03a
+Address: 10.160.39.14
+State: CRITICAL
+
+Date/Time: Sat Apr 14 20:43:57 EDT 2018
+
+Additional Info:
+
+(Service check timed out after 60.01 seconds)
+

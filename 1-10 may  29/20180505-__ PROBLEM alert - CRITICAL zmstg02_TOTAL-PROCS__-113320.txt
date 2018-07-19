@@ -1,0 +1,20 @@
+Subject: ** PROBLEM alert - CRITICAL zmstg02/TOTAL-PROCS**
+From: MTN Zambia EVD Support <EVDAlerts.ZM@mtn.com>
+Date: 5/5/2018 7:18 AM
+To: <sds.noc@seamless.se>
+
+***MTN Zambia EVD System - NMS Notification***
+
+Notification Type: PROBLEM
+
+Service: TOTAL-PROCS
+Host: zmstg02
+Address: localhost
+State: CRITICAL
+
+Date/Time: Sat May 5 04:18:29 CAT 2018
+
+Additional Info:
+
+PROCS CRITICAL: 437 processes
+

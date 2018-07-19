@@ -1,0 +1,20 @@
+Subject: **[BANKSYSTEM-Nagios-II] PROBLEM Service Alert: jrf-prd-banksystem-atm4/SYS_Ping_Status is CRITICAL **
+From: nagios@bhf-prd-banksystem-nagios01.seamless.internal
+Date: 5/17/2018 8:45 AM
+To: sds.noc@seamless.se
+
+***** Nagios *****
+
+Notification Type: PROBLEM
+
+Service: SYS_Ping_Status
+Host: jrf-prd-banksystem-atm4
+Address: 10.0.68.200
+State: CRITICAL
+
+Date/Time: Thu May 17 05:45:17 CEST 2018
+
+Additional Info:
+
+PING CRITICAL - Packet loss = 100%
+

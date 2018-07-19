@@ -1,0 +1,29 @@
+Subject: **Gosoft-Thailand RECOVERY Service Alert: OK goersdb02/SYS-memory utlization **
+From: noreply <noreply@gosoft.co.th>
+Date: 5/17/2018 7:28 AM
+To: sds.noc@seamless.se
+
+***** Nagios *****
+
+Notification Type: RECOVERY
+
+Service: SYS-memory utlization
+Host: goersdb02
+Address: 10.160.102.151
+State: OK
+
+Date/Time: Thu May 17 09:28:46 ICT 2018
+
+Additional Info:
+
+OK - Memory usage is 94.800%
+<FONT face="Tahoma,Helvetica,Sans-Serif" color="gray" size="1"><BR>
+<STRONG>Disclaimer:</STRONG>
+************************************************************
+<STRONG>Important</STRONG>
+Confidentiality: This Information is intended for the above-named person and may contain confidential and/or legally privileged material. Any opinions expressed in this information are not necessarily those of the company. If it has come to you in error you must take no action based on it, nor must you copy or show it to anyone; please delete/destroy and inform the sender immediately.
+<STRONG>Monitoring/Viruses</STRONG>
+Gosoft reserves the right to monitor all incoming and outgoing emails via Gosoft system. Although we have security program to monitor and eliminate virus, we also advise that in keeping with good computing practice the recipient should ensure they are actually virus free.
+************************************************************
+</FONT>
+

@@ -1,0 +1,20 @@
+Subject: ** [SY-MTN] - PROBLEM alert - WARNING syedb02b-MySQL_Replication**
+From: nagios@SYRIA.STG01 (nagios)
+Date: 6/10/2018 5:02 AM
+To: sds.noc@seamless.se
+
+***Seamless Support for MTN Syria - Notification***
+
+Notification Type: PROBLEM
+
+Service: MySQL_Replication
+Host: syedb02b
+Address: 10.10.50.22
+State: WARNING
+
+Date/Time: Sun Jun 10 03:02:40 EEST 2018
+
+Additional Info:
+
+SLOW_SLAVE WARNING: Slave IO: Yes Slave SQL: Yes Seconds Behind Master: 13
+

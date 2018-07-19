@@ -1,0 +1,20 @@
+Subject: ** PROBLEM Service Alert: edb03a/Cluster_Count is CRITICAL **
+From: nagios@newcoersstg01a.localdomain
+Date: 4/15/2018 9:21 AM
+To: sds.noc@seamless.se
+
+***** Nagios *****
+
+Notification Type: PROBLEM
+
+Service: Cluster_Count
+Host: edb03a
+Address: 10.160.39.14
+State: CRITICAL
+
+Date/Time: Sun Apr 15 00:21:50 EDT 2018
+
+Additional Info:
+
+(Service check timed out after 60.01 seconds)
+

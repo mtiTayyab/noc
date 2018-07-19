@@ -1,0 +1,7 @@
+Subject: Average: PROBLEM: VM04 is unavailable by ICMP
+From: zabbix@nagios01.infra.ts (Zabbix Monitoring System)
+Date: 5/14/2018 1:30 PM
+To: sds.noc@seamless.se
+
+
+	285 bytes

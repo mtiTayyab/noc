@@ -1,0 +1,7 @@
+Subject: Forwarded Message from +242060000001
+From: sds.noc.pk@gmail.com
+Date: 6/9/2018 11:27 AM
+To: sds.noc@seamless.se
+
+MTN-C-Service: SYS-HostReachable, Host: ERSBZVPROMO01, State: CRITICAL, Date:06-09-2018-07:26:59
+

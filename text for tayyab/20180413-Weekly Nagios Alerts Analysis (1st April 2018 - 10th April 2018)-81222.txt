@@ -1,0 +1,26 @@
+Subject: Weekly Nagios Alerts Analysis (1st April 2018 - 10th April 2018)
+From: Arslan Alam <arslan.alam@seamless.se>
+Date: 4/13/2018 4:46 AM
+To: Hassan Anwar <hassan.anwar@seamless.se>
+CC: SDS NOC <sds.noc@seamless.se>, Muhammad Sabihullah <muhammad.sabihullah@seamless.se>
+
+Dear Hassan,
+
+Please click here to find weekly Nagios Alerts Analysis from "1st April 2018 - 10th April 2018" . Please find the attached final document as well.
+
+P.S
+
+I have kept into account the last suggestions sent by Hassan Anwar and endeavored alot not to repeat the mistakes. Hopefully improvements will be evident from the report leaving no room for furthur refinement. Even then if you find any, please feel free to discuss with me.
+
+Thanks
+
+
+-- 
+Arslan Alam Dhillon - NOC ENGINEER
+Mobile: +92-321-4732729
+Address: Vasagatan 7, 111 20 Stockholm, Sweden
+Switchboard: +46 8 58 63 34 69
+Web: www.sds.seamless.se
+
+Attachments:
+Nagios Alerts Weekly Analysis - 1 April - 10 April 2018.xlsx	1.1 MB

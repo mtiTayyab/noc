@@ -1,0 +1,7 @@
+Subject: Forwarded Message from MTN-Benin
+From: sds.noc.pk@gmail.com
+Date: 5/9/2018 3:23 PM
+To: sds.noc@seamless.se
+
+MTN-Benin-Service: SYS Host Reachable, Host: TRS01A, State: CRITICAL, Date:05-09-2018-11:07:04
+

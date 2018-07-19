@@ -1,0 +1,55 @@
+Subject: Fwd: Yemen Site to Site VPN
+From: SDS NOC <sds.noc@seamless.se>
+Date: 5/10/2018 11:45 AM
+To: Tapash Raha <tapash.raha@seamless.se>
+CC: Omair Anwer <omair.anwer@seamless.se>, Shahrukh Mushtaq <shahrukh.mushtaq@seamless.se>, Muhammad Sabihullah <muhammad.sabihullah@seamless.se>, SDS NOC <sds.noc@seamless.se>
+
+Hello Tapash,
+
+Your kind assistance is required.
+
+
+
+
+
+Kind Regards,
+
+ 
+Network Operations Center 
+Mobile: +92-336-4001166
+Address: Vasagatan 7, 111 20 Stockholm, Sweden
+Switchboard: +46 8 58 63 34 69
+Web: www.sds.seamless.se
+  
+
+---------- Forwarded message ----------
+From: Omair Anwer <omair.anwer@seamless.se>
+Date: Thu, May 10, 2018 at 11:42 AM
+Subject: Yemen Site to Site VPN
+To: SDS NOC <sds.noc@seamless.se>
+Cc: Shahrukh Mushtaq <shahrukh.mushtaq@seamless.se>
+
+
+Dear Team,
+
+It seems the site to site VPN of Yemen is currently down. Kindly look into it.
+
+
+[omaanw@jump01 ~]$ ping ytrs02a
+PING YTRS02A (172.27.203.23) 56(84) bytes of data.
+^C
+--- YTRS02A ping statistics ---
+65 packets transmitted, 0 received, 100% packet loss, time 64000ms
+
+[omaanw@jump01 ~]$
+ 
+Omair Anwer - System Engineer
+Mobile: +92 345 844 7912 
+Address: Vasagatan 7, 111 20 Stockholm, Sweden 
+Switchboard: +46 8 58 63 34 69 
+Web: www.sds.seamless.se 
+
+
+
+
+

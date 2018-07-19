@@ -1,0 +1,43 @@
+Subject: Re: [ERS-BANKSYSTEM-NEW] PROBLEM alert - CRITICAL ATM1/Check_Tre_Oplink_Offhour_Trans
+From: Amarendra Sarangi <amarendra.sarangi@seamless.se>
+Date: 6/5/2018 8:14 AM
+To: SDS NOC <sds.noc@seamless.se>
+CC: Debadrita Sarkar <debadrita.sarkar@seamless.se>, Srinivas Varakala <srinivas.varakala@seamless.se>, Muhammad Sabihullah <muhammad.sabihullah@seamless.se>
+
+Hi ,
+
+As there is no transactions happening so the alerts cropped up. Also there is no errors/exceptions in the logs. So lets monitor for some more time.
+
+On Tue, Jun 5, 2018 at 7:52 AM, SDS NOC <sds.noc@seamless.se> wrote:
+
+    Hi Team,
+
+    We have received the subjected alert.Kindly do the needful accordingly.
+
+
+
+
+
+     
+    Salah Ud Din Saleem - Engineer Network Operations Center
+    Mobile: +92 323 7055680
+    Address: Vasagatan 7, 111 20 Stockholm, Sweden
+    Switchboard: +46 8 58 63 34 69
+    Web: www.sds.seamless.se
+      
+
+
+
+
+-- 
+
+Thanks and Regards,
+
+
+ 
+Amarendra Sarangi - System Engineer
+Mobile: +91 9836003768
+Address: Vasagatan 7, 111 20 Stockholm, Sweden
+Switchboard: +46 8 58 63 34 69
+Web: www.sds.seamless.se
+  

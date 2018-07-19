@@ -1,0 +1,7 @@
+Subject: Warning: OK: Ping loss is too high on VM04
+From: zabbix@nagios01.infra.ts (Zabbix Monitoring System)
+Date: 5/14/2018 1:48 PM
+To: sds.noc@seamless.se
+
+
+	281 bytes

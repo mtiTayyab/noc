@@ -1,0 +1,20 @@
+Subject: ** PROBLEM Service Alert: edb03a/DB_Cluster is WARNING **
+From: nagios@newcoersstg01a.localdomain
+Date: 4/15/2018 9:39 AM
+To: sds.noc@seamless.se
+
+***** Nagios *****
+
+Notification Type: PROBLEM
+
+Service: DB_Cluster
+Host: edb03a
+Address: 10.160.39.14
+State: WARNING
+
+Date/Time: Sun Apr 15 00:39:08 EDT 2018
+
+Additional Info:
+
+HTTP/1.1 503 Service Unavailable
+

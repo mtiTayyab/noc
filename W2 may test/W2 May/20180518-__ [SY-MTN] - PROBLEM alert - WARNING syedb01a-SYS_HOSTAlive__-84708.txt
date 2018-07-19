@@ -1,0 +1,20 @@
+Subject: ** [SY-MTN] - PROBLEM alert - WARNING syedb01a-SYS_HOSTAlive**
+From: nagios@SYRIA.STG01 (nagios)
+Date: 5/18/2018 5:44 AM
+To: sds.noc@seamless.se
+
+***Seamless Support for MTN Syria - Notification***
+
+Notification Type: PROBLEM
+
+Service: SYS_HOSTAlive
+Host: syedb01a
+Address: 10.10.51.19
+State: WARNING
+
+Date/Time: Fri May 18 03:44:53 EEST 2018
+
+Additional Info:
+
+PING WARNING - Packet loss = 0%, RTA = 210.26 ms
+

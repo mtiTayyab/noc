@@ -1,0 +1,62 @@
+Subject: [Bango Customer Services] Update: Temporary disturbance in Topup and Event charging services
+From: "'Bango Customer Services' via SDS NOC" <sds.noc@seamless.se>
+Date: 4/12/2018 6:42 PM
+CC: "emelie.strang@smartrefill.se" <emelie.strang@smartrefill.se>, "backoffice@smartrefill.se" <backoffice@smartrefill.se>, "tre-notifications@seamless.se" <tre-notifications@seamless.se>, "support@seamless.se" <support@seamless.se>, "is.operations@smartrefill.se" <is.operations@smartrefill.se>, "sds.noc@seamless.se" <sds.noc@seamless.se>
+Reply-to: Bango Customer Services
+
+##- Please type your reply above this line -##
+logo 		#1 for app store carrier billing.
+Mobile operator and Store support: support@bango.com
+End user support: usersupport@bango.com
+	
+
+You are registered as a CC on this help desk request http://support.bango.com/hc/requests/220159.
+Reply to this email to add a comment to the request.
+
+People CC’d on this ticket: emelie.strang@smartrefill.se, backoffice@smartrefill.se, tre-notifications@seamless.se, support@seamless.se, is.operations@smartrefill.se, sds.noc@seamless.se
+
+Ticket Requester: mobileservicesoperation
+
+Joseph Phillips (Bango Customer Services)
+
+12 Apr, 13:42 UTC
+
+Dear Three Team,
+
+Thank you for providing an update regarding this issue,
+Could you please provide an RCA for this matter.
+
+Kind Regards,
+
+Joseph Phillips, 1st Line Engineer, Platform Operations Center, Bango
+
+T: +44 3330 77 2623
+
+support@bango.com, 
+www.bango.com
+
+mobileservicesoperation
+
+12 Apr, 13:36 UTC
+
+Dear Customer/Partner,
+
+The temporary disturbance has been resolved and everything is as normal.
+
+Affected services:
+Topup Services and Event Charging Services.
+
+Regards,
+
+mobileservicesoperation@tre.se
+
+Hi3G Access AB
+
+104 25 Stockholm
+
+mobileservicesoperation@tre.se
+
+www.tre.se
+
+	
+[22W323-8Z3W]

@@ -1,0 +1,21 @@
+Subject: [GH-MTN] - PROBLEM alert - CRITICAL EDB01G-SYS_Disk_Space_database
+From: SDS NOC <sds.noc@seamless.se>
+Date: 3/24/2018 6:16 AM
+To: Queen Latifa Abdulai <queen.abdulai@seamless.se>
+CC: Prince Ahugah <prince.ahugah@seamless.se>, Emmanuel Avisseh <eli.avisseh@seamless.se>, Muhammad Sabihullah <muhammad.sabihullah@seamless.se>, SDS NOC <sds.noc@seamless.se>
+
+Hi Team,
+
+We are receiving the subject alerts. Please do the needful. Thank You.
+
+
+
+
+-- 
+ 
+SDS NOC - Network Operations Center
+Mobile: +92 333 9094234
+Address: St:Eriksgatan 121, 113 43 Stockholm, Sweden
+Switchboard: +46 8 564 878 00
+Web: www.sds.seamless.se
+  

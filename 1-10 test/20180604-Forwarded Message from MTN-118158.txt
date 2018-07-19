@@ -1,0 +1,7 @@
+Subject: Forwarded Message from MTN
+From: sds.noc.pk@gmail.com
+Date: 6/4/2018 1:14 AM
+To: sds.noc@seamless.se
+
+MTN-GB-EVD-Service: MTN AIRS Host: ERS01A State: CRITICAL Date:06-03-2018-20:14:46
+

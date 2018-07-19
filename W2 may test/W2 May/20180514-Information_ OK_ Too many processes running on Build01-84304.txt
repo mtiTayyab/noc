@@ -1,0 +1,7 @@
+Subject: Information: OK: Too many processes running on Build01
+From: zabbix@nagios01.infra.ts (Zabbix Monitoring System)
+Date: 5/14/2018 6:51 PM
+To: sds.noc@seamless.se
+
+
+	304 bytes

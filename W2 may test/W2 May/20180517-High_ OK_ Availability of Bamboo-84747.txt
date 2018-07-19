@@ -1,0 +1,7 @@
+Subject: High: OK: Availability of Bamboo
+From: zabbix@nagios01.infra.ts (Zabbix Monitoring System)
+Date: 5/17/2018 7:05 AM
+To: sds.noc@seamless.se
+
+
+	337 bytes

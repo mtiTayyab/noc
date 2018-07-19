@@ -1,0 +1,20 @@
+Subject: ** [SY-MTN] - PROBLEM alert - CRITICAL sygw01a-ERS_Septel**
+From: nagios@SYRIA.STG01 (nagios)
+Date: 4/14/2018 7:05 AM
+To: sds.noc@seamless.se
+
+***Seamless Support for MTN Syria - Notification***
+
+Notification Type: PROBLEM
+
+Service: ERS_Septel
+Host: sygw01a
+Address: 10.10.51.71
+State: CRITICAL
+
+Date/Time: Sat Apr 14 05:05:48 EEST 2018
+
+Additional Info:
+
+Check Septel.
+

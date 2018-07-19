@@ -1,0 +1,48 @@
+Subject: Planned maintenance release 2018-05-21
+From: mobileservicesoperation <mobileservicesoperation@tre.se>
+Date: 5/16/2018 6:59 PM
+To: mobileservicesoperation <mobileservicesoperation@tre.se>
+
+Dear Customer/Partner,
+
+ 
+
+We have a planned maintenance release. During the release disturbance in our services will be expected.
+
+ 
+
+Affected services
+
+Topup Services and Event Charging Services.
+
+ 
+
+Disturbance period
+
+From 2018-05-21 at 22:00 CET until 2018-05-22 at 03:00 CET.
+
+In case of a rollback this will be completed by 2018-05-22 at 07:00 CET.
+
+ 
+
+Next maintenance release is scheduled to 2018-06-11.
+
+ 
+
+ 
+
+Regards,
+
+3logo (1)
+
+Mobile Services Operation
+
+Hi3G Access AB
+
+104 25 Stockholm
+
+mobileservicesoperation@tre.se
+
+www.tre.se
+
+ 

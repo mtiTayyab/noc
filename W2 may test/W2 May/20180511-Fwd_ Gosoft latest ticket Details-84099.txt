@@ -1,0 +1,52 @@
+Subject: Fwd: Gosoft latest ticket Details
+From: Muhammad Sabihullah <muhammad.sabihullah@seamless.se>
+Date: 5/11/2018 3:17 PM
+To: SDS NOC <sds.noc@seamless.se>
+
+FYI P.
+
+
+---------- Forwarded message ----------
+From: Debadrita Sarkar <debadrita.sarkar@seamless.se>
+Date: Fri, May 11, 2018 at 1:20 PM
+Subject: Gosoft latest ticket Details
+To: Muhammad Sabihullah <muhammad.sabihullah@seamless.se>
+Cc: Moazzam Ali <moazzam.ali@seamless.se>, Barun Kumar Das <barun.kumar.das@seamless.se>
+
+
+Gosoft Thailand	2016030210000010
+	Major : Please check about "Stock movement by product report"	Seamless SE	MOP has shared with Gosoft for downtime confirmation.
+Gosoft Thailand	201711281015042	goersstgdb02(10.151.26.42) is Down	Gosoft	Its pending from the Gosoft side.I have close this. If gosoft reply it will reopen automatically.
+Gosoft Thailand	201801221017140	<Major> Please review Gosoft work plan of replacing core switch network.	Goosft - Seamless	Communication Going on with Customer
+Gosoft Thailand	201802281028573	<Major> Please review HW setup of ERS	Goosft - Seamless	Merged with 201801221017140
+Gosoft Thailand	201803021028654	Major : Please check about ORR file [NEW]	Gosoft	Pending From the customer side what they need to do.
+
+The above is the gosoft ticket details.  
+Please get back in case of any concerns.
+
+
+
+Regrads,
+Debadrita  
+
+
+-- 
+ 
+Debadrita Sarkar - Team Lead, Customer Operations
+Mobile: +91 9836002846
+Address: Vasagatan 7, 111 20 Stockholm, Sweden
+Switchboard: +46 8 58 63 34 69
+Web: www.sds.seamless.se
+  
+
+
+
+
+-- 
+ 
+Muhammad Sabih Ullah - Team Lead Network Operations Center
+Mobile: +92 345 47 67 321, +92 302 84 80 616
+Address: Vasagatan 7, 111 20 Stockholm, Sweden
+Switchboard: +46 8 58 63 34 69
+Web: www.sds.seamless.se
+  

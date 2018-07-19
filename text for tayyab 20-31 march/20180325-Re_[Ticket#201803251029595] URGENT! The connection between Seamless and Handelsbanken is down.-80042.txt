@@ -1,0 +1,48 @@
+Subject: Re: [Ticket#201803251029595] URGENT! The connection between Seamless and Handelsbanken is down.
+From: "support@seamless.se" <support@seamless.se>
+Date: 3/25/2018 8:20 PM
+To: mainframe@handelsbanken.se
+CC: PEBJ10@HANDELSBANKEN.SE, lala04@handelsbanken.se, debadrita.sarkar@seamless.se, sds.noc@seamless.se
+
+Hi,
+There was some issue from tele2 end. But now everything is fine.
+
+-- 
+
+Best Regards,
+ 
+
+Support Team
+Address: Vasagatan 7, 111 20 Stockholm, Sweden
+Global Support Center : +46 8 52 50 42 06
+Switchboard : +46 8 58 63 34 69
+Web: sds.seamless.se
+  
+
+
+03/25/2018 19:10 - mainframe@handelsbanken.se wrote:
+
+
+The connection between Seamless and Handelsbanken is down.
+Please investigate if you are experiencing any degredation or failure in your
+services,
+if so please report to us with Problem description and estimated time for
+solution.
+
+
+I believe it might have something to do with Tele2Comviq, although I am not sure
+at this moment.
+
+
+_________________________________
+Med vänlig hälsning/Best Regards
+
+Svenska Handelsbanken
+CDOO
+mainframe@handelsbanken.se
++4687011088
+
+
+
+Felix Granstam
+ 

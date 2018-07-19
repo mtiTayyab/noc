@@ -1,0 +1,7 @@
+Subject: Forwarded Message from +366939
+From: sds.noc.pk@gmail.com
+Date: 6/6/2018 4:37 AM
+To: sds.noc@seamless.se
+
+SE-BANK-SYSTEM: Host: freya Check_Disk_Space State: OK Date:06-06-2018-01:37:26
+

@@ -1,0 +1,20 @@
+Subject: ** [SY-MTN] - RECOVERY alert - OK drtd03-SYS_HostLoad**
+From: nagios@SYRIA.STG01 (nagios)
+Date: 5/18/2018 1:27 AM
+To: sds.noc@seamless.se
+
+***Seamless Support for MTN Syria - Notification***
+
+Notification Type: RECOVERY
+
+Service: SYS_HostLoad
+Host: drtd03
+Address: 10.10.50.10
+State: OK
+
+Date/Time: Thu May 17 23:27:45 EEST 2018
+
+Additional Info:
+
+OK - load average: 1.33, 5.98, 3.62
+

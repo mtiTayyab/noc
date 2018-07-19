@@ -1,0 +1,20 @@
+Subject: ** PROBLEM Service Alert: newcoersdb02d/SYS-DiskSpace is WARNING **
+From: nagios@newcoersstg01a.localdomain
+Date: 5/12/2018 9:09 PM
+To: sds.noc@seamless.se
+
+***** Nagios *****
+
+Notification Type: PROBLEM
+
+Service: SYS-DiskSpace
+Host: newcoersdb02d
+Address: 10.160.33.119
+State: WARNING
+
+Date/Time: Sat May 12 12:09:31 EDT 2018
+
+Additional Info:
+
+DISK WARNING - free space: / 45168 MB (94% inode=98%): /dev/shm 32213 MB (100% inode=99%): /boot 420 MB (91% inode=99%): /home 3690 MB (96% inode=99%): /var 133673 MB (30% inode=99%): /database 1566605 MB (79% inode=99%):
+

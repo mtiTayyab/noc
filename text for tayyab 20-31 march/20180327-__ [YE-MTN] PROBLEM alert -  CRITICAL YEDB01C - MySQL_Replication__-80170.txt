@@ -1,0 +1,20 @@
+Subject: ** [YE-MTN] PROBLEM alert - CRITICAL YEDB01C - MySQL_Replication**
+From: nagios <nagios@YTRS02B.localdomain>
+Date: 3/27/2018 4:26 PM
+To: <sds.noc@seamless.se>
+
+***Seamless Support MTN YEMEN - Notification***
+
+Notification Type: PROBLEM
+
+Service: MySQL_Replication
+Host: YEDB01C
+Address: 172.16.20.48
+State: CRITICAL
+
+Date/Time: Tue Mar 27 14:26:08 AST 2018
+
+Additional Info:
+
+CRITICAL - Slave is 1213 seconds behind master
+

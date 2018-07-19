@@ -1,0 +1,18 @@
+Subject: Air3 alerts
+From: Nadeem Ahmad <nadeem.ahmad@seamless.se>
+Date: 4/13/2018 7:01 AM
+To: itcsdserviceoperation <ITCSDServiceOperation@mtn.com.sy>, "Lorine Mahfoud [MTN Syria - Information Technology]" <lmahfoud@mtn.com.sy>
+CC: SDS NOC <sds.noc@seamless.se>, Shahrukh Mushtaq <shahrukh.mushtaq@seamless.se>, Ahmed Hassan <ahmed.hassan@seamless.se>
+
+Dear Team
+
+We are receiving Air3 down alerts. Kindly check.
+
+Regards
+Nadeem Ahmad
+
+
+
+
+
+Sent from OPPO Mail

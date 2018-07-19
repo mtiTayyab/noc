@@ -1,0 +1,20 @@
+Subject: ** [SY-MTN] - PROBLEM alert - WARNING drtd02-SYS_HostLoad**
+From: nagios@SYRIA.STG01 (nagios)
+Date: 4/3/2018 2:48 PM
+To: sds.noc@seamless.se
+
+***Seamless Support for MTN Syria - Notification***
+
+Notification Type: PROBLEM
+
+Service: SYS_HostLoad
+Host: drtd02
+Address: 10.10.50.7
+State: WARNING
+
+Date/Time: Tue Apr 3 12:48:33 EEST 2018
+
+Additional Info:
+
+WARNING - load average: 11.72, 18.93, 12.96
+

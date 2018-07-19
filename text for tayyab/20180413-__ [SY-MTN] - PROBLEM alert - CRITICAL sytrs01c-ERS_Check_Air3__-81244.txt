@@ -1,0 +1,20 @@
+Subject: ** [SY-MTN] - PROBLEM alert - CRITICAL sytrs01c-ERS_Check_Air3**
+From: nagios@SYRIA.STG01 (nagios)
+Date: 4/13/2018 6:52 AM
+To: sds.noc@seamless.se
+
+***Seamless Support for MTN Syria - Notification***
+
+Notification Type: PROBLEM
+
+Service: ERS_Check_Air3
+Host: sytrs01c
+Address: 10.10.51.27
+State: CRITICAL
+
+Date/Time: Fri Apr 13 04:52:02 EEST 2018
+
+Additional Info:
+
+CHECK_NRPE: Socket timeout after 10 seconds.
+

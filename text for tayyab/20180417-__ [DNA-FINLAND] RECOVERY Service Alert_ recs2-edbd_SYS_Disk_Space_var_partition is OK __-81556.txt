@@ -1,0 +1,20 @@
+Subject: ** [DNA-FINLAND] RECOVERY Service Alert: recs2-edbd/SYS_Disk_Space_var_partition is OK **
+From: nagios@recs2-test.s.dnaip.fi
+Date: 4/17/2018 7:36 AM
+To: sds.noc@seamless.se
+
+***** Nagios *****
+
+Notification Type: RECOVERY
+
+Service: SYS_Disk_Space_var_partition
+Host: recs2-edbd
+Address: 193.143.80.141
+State: OK
+
+Date/Time: Tue Apr 17 05:36:53 EEST 2018
+
+Additional Info:
+
+DISK OK - free space: /var 350816 MB (73% inode=99%):
+

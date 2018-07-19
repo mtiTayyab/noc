@@ -1,0 +1,7 @@
+Subject: Forwarded Message from +242060000001
+From: sds.noc.pk@gmail.com
+Date: 5/10/2018 4:07 AM
+To: sds.noc@seamless.se
+
+MTN-C-Service: SMSGW, Host: GW02A, State: OK, Date:05-10-2018-00:07:03
+

@@ -1,0 +1,20 @@
+Subject: ** RECOVERY alert - OK WEB01A (PR Web Server 1)/Haproxy_Service**
+From: nagios@bjmtn-stg01.localdomain
+Date: 5/16/2018 5:26 PM
+To: sds.noc@seamless.se
+
+***Seamless Support for MTN BENIN - Notification***
+
+Notification Type: RECOVERY
+
+Service: Haproxy_Service
+Host: WEB01A (PR Web Server 1)
+Address: 10.77.73.214
+State: OK
+
+Date/Time: Wed May 16 13:26:54 WAT 2018
+
+Additional Info:
+
+PROCS OK: 1 process with command name haproxy
+

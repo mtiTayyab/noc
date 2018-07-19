@@ -1,0 +1,20 @@
+Subject: ** [SY-MTN] - RECOVERY alert - OK syedb01a-MySQL_LongQuery**
+From: nagios@SYRIA.STG01 (nagios)
+Date: 3/20/2018 10:28 PM
+To: sds.noc@seamless.se
+
+***Seamless Support for MTN Syria - Notification***
+
+Notification Type: RECOVERY
+
+Service: MySQL_LongQuery
+Host: syedb01a
+Address: 10.10.51.19
+State: OK
+
+Date/Time: Tue Mar 20 19:28:24 EET 2018
+
+Additional Info:
+
+MYSQL_LONGQUERIES OK - No long running queries found (430 threads checked)
+

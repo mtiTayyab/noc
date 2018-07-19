@@ -1,0 +1,20 @@
+Subject: ** [DNA-FINLAND] PROBLEM Service Alert: recs2-edbd/SYS_Disk_Space_var_partition is WARNING **
+From: nagios@recs2-test.s.dnaip.fi
+Date: 5/17/2018 3:15 AM
+To: sds.noc@seamless.se
+
+***** Nagios *****
+
+Notification Type: PROBLEM
+
+Service: SYS_Disk_Space_var_partition
+Host: recs2-edbd
+Address: 193.143.80.141
+State: WARNING
+
+Date/Time: Thu May 17 01:15:57 EEST 2018
+
+Additional Info:
+
+DISK WARNING - free space: /var 98933 MB (20% inode=99%):
+

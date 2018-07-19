@@ -1,0 +1,20 @@
+Subject: ** [SY-MTN] - PROBLEM alert - CRITICAL prtd02-SYS_HostReachable**
+From: nagios@SYRIA.STG01 (nagios)
+Date: 4/6/2018 5:50 AM
+To: sds.noc@seamless.se
+
+***Seamless Support for MTN Syria - Notification***
+
+Notification Type: PROBLEM
+
+Service: SYS_HostReachable
+Host: prtd02
+Address: 10.10.51.7
+State: CRITICAL
+
+Date/Time: Fri Apr 6 03:50:11 EEST 2018
+
+Additional Info:
+
+CRITICAL - Socket timeout after 2 seconds
+

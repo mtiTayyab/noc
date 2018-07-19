@@ -1,0 +1,23 @@
+Subject: VPN Tunnel unreachable alerts
+From: SDS NOC <sds.noc@seamless.se>
+Date: 5/13/2018 2:28 PM
+To: Tapash Raha <tapash.raha@seamless.se>
+CC: Muhammad Sabihullah <muhammad.sabihullah@seamless.se>, SDS NOC <sds.noc@seamless.se>, Omair Anwer <omair.anwer@seamless.se>, Debadrita Sarkar <debadrita.sarkar@seamless.se>, Michael Gyamfi <michael.gyamfi@seamless.se>
+
+Hi Tapash,
+
+As discussed on call we are unable to access the Nagios of following sites :
+
+    MTN Yemen
+    MTN South Sudan
+    DNA Finland
+
+Kindly do the needful accordingly.
+
+ 
+Salah Ud Din Saleem - Engineer Network Operations Center
+Mobile: +92 323 7055680
+Address: Vasagatan 7, 111 20 Stockholm, Sweden
+Switchboard: +46 8 58 63 34 69
+Web: www.sds.seamless.se
+  

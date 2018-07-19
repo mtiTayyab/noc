@@ -1,0 +1,7 @@
+Subject: Forwarded Message from +242060000001
+From: sds.noc.pk@gmail.com
+Date: 5/3/2018 4:53 PM
+To: sds.noc@seamless.se
+
+MTN-C-Service: MySQL-Replication, Host: ERSBZVPROMO01, State: OK, Date:05-03-2018-12:53:33
+

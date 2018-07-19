@@ -1,0 +1,36 @@
+Subject: Re: Multiple Alerts at MTN Yemen
+From: Omair Anwer <omair.anwer@seamless.se>
+Date: 3/30/2018 3:43 AM
+To: SDS NOC <sds.noc@seamless.se>
+CC: Shahrukh Mushtaq <shahrukh.mushtaq@seamless.se>, Muhammad Sabihullah <muhammad.sabihullah@seamless.se>, Ahsan Altaf <ahsan.altaf@seamless.se>
+
+The issue has been resolved for now, the actual problem is that one disk on this server is faulty which is causing irregular behaviour on this server. The issue has already been reported to MTN YE for immediate disk replacement.
+ 
+Omair Anwer - System Engineer
+Mobile: +92 345 844 7912 
+Address: Vasagatan 7, 111 20 Stockholm, Sweden 
+Switchboard: +46 8 58 63 34 69 
+Web: www.sds.seamless.se 
+
+
+
+
+> On 30-Mar-2018, at 3:36 AM, SDS NOC <sds.noc@seamless.se> wrote:
+>
+> Hi,
+>
+> As informed on phone call, we have received the below mentioned alerts. Please do the needful.
+>
+>
+> <image.png>
+>
+>
+> Kind Regards
+>  
+> SDS NOC - Network Operations Center
+> Mobile: +92-346-4001166
+> Address: Vasagatan 7, 111 20 Stockholm, Sweden
+> Switchboard: +46 8 58 63 34 69
+> Web: www.sds.seamless.se
+>   
+

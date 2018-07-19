@@ -1,0 +1,7 @@
+Subject: Forwarded Message from +242060000001
+From: sds.noc.pk@gmail.com
+Date: 5/5/2018 11:16 PM
+To: sds.noc@seamless.se
+
+MTN-C-Service: TXE FAF ISSUE, Host: TRS02A, State: CRITICAL, Date:05-05-2018-19:16:08
+

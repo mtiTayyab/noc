@@ -1,0 +1,20 @@
+Subject: **[ERS-BANKSYSTEM-NEW] PROBLEM alert - CRITICAL ATM1/ERS_tele2_oplink-logs**
+From: nagios@jrf-prd-banksystem-atm4.seamless.internal
+Date: 5/18/2018 10:29 PM
+To: sds.noc@seamless.se
+
+***Seamless Support - Notification for SE Bank System ***
+
+Notification Type: PROBLEM
+
+Service: ERS_tele2_oplink-logs
+Host: ATM1
+Address: 10.0.68.197
+State: CRITICAL
+
+Date/Time: Fri May 18 19:29:01 CEST 2018
+
+Additional Info:
+
+CRITICAL: Found 1648 lines (limit=10/50): 2018-05-18 19:28:41,816 WARN  [Tele2WebServiceClient] [tx: oid: msisdn:] - ValidateMsisdn msisdn 0764244782 WebServiceException: connect timed out
+

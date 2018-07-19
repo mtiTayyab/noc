@@ -1,0 +1,52 @@
+Subject: Fwd: [Ticket#201805161032064] Planned maintenance release 2018-05-21
+From: "support@seamless.se" <support@seamless.se>
+Date: 5/17/2018 10:52 AM
+To: sds.noc@seamless.se
+
+Hi NOC Team,
+
+FYI 
+
+-- 
+
+Best Regards,
+ 
+
+Support Team
+Address: Vasagatan 7, 111 20 Stockholm, Sweden
+Global Support Center : +46 8 52 50 42 06
+Switchboard : +46 8 58 63 34 69
+Web: sds.seamless.se
+  
+
+---- Forwarded message from mobileservicesoperation <mobileservicesoperation@tre.se> ---
+ 
+From: mobileservicesoperation <mobileservicesoperation@tre.se>
+To: mobileservicesoperation <mobileservicesoperation@tre.se>
+Subject: Planned maintenance release 2018-05-21
+Date: 2018-05-16 19:00:14
+ 
+Dear Customer/Partner,
+ 
+We have a planned maintenance release. During the release disturbance in our services will be expected.
+ 
+Affected services
+Topup Services and Event Charging Services.
+ 
+Disturbance period
+From 2018-05-21 at 22:00 CET until 2018-05-22 at 03:00 CET.
+In case of a rollback this will be completed by 2018-05-22 at 07:00 CET.
+ 
+Next maintenance release is scheduled to 2018-06-11.
+ 
+ 
+Regards,
+3logo (1)
+Mobile Services Operation
+Hi3G Access AB
+104 25 Stockholm
+mobileservicesoperation@tre.se
+www.tre.se
+ 
+
+---- End forwarded message --- 

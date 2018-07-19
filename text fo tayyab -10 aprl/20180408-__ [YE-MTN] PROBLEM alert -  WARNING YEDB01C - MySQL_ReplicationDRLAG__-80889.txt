@@ -1,0 +1,20 @@
+Subject: ** [YE-MTN] PROBLEM alert - WARNING YEDB01C - MySQL_ReplicationDRLAG**
+From: nagios <nagios@YTRS02B.localdomain>
+Date: 4/8/2018 3:20 AM
+To: <sds.noc@seamless.se>
+
+***Seamless Support MTN YEMEN - Notification***
+
+Notification Type: PROBLEM
+
+Service: MySQL_ReplicationDRLAG
+Host: YEDB01C
+Address: 172.16.20.48
+State: WARNING
+
+Date/Time: Sun Apr 8 01:20:58 AST 2018
+
+Additional Info:
+
+WARNING - Slave is 17 seconds behind master
+

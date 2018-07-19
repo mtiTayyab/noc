@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="9aa4d984-bf15-4ae6-ad07-b0b26ffa966b" name="Default" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/NOC$script.coverage" NAME="script Coverage Results" MODIFIED="1531827010946" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="NOC" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
+      <file leaf-file-name="script.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/script.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
+              <folding>
+                <element signature="e#0#9#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>charmap</find>
+      <find>ffinal</find>
+      <find>temp0</find>
+      <find>temp1</find>
+      <find>txt_name</find>
+      <find>gh</find>
+      <find>benin</find>
+      <find>key</find>
+      <find>subject</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>final</replace>
+      <replace>subject</replace>
+      <replace>from</replace>
+      <replace>from_line</replace>
+      <replace>key1</replace>
+    </replaceStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/W2 may test/script.py" />
+        <option value="$PROJECT_DIR$/script.py" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="948" />
+    <option name="width" value="981" />
+    <option name="height" value="1092" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="script" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="NOC" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/script.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.script" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9aa4d984-bf15-4ae6-ad07-b0b26ffa966b" name="Default" comment="" />
+      <created>1523605856480</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1523605856480</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1295" height="735" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32888147" />
+      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Python Console" order="7" weight="0.3295964" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3295964" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49408284" weight="0.31675676" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32888147" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.32079646" />
+      <window_info id="Favorites" order="2" sideWeight="0.50591713" side_tool="true" weight="0.2808642" />
+      <window_info anchor="right" id="R Packages" order="3" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" id="R Graphics" order="3" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="right" id="Data View" order="3" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+      <option name="time" value="43" />
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/10-20 may/20180518-__ [SY-MTN] - ACKNOWLEDGEMENT alert - CRITICAL syedb02e-MySQL_Replication__-84725.txt" />
+    <entry file="file://$PROJECT_DIR$/10-20 may/20180518-__ [SY-MTN] - PROBLEM alert - CRITICAL syedb01a-MySQL_LongQuery__-84704.txt" />
+    <entry file="file://$PROJECT_DIR$/10-20 may/20180518-__ [SY-MTN] - PROBLEM alert - CRITICAL syedb01a-MySQL_Replication__-84718.txt" />
+    <entry file="file://$PROJECT_DIR$/10-20 may/20180518-__ [SY-MTN] - PROBLEM alert - CRITICAL syedb01b-SYS_HOSTAlive__-84709.txt" />
+    <entry file="file://$PROJECT_DIR$/10-20 may/20180518-__ [SY-MTN] - PROBLEM alert - CRITICAL syedb02b-MySQL_Replication__-84720.txt" />
+    <entry file="file://$PROJECT_DIR$/10-20 may/20180518-__ [SY-MTN] - PROBLEM alert - CRITICAL syedb02b-MySQL_Replication__-84722.txt" />
+    <entry file="file://$PROJECT_DIR$/10-20 may/20180518-__ [SY-MTN] - PROBLEM alert - CRITICAL syedb02e-MySQL_Replication__-84724.txt" />
+    <entry file="file://$PROJECT_DIR$/10-20 may/20180518-__ [SY-MTN] - PROBLEM alert - WARNING drtd03-SYS_HostLoad__-84702.txt" />
+    <entry file="file://$PROJECT_DIR$/10-20 may/20180518-__ [SY-MTN] - PROBLEM alert - WARNING syedb01a-SYS_HOSTAlive__-84708.txt" />
+    <entry file="file://$PROJECT_DIR$/10-20 may/20180518-__ [SY-MTN] - PROBLEM alert - WARNING syedb01b-SYS_HOSTAlive__-84706.txt" />
+    <entry file="file://$PROJECT_DIR$/10-20 may/20180518-__ [SY-MTN] - PROBLEM alert - WARNING syedb01e-SYS_HOSTAlive__-84711.txt" />
+    <entry file="file://$PROJECT_DIR$/10-20 may/20180518-__ PROBLEM Service Alert_ newcoersap02a_ERS_BS_NEWCO_LINK_EXCEPTION is WARNING __-84764.txt" />
+    <entry file="file://$PROJECT_DIR$/10-20 may/20180518-__[ERS-BANKSYSTEM-NEW] ACKNOWLEDGEMENT alert - WARNING ATM1_ERS_handelsbanken-mqlink-logs__-84776.txt" />
+    <entry file="file://$PROJECT_DIR$/10-20 may/20180518-__[ERS-BANKSYSTEM-NEW] ACKNOWLEDGEMENT alert - WARNING ATM1_ERS_nordea-mqlink-logs__-84777.txt" />
+    <entry file="file://$PROJECT_DIR$/10-20 may/20180518-__[ERS-BANKSYSTEM-NEW] PROBLEM alert - CRITICAL ATM1_Check_Tele2_Oplink_Connectivity__-84772.txt" />
+    <entry file="file://$PROJECT_DIR$/10-20 may/20180518-__[ERS-BANKSYSTEM-NEW] PROBLEM alert - CRITICAL ATM1_Check_Tele2_Oplink_Connectivity__-84780.txt" />
+    <entry file="file://$PROJECT_DIR$/10-20 may/20180518-__[ERS-BANKSYSTEM-NEW] PROBLEM alert - CRITICAL ATM1_Check_Tele2_Oplink_Connectivity__-84783.txt" />
+    <entry file="file://$PROJECT_DIR$/10-20 may/20180518-__[ERS-BANKSYSTEM-NEW] PROBLEM alert - CRITICAL ATM1_Check_Tele2_Oplink_Connectivity__-84787.txt" />
+    <entry file="file://$PROJECT_DIR$/10-20 may/20180518-__[ERS-BANKSYSTEM-NEW] PROBLEM alert - CRITICAL ATM1_Check_Tele2_Oplink_Connectivity__-84791.txt" />
+    <entry file="file://$PROJECT_DIR$/10-20 may/20180518-__[ERS-BANKSYSTEM-NEW] PROBLEM alert - CRITICAL ATM1_Check_Tele2_Oplink_Connectivity__-84793.txt" />
+    <entry file="file://$PROJECT_DIR$/10-20 may/20180518-__[ERS-BANKSYSTEM-NEW] PROBLEM alert - CRITICAL ATM1_Check_Tele2_Oplink_Connectivity__-84797.txt" />
+    <entry file="file://$PROJECT_DIR$/10-20 may/20180518-__[ERS-BANKSYSTEM-NEW] PROBLEM alert - CRITICAL ATM1_Check_Tele2_Oplink_Connectivity__-84800.txt" />
+    <entry file="file://$PROJECT_DIR$/10-20 may/20180518-__[ERS-BANKSYSTEM-NEW] PROBLEM alert - CRITICAL ATM1_Check_Tele2_Oplink_Peakhour_Trans__-84773.txt" />
+    <entry file="file://$PROJECT_DIR$/10-20 may/20180518-__[ERS-BANKSYSTEM-NEW] PROBLEM alert - CRITICAL ATM1_Check_Tele2_Oplink_Peakhour_Trans__-84781.txt" />
+    <entry file="file://$PROJECT_DIR$/10-20 may/20180518-__[ERS-BANKSYSTEM-NEW] PROBLEM alert - CRITICAL ATM1_Check_Tele2_Oplink_Peakhour_Trans__-84784.txt" />
+    <entry file="file://$PROJECT_DIR$/10-20 may/20180518-__[ERS-BANKSYSTEM-NEW] PROBLEM alert - CRITICAL ATM1_ERS_tele2_oplink-logs__-84769.txt" />
+    <entry file="file://$PROJECT_DIR$/10-20 may/20180518-__[ERS-BANKSYSTEM-NEW] PROBLEM alert - CRITICAL ATM1_ERS_tele2_oplink-logs__-84779.txt" />
+    <entry file="file://$PROJECT_DIR$/10-20 may/20180518-__[ERS-BANKSYSTEM-NEW] PROBLEM alert - CRITICAL ATM1_ERS_tele2_oplink-logs__-84782.txt" />
+    <entry file="file://$PROJECT_DIR$/10-20 may/20180518-__[ERS-BANKSYSTEM-NEW] PROBLEM alert - CRITICAL ATM1_ERS_tele2_oplink-logs__-84785.txt" />
+    <entry file="file://$PROJECT_DIR$/10-20 may/20180518-__[ERS-BANKSYSTEM-NEW] PROBLEM alert - CRITICAL ATM1_ERS_tele2_oplink-logs__-84790.txt" />
+    <entry file="file://$PROJECT_DIR$/10-20 may/20180518-__[ERS-BANKSYSTEM-NEW] PROBLEM alert - CRITICAL ATM1_ERS_tele2_oplink-logs__-84792.txt" />
+    <entry file="file://$PROJECT_DIR$/10-20 may/20180518-__[ERS-BANKSYSTEM-NEW] PROBLEM alert - CRITICAL ATM1_ERS_tele2_oplink-logs__-84794.txt" />
+    <entry file="file://$PROJECT_DIR$/10-20 may/20180518-__[ERS-BANKSYSTEM-NEW] PROBLEM alert - CRITICAL ATM1_ERS_tele2_oplink-logs__-84798.txt" />
+    <entry file="file://$PROJECT_DIR$/10-20 may/20180518-Host DOWN alert for syedb01b!-84712.txt" />
+    <entry file="file://$PROJECT_DIR$/10-20 may/20180518-MTN-GB-EVD-Service_ HW Disk Space Host_ STG01 State_ CRITICAL-84721.txt" />
+    <entry file="file://$PROJECT_DIR$/10-20 may/20180519-__[ERS-BANKSYSTEM-NEW] PROBLEM alert - CRITICAL ATM1_Check_Tele2_Oplink_Connectivity__-84802.txt" />
+    <entry file="file://$PROJECT_DIR$/10-20 may/20180519-__[ERS-BANKSYSTEM-NEW] PROBLEM alert - CRITICAL ATM1_ERS_tele2_oplink-logs__-84801.txt" />
+    <entry file="file://$PROJECT_DIR$/10-20 may/20180519-__[ERS-BANKSYSTEM-NEW] PROBLEM alert - CRITICAL ATM1_ERS_tele2_oplink-logs__-84803.txt" />
+    <entry file="file://$PROJECT_DIR$/10-20 may/20180510-__ [GC-MTN] - PROBLEM alert - CRITICAL REPARCH01-ERS_TransactionImport__-84048.txt" />
+    <entry file="file://$PROJECT_DIR$/10-20 may/20180510-__ PROBLEM Service Alert_ KVM HOST_Check Disk is WARNING __-83965.txt" />
+    <entry file="file://$PROJECT_DIR$/10-20 may/20180510-__ PROBLEM Service Alert_ KVM HOST_Check Disk is WARNING __-83959.txt" />
+    <entry file="file://$PROJECT_DIR$/10-20 may/20180510-__ PROBLEM Service Alert_ KVM HOST_Check Disk is WARNING __-83957.txt" />
+    <entry file="file://$PROJECT_DIR$/10-20 may/20180510-__ PROBLEM Service Alert_ KVM HOST_Check Disk is WARNING __-83955.txt" />
+    <entry file="file://$PROJECT_DIR$/10-20 may/20180510-__ PROBLEM Service Alert_ KVM HOST_Check Disk is WARNING __-83953.txt" />
+    <entry file="file://$PROJECT_DIR$/10-20 may/20180510-__ [SY-MTN] - PROBLEM alert - WARNING sytrs02a-SYS_TotalProc__-83964.txt" />
+    <entry file="file://$PROJECT_DIR$/10-20 may/20180510-__ [SY-MTN] - PROBLEM alert - WARNING sytrs02a-SYS_TotalProc__-83963.txt" />
+    <entry file="file://$PROJECT_DIR$/10-20 may/20180510-__ [SY-MTN] - PROBLEM alert - WARNING sytrs02a-SYS_TotalProc__-83960.txt" />
+    <entry file="file://$PROJECT_DIR$/10-20 may/20180510-__ PROBLEM Service Alert_ KVM HOST_Check Disk is WARNING __-83974.txt" />
+    <entry file="file://$PROJECT_DIR$/10-20 may/20180510-__ PROBLEM Service Alert_ KVM HOST_Check Disk is WARNING __-83968.txt" />
+    <entry file="file://$PROJECT_DIR$/W2 may test/script.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/script.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="26" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#9#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

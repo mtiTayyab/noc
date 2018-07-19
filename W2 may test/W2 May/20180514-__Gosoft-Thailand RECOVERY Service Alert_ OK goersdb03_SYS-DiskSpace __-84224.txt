@@ -1,0 +1,29 @@
+Subject: **Gosoft-Thailand RECOVERY Service Alert: OK goersdb03/SYS-DiskSpace **
+From: noreply <noreply@gosoft.co.th>
+Date: 5/14/2018 6:59 AM
+To: sds.noc@seamless.se
+
+***** Nagios *****
+
+Notification Type: RECOVERY
+
+Service: SYS-DiskSpace
+Host: goersdb03
+Address: 10.160.102.166
+State: OK
+
+Date/Time: Mon May 14 08:59:26 ICT 2018
+
+Additional Info:
+
+DISK OK - free space: / 2398 MB (83% inode=96%): /dev/shm 24133 MB (100% inode=99%): /boot 150 MB (81% inode=99%): /home 3091 MB (80% inode=99%): /opt 2734 MB (57% inode=96%): /tmp 923 MB (96% inode=99%): /usr 2796 MB (73% inode=81%): /var 57022 MB (54% inode=98%): /var/backup 7701 MB (16% inode=99%): /var/lib/mysql 229988 MB (34% inode=99%):
+<FONT face="Tahoma,Helvetica,Sans-Serif" color="gray" size="1"><BR>
+<STRONG>Disclaimer:</STRONG>
+************************************************************
+<STRONG>Important</STRONG>
+Confidentiality: This Information is intended for the above-named person and may contain confidential and/or legally privileged material. Any opinions expressed in this information are not necessarily those of the company. If it has come to you in error you must take no action based on it, nor must you copy or show it to anyone; please delete/destroy and inform the sender immediately.
+<STRONG>Monitoring/Viruses</STRONG>
+Gosoft reserves the right to monitor all incoming and outgoing emails via Gosoft system. Although we have security program to monitor and eliminate virus, we also advise that in keeping with good computing practice the recipient should ensure they are actually virus free.
+************************************************************
+</FONT>
+

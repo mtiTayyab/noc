@@ -1,0 +1,15 @@
+Subject: ** FLAPPINGSTART Host Alert: edb03a is UP **
+From: nagios@newcoersstg01a.localdomain
+Date: 4/15/2018 5:41 AM
+To: sds.noc@seamless.se
+
+***** Nagios *****
+
+Notification Type: FLAPPINGSTART
+Host: edb03a
+State: UP
+Address: 10.160.39.14
+Info: PING OK - Packet loss = 0%, RTA = 690.39 ms
+
+Date/Time: Sat Apr 14 20:41:44 EDT 2018
+

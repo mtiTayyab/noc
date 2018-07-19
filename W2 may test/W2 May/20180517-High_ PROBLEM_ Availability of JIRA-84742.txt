@@ -1,0 +1,7 @@
+Subject: High: PROBLEM: Availability of JIRA
+From: zabbix@nagios01.infra.ts (Zabbix Monitoring System)
+Date: 5/17/2018 5:54 AM
+To: sds.noc@seamless.se
+
+
+	336 bytes

@@ -1,0 +1,20 @@
+Subject: ** RECOVERY Service Alert: newcoersdb02a/Cluster_Count is OK **
+From: nagios@newcoersstg01a.localdomain
+Date: 4/15/2018 11:51 AM
+To: sds.noc@seamless.se
+
+***** Nagios *****
+
+Notification Type: RECOVERY
+
+Service: Cluster_Count
+Host: newcoersdb02a
+Address: 10.160.33.108
+State: OK
+
+Date/Time: Sun Apr 15 02:50:59 EDT 2018
+
+Additional Info:
+
+OK: number of NODES = 5
+

@@ -1,0 +1,20 @@
+Subject: ** PROBLEM alert - CRITICAL appdb01b/SYSTEM-LOAD**
+From: MTN Zambia EVD Support <EVDAlerts.ZM@mtn.com>
+Date: 5/5/2018 5:47 AM
+To: <sds.noc@seamless.se>
+
+***MTN Zambia EVD System - NMS Notification***
+
+Notification Type: PROBLEM
+
+Service: SYSTEM-LOAD
+Host: appdb01b
+Address: 10.110.80.102
+State: CRITICAL
+
+Date/Time: Sat May 5 02:47:58 CAT 2018
+
+Additional Info:
+
+CHECK_NRPE STATE CRITICAL: Socket timeout after 10 seconds.
+

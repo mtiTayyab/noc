@@ -1,0 +1,7 @@
+Subject: Forwarded Message from +046931
+From: sds.noc.pk@gmail.com
+Date: 6/6/2018 6:09 AM
+To: sds.noc@seamless.se
+
+SE-BANK-SYSTEM: Host: ATM1 check_danskebank_MQ_Sessions State: OK Date:06-06-2018-03:09:43
+

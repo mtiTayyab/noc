@@ -1,0 +1,20 @@
+Subject: ** PROBLEM Service Alert: KVM HOST/Check Disk is WARNING **
+From: nagios@localhost.localdomain
+Date: 6/3/2018 7:22 PM
+To: sds.noc.pk@gmail.com, omer.almas@seamless.se, wajahat.ali@seamless.se
+
+***** Nagios *****
+
+Notification Type: PROBLEM
+
+Service: Check Disk
+Host: KVM HOST
+Address: 192.168.1.25
+State: WARNING
+
+Date/Time: Sun Jun 3 19:22:29 PKT 2018
+
+Additional Info:
+
+DISK WARNING - free space: / 225845 MB (21.75% inode=100%):
+

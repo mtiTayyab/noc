@@ -1,0 +1,20 @@
+Subject: ** RECOVERY Service Alert: newcoersdb02d/SYS-DiskSpace is OK **
+From: nagios@newcoersstg01a.localdomain
+Date: 5/12/2018 9:14 PM
+To: sds.noc@seamless.se
+
+***** Nagios *****
+
+Notification Type: RECOVERY
+
+Service: SYS-DiskSpace
+Host: newcoersdb02d
+Address: 10.160.33.119
+State: OK
+
+Date/Time: Sat May 12 12:14:08 EDT 2018
+
+Additional Info:
+
+DISK OK - free space: / 45168 MB (94% inode=98%): /dev/shm 32213 MB (100% inode=99%): /boot 420 MB (91% inode=99%): /home 3690 MB (96% inode=99%): /var 312129 MB (71% inode=99%): /database 1566599 MB (79% inode=99%):
+

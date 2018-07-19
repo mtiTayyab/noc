@@ -1,0 +1,33 @@
+Subject: Re: Ticket#201803251029596 — FW: Notification : Glo High VTU failures
+From: Ahsan Altaf <ahsan.altaf@seamless.se>
+Date: 3/25/2018 9:46 PM
+To: SDS NOC <sds.noc@seamless.se>
+CC: SDS NOC <sds.noc@seamless.se>, Muhammad Sabihullah <muhammad.sabihullah@seamless.se>, Nadeem Ahmad <nadeem.ahmad@seamless.se>, Shahrukh Mushtaq <shahrukh.mushtaq@seamless.se>
+
+Hi,
+  I have updated customer on the said ticket , you may close it for now .
+
+
+Regards,
+Ahsan
+
+
+
+On Sun, Mar 25, 2018 at 9:41 PM +0500, "SDS NOC" <sds.noc@seamless.se> wrote:
+
+    Hi Team,
+
+    We have received the subjected critical ticket.Please do the needful accordingly.
+
+
+
+
+
+     
+    Salah Ud Din Saleem - Engineer Network Operations Center
+    Mobile: +92 323 7055680
+    Address: Vasagatan 7, 111 20 Stockholm, Sweden
+    Switchboard: +46 8 58 63 34 69
+    Web: www.sds.seamless.se
+      
+

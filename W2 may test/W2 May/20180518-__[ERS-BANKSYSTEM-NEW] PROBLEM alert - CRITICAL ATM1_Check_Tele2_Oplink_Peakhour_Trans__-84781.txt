@@ -1,0 +1,20 @@
+Subject: **[ERS-BANKSYSTEM-NEW] PROBLEM alert - CRITICAL ATM1/Check_Tele2_Oplink_Peakhour_Trans**
+From: nagios@jrf-prd-banksystem-atm4.seamless.internal
+Date: 5/18/2018 9:55 PM
+To: sds.noc@seamless.se
+
+***Seamless Support - Notification for SE Bank System ***
+
+Notification Type: PROBLEM
+
+Service: Check_Tele2_Oplink_Peakhour_Trans
+Host: ATM1
+Address: 10.0.68.197
+State: CRITICAL
+
+Date/Time: Fri May 18 18:55:43 CEST 2018
+
+Additional Info:
+
+QUERY CRITICAL: select if(count(*)0,0,1) from transactions where StartTime  (now()-INTERVAL 10 MINUTE) and StartTime  now() and resultCode=00 and transactionType = 120 and TRIM(substring(ResponseData,71,3)) in (030,032): returned 1.000000
+

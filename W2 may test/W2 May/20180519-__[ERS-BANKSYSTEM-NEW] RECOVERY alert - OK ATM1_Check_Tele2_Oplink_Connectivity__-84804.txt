@@ -1,0 +1,20 @@
+Subject: **[ERS-BANKSYSTEM-NEW] RECOVERY alert - OK ATM1/Check_Tele2_Oplink_Connectivity**
+From: nagios@jrf-prd-banksystem-atm4.seamless.internal
+Date: 5/19/2018 12:33 AM
+To: sds.noc@seamless.se
+
+***Seamless Support - Notification for SE Bank System ***
+
+Notification Type: RECOVERY
+
+Service: Check_Tele2_Oplink_Connectivity
+Host: ATM1
+Address: 10.0.68.197
+State: OK
+
+Date/Time: Fri May 18 21:33:28 CEST 2018
+
+Additional Info:
+
+TCP OK - 0.004 second response time on 90.131.28.136 port 80
+

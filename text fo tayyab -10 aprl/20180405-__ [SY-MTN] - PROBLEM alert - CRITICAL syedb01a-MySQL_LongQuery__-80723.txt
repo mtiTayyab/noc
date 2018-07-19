@@ -1,0 +1,20 @@
+Subject: ** [SY-MTN] - PROBLEM alert - CRITICAL syedb01a-MySQL_LongQuery**
+From: nagios@SYRIA.STG01 (nagios)
+Date: 4/5/2018 12:31 AM
+To: sds.noc@seamless.se
+
+***Seamless Support for MTN Syria - Notification***
+
+Notification Type: PROBLEM
+
+Service: MySQL_LongQuery
+Host: syedb01a
+Address: 10.10.51.19
+State: CRITICAL
+
+Date/Time: Wed Apr 4 22:31:34 EEST 2018
+
+Additional Info:
+
+MYSQL_LONGQUERIES CRITICAL - TIME: 5465 command=Query db=transactionlog host=sytrs01c:34424 id=55942800 progress=0.000 state=Writing to net user=refill INFO=SELECT * FROM txe_transactions_archive_xml
+

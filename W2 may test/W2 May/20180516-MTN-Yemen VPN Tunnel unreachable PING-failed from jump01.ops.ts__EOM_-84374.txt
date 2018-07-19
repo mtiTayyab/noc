@@ -1,0 +1,5 @@
+Subject: MTN-Yemen VPN Tunnel unreachable PING-failed from jump01.ops.ts</EOM>
+From: root@jump01.ops.ts (root)
+Date: 5/16/2018 11:30 AM
+To: utpalendu.mondal@seamless.se, sds.noc@seamless.se, tapash.raha@seamless.se
+

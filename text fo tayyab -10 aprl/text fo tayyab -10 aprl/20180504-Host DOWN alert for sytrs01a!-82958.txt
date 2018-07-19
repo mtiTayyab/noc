@@ -1,0 +1,15 @@
+Subject: Host DOWN alert for sytrs01a!
+From: nagios@SYRIA.STG01 (nagios)
+Date: 5/4/2018 6:13 AM
+To: sds.noc@seamless.se
+
+***Seamless Support - Notification***
+
+Notification Type: PROBLEM
+Host: sytrs01a
+State: DOWN
+Address: 10.10.51.21
+Info: PING CRITICAL - Packet loss = 100%
+
+Date/Time: Fri May 4 04:13:59 EEST 2018
+

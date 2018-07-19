@@ -1,0 +1,20 @@
+Subject: ** [YE-MTN] RECOVERY alert - OK YDDB01C - SYS_NetworkBond**
+From: nagios <nagios@YTRS02B.localdomain>
+Date: 3/30/2018 3:37 AM
+To: <sds.noc@seamless.se>
+
+***Seamless Support MTN YEMEN - Notification***
+
+Notification Type: RECOVERY
+
+Service: SYS_NetworkBond
+Host: YDDB01C
+Address: 172.27.203.21
+State: OK
+
+Date/Time: Fri Mar 30 01:37:28 AST 2018
+
+Additional Info:
+
+Interface bond0 is up: mode=1 (active-backup), 2 slaves: eth0, eth1!
+

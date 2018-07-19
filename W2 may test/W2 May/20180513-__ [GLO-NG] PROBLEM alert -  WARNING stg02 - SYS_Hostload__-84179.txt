@@ -1,0 +1,27 @@
+Subject: ** [GLO-NG] PROBLEM alert - WARNING stg02 - SYS_Hostload**
+From: <nagios@web01c.localdomain>
+Date: 5/13/2018 7:46 AM
+To: <sds.noc@seamless.se>
+
+***Seamless Support GLO-NIGERIA - Notification***
+
+Notification Type: PROBLEM
+
+Service: SYS_Hostload
+Host: stg02
+Address: 10.155.190.72
+State: WARNING
+
+Date/Time: Sun May 13 03:46:42 WAT 2018
+
+Additional Info:
+
+WARNING - load average: 5.92, 5.34, 5.27
+
+
+[https://mail.gloworld.com/img/GLO_4G_LTE_INTRO_BOTTOM_STRIP_AD_v2.jpg]
+
+"This email, together with any attachments, is for the exclusive and confidential use of the address(es) and may contain legally privileged information. Any other distribution, use or reproduction without the sender's prior consent is unauthorized and strictly prohibited. If you have received this message in error, please notify the sender by email immediately and delete this message from your computer without making any copies.
+
+Globacom is a Limited Liability Company with registration number 439916 and address at Mike Adenuga Towers, 1 Mike Adenuga Close, Off Adeola Odeku, Victoria Island, Lagos, Nigeria. Globacom Limited is registered to deliver Telecommunications services."
+

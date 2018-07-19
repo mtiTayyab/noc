@@ -1,0 +1,20 @@
+Subject: **[ERS-BANKSYSTEM-NEW] PROBLEM alert - CRITICAL ATM1/Check_Telenor_Oplink_Connectivity**
+From: nagios@jrf-prd-banksystem-atm4.seamless.internal
+Date: 3/20/2018 3:26 AM
+To: sds.noc@seamless.se
+
+***Seamless Support - Notification for SE Bank System ***
+
+Notification Type: PROBLEM
+
+Service: Check_Telenor_Oplink_Connectivity
+Host: ATM1
+Address: 10.0.68.197
+State: CRITICAL
+
+Date/Time: Mon Mar 19 23:26:16 CET 2018
+
+Additional Info:
+
+CHECK_NRPE: Socket timeout after 10 seconds.
+

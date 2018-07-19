@@ -1,0 +1,7 @@
+Subject: Forwarded Message from +794935
+From: sds.noc.pk@gmail.com
+Date: 6/6/2018 4:17 AM
+To: sds.noc@seamless.se
+
+SE-BANK-SYSTEM: Host: freya Check_Disk_Space State: WARNING Date:06-06-2018-01:17:26
+

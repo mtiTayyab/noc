@@ -1,0 +1,7 @@
+Subject: Forwarded Message from MTN-Benin
+From: sds.noc.pk@gmail.com
+Date: 5/8/2018 6:09 PM
+To: sds.noc@seamless.se
+
+MTN-Benin-Service: Haproxy Service, Host: TRS01A, State: OK, Date:05-08-2018-14:03:11
+

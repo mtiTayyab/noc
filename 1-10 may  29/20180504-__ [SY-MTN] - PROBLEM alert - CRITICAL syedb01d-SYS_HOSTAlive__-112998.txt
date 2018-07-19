@@ -1,0 +1,20 @@
+Subject: ** [SY-MTN] - PROBLEM alert - CRITICAL syedb01d-SYS_HOSTAlive**
+From: nagios@SYRIA.STG01 (nagios)
+Date: 5/4/2018 5:45 AM
+To: sds.noc@seamless.se
+
+***Seamless Support for MTN Syria - Notification***
+
+Notification Type: PROBLEM
+
+Service: SYS_HOSTAlive
+Host: syedb01d
+Address: 10.10.51.20
+State: CRITICAL
+
+Date/Time: Fri May 4 03:45:59 EEST 2018
+
+Additional Info:
+
+PING CRITICAL - Packet loss = 0%, RTA = 791.96 ms
+

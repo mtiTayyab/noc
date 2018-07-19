@@ -1,0 +1,7 @@
+Subject: Warning: PROBLEM: Lack of free swap space on Tools01
+From: zabbix@nagios01.infra.ts (Zabbix Monitoring System)
+Date: 6/9/2018 5:52 AM
+To: sds.noc@seamless.se
+
+
+	321 bytes

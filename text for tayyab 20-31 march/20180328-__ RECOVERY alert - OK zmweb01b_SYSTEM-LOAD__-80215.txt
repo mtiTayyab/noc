@@ -1,0 +1,20 @@
+Subject: ** RECOVERY alert - OK zmweb01b/SYSTEM-LOAD**
+From: MTN Zambia EVD Support <EVDAlerts.ZM@mtn.com>
+Date: 3/28/2018 4:33 AM
+To: <sds.noc@seamless.se>
+
+***MTN Zambia EVD System - NMS Notification***
+
+Notification Type: RECOVERY
+
+Service: SYSTEM-LOAD
+Host: zmweb01b
+Address: 10.110.80.120
+State: OK
+
+Date/Time: Wed Mar 28 01:33:44 CAT 2018
+
+Additional Info:
+
+OK - load average per CPU: 0.00, 0.00, 0.00
+

@@ -1,0 +1,20 @@
+Subject: ** RECOVERY alert - OK zmstg02/TOTAL-PROCS**
+From: MTN Zambia EVD Support <EVDAlerts.ZM@mtn.com>
+Date: 3/28/2018 8:56 PM
+To: <sds.noc@seamless.se>
+
+***MTN Zambia EVD System - NMS Notification***
+
+Notification Type: RECOVERY
+
+Service: TOTAL-PROCS
+Host: zmstg02
+Address: localhost
+State: OK
+
+Date/Time: Wed Mar 28 17:56:29 CAT 2018
+
+Additional Info:
+
+PROCS OK: 244 processes
+

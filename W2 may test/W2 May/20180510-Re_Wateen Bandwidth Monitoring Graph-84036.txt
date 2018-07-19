@@ -1,0 +1,227 @@
+Subject: Re: Wateen Bandwidth Monitoring Graph
+From: Wajahat Ali <wajahat.ali@synavos.com>
+Date: 5/10/2018 4:01 PM
+To: "Hadi Ul Hassan/Tech-NOC/Lahore" <Hadi.Hassan@wateen.com>
+CC: ENOC <ENOC@wateen.com>, Wateen ENOC <servicedesk@wateen.com>, "Umer Azeem/Corporate Business/Lahore" <Umer.Azeem@wateen.com>, Shahrukh Mushtaq <shahrukh.mushtaq@synavos.com>, Nadeem Ahmad <nadeem.ahmad@synavos.com>, SDS NOC <sds.noc@seamless.se>
+
+Hi , 
+
+Kindly find the details below:
+
+username : Synavos Solution
+Password : synavos
+
+
+Best regards,
+
+Wajahat Ali Sheikh
+IT-Help Desk Manager
+
+
+Mobile : +92 303 6655599
+Web: http: www.synavos.com
+Address: 346, G-1, Johar Town, Lahore
+
+On Thu, May 10, 2018 at 2:16 PM, Hadi Ul Hassan/Tech-NOC/Lahore <Hadi.Hassan@wateen.com> wrote:
+
+    Dear Wajahat,
+
+     
+
+    Kindly share your login credentials provided by Wateen.
+
+     
+
+     
+
+     
+
+    Description: Description: Description: image005Hadi Ul Hassan – Shift Manager ENOC
+
+    Wateen Telecom Limited
+
+    GSM: +92 (321) 8428 009
+
+    UAN: +92 (42) 111 999 919 IPT: 42516
+
+    Email: Hadi.Hassan@wateen.com
+
+    URL:    www.wateen.com
+
+     
+
+    Description: cid:image002.png@01CE2A3F.9C3E2DF0  Description: cid:image003.png@01CE2A3F.9C3E2DF0  Description: cid:image004.png@01CE2A3F.9C3E2DF0  Description: cid:image005.png@01CE2A3F.9C3E2DF0
+
+     
+
+     
+
+     
+
+     
+
+     
+
+     
+
+     
+
+    From: Wajahat Ali [mailto:wajahat.ali@synavos.com]
+    Sent: Thursday, May 10, 2018 2:04 PM
+    To: ENOC
+    Cc: Wateen ENOC; Umer Azeem/Corporate Business/Lahore; Hadi Ul Hassan/Tech-NOC/Lahore; Shahrukh Mushtaq; Nadeem Ahmad; SDS NOC
+    Subject: Re: Wateen Bandwidth Monitoring Graph
+
+     
+
+    ++ Synavos NOC
+
+
+    Best regards,
+
+     
+
+    Wajahat Ali Sheikh
+
+    IT-Help Desk Manager
+
+     
+
+     
+
+    Mobile : +92 303 6655599
+
+    Web: http: www.synavos.com
+
+    Address: 346, G-1, Johar Town, Lahore
+
+     
+
+    On Thu, May 10, 2018 at 2:02 PM, Wajahat Ali <wajahat.ali@synavos.com> wrote:
+
+    Dear ENOC,
+
+     
+
+    Bandwidth Monitoring Graph provided is not working again, kindly look into the issue and confirm it's permanent fix.
+
+     
+
+
+    Best regards,
+
+     
+
+    Wajahat Ali Sheikh
+
+    IT-Help Desk Manager
+
+     
+
+     
+
+    Mobile : +92 303 6655599
+
+    Web: http: www.synavos.com
+
+    Address: 346, G-1, Johar Town, Lahore
+
+     
+
+    On Tue, Apr 24, 2018 at 12:37 PM, Hadi Ul Hassan/Tech-NOC/Lahore <Hadi.Hassan@wateen.com> wrote:
+
+    Dear Wajahat,
+
+     
+
+    Graph has been updated , please check after 30 minutes.
+
+     
+
+     
+
+     
+
+    Description: Description: Description: image005Hadi Ul Hassan – Shift Manager ENOC
+
+    Wateen Telecom Limited
+
+    GSM: +92 (321) 8428 009
+
+    UAN: +92 (42) 111 999 919 IPT: 42516
+
+    Email: Hadi.Hassan@wateen.com
+
+    URL:    www.wateen.com
+
+     
+
+    Description: cid:image002.png@01CE2A3F.9C3E2DF0  Description: cid:image003.png@01CE2A3F.9C3E2DF0  Description: cid:image004.png@01CE2A3F.9C3E2DF0  Description: cid:image005.png@01CE2A3F.9C3E2DF0
+
+     
+
+     
+
+     
+
+     
+
+     
+
+    From: Wajahat Ali [mailto:wajahat.ali@synavos.com]
+    Sent: Tuesday, April 24, 2018 12:19 PM
+    To: ENOC
+    Cc: Wateen ENOC; Umer Azeem/Corporate Business/Lahore; Shahrukh Mushtaq; Irfan Ahmad Malik; Nadeem Ahmad
+    Subject: Wateen Bandwidth Monitoring Graph
+
+     
+
+    Dear Team ,
+
+     
+
+    Bandwidth monitoring graph provided from Wateen end is not working since last down time (24/4/2018   ,  2:30 PM)
+
+     
+
+    Kindly assist and provided solution.
+
+     
+
+     
+
+     
+
+
+
+    Best regards,
+
+     
+
+    Wajahat Ali Sheikh
+
+    IT-Help Desk Manager
+
+     
+
+     
+
+    Mobile : +92 303 6655599
+
+    Web: http: www.synavos.com
+
+    Address: 346, G-1, Johar Town, Lahore
+
+    Disclaimer:
+    This email and any files transmitted with it are confidential and intended solely for the use of the individual or entity to who they are addressed. If you have received this email in error please notify the system manager. This message contains confidential information and is intended only for the individual named. If you are not the named addressee you should not disseminate, distribute or copy this e-mail. If you are not the intended recipient you are notified that disclosing, copying, distributing or taking any action in reliance on the contents of this information is strictly prohibited. 
+    Warning: Although the company has taken reasonable precautions to ensure no viruses are present in this email, the company cannot accept responsibility for any loss or damage arising from the use of this email or attachments.
+
+     
+
+     
+
+    Disclaimer:
+    This email and any files transmitted with it are confidential and intended solely for the use of the individual or entity to who they are addressed. If you have received this email in error please notify the system manager. This message contains confidential information and is intended only for the individual named. If you are not the named addressee you should not disseminate, distribute or copy this e-mail. If you are not the intended recipient you are notified that disclosing, copying, distributing or taking any action in reliance on the contents of this information is strictly prohibited. 
+    Warning: Although the company has taken reasonable precautions to ensure no viruses are present in this email, the company cannot accept responsibility for any loss or damage arising from the use of this email or attachments.
+
+

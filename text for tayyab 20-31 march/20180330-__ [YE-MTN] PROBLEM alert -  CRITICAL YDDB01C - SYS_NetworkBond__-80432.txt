@@ -1,0 +1,20 @@
+Subject: ** [YE-MTN] PROBLEM alert - CRITICAL YDDB01C - SYS_NetworkBond**
+From: nagios <nagios@YTRS02B.localdomain>
+Date: 3/30/2018 3:31 AM
+To: <sds.noc@seamless.se>
+
+***Seamless Support MTN YEMEN - Notification***
+
+Notification Type: PROBLEM
+
+Service: SYS_NetworkBond
+Host: YDDB01C
+Address: 172.27.203.21
+State: CRITICAL
+
+Date/Time: Fri Mar 30 01:31:38 AST 2018
+
+Additional Info:
+
+CHECK_NRPE: Socket timeout after 10 seconds.
+

@@ -1,0 +1,20 @@
+Subject: SLA Document - April 09, 2018 to April 15, 2018
+From: SDS NOC <sds.noc@seamless.se>
+Date: 4/16/2018 9:16 AM
+To: Nadeem Ahmad <nadeem.ahmad@seamless.se>, ahsan Altaf <ahsan.altaf@seamless.se>, Zeeshan Khalid <zeeshan.khalid@seamless.se>, Ahmed Hassan <ahmed.hassan@seamless.se>, Ayyaz Rasool <ayyaz.rasool@seamless.se>, Omair Anwer <omair.anwer@seamless.se>
+CC: Shahrukh Mushtaq <shahrukh.mushtaq@seamless.se>, Muhammad Sabihullah <muhammad.sabihullah@seamless.se>, SDS NOC <sds.noc@seamless.se>
+
+Dear Team,
+
+Kindly find the attached SLA document for 9 April - 15 April, 2018.
+
+ 
+SDS NOC - Network Operations Center
+Mobile: +92 333 9094234
+Address: St:Eriksgatan 121, 113 43 Stockholm, Sweden
+Switchboard: +46 8 564 878 00
+Web: www.sds.seamless.se
+  
+
+Attachments:
+SLA April 9 - 15 April.xlsx	48.9 KB

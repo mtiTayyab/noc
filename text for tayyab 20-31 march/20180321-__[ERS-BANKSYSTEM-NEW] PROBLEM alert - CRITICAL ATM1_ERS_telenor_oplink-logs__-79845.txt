@@ -1,0 +1,20 @@
+Subject: **[ERS-BANKSYSTEM-NEW] PROBLEM alert - CRITICAL ATM1/ERS_telenor_oplink-logs**
+From: nagios@jrf-prd-banksystem-atm4.seamless.internal
+Date: 3/21/2018 7:41 PM
+To: sds.noc@seamless.se
+
+***Seamless Support - Notification for SE Bank System ***
+
+Notification Type: PROBLEM
+
+Service: ERS_telenor_oplink-logs
+Host: ATM1
+Address: 10.0.68.197
+State: CRITICAL
+
+Date/Time: Wed Mar 21 15:41:02 CET 2018
+
+Additional Info:
+
+CRITICAL: Found 58 lines (limit=10/50): hu.iqsoft.crp.comm.CrpCommException: timeout while waiting transaction response
+

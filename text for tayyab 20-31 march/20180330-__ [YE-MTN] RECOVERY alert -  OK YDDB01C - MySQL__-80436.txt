@@ -1,0 +1,20 @@
+Subject: ** [YE-MTN] RECOVERY alert - OK YDDB01C - MySQL**
+From: nagios <nagios@YTRS02B.localdomain>
+Date: 3/30/2018 3:37 AM
+To: <sds.noc@seamless.se>
+
+***Seamless Support MTN YEMEN - Notification***
+
+Notification Type: RECOVERY
+
+Service: MySQL
+Host: YDDB01C
+Address: 172.27.203.21
+State: OK
+
+Date/Time: Fri Mar 30 01:37:28 AST 2018
+
+Additional Info:
+
+Uptime: 18572953  Threads: 1  Questions: 498145794  Slow queries: 1  Opens: 189  Flush tables: 1  Open tables: 118  Queries per second avg: 26.821
+

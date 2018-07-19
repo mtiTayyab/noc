@@ -1,0 +1,7 @@
+Subject: Forwarded Message from Syria
+From: sds.noc.pk@gmail.com
+Date: 6/4/2018 4:06 PM
+To: sds.noc@seamless.se
+
+MTN-SY-Service: SYS_DiskSpace Host: syedb01b State: WARNING Date:06-04-2018-14:06:24
+

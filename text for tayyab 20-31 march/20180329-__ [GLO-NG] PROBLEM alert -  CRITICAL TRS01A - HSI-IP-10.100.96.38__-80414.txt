@@ -1,0 +1,27 @@
+Subject: ** [GLO-NG] PROBLEM alert - CRITICAL TRS01A - HSI-IP-10.100.96.38**
+From: <nagios@web01c.localdomain>
+Date: 3/29/2018 8:40 PM
+To: <sds.noc@seamless.se>
+
+***Seamless Support GLO-NIGERIA - Notification***
+
+Notification Type: PROBLEM
+
+Service: HSI-IP-10.100.96.38
+Host: TRS01A
+Address: 10.152.190.82
+State: CRITICAL
+
+Date/Time: Thu Mar 29 16:40:12 WAT 2018
+
+Additional Info:
+
+FPING CRITICAL - 10.100.96.38 (loss=100% )
+
+
+[https://mail.gloworld.com/img/GLO_4G_LTE_INTRO_BOTTOM_STRIP_AD_v2.jpg]
+
+"This email, together with any attachments, is for the exclusive and confidential use of the address(es) and may contain legally privileged information. Any other distribution, use or reproduction without the sender's prior consent is unauthorized and strictly prohibited. If you have received this message in error, please notify the sender by email immediately and delete this message from your computer without making any copies.
+
+Globacom is a Limited Liability Company with registration number 439916 and address at Mike Adenuga Towers, 1 Mike Adenuga Close, Off Adeola Odeku, Victoria Island, Lagos, Nigeria. Globacom Limited is registered to deliver Telecommunications services."
+

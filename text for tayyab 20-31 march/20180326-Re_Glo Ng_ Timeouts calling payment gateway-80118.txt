@@ -1,0 +1,75 @@
+Subject: Re: Glo Ng: Timeouts calling payment gateway
+From: Ahsan Altaf <ahsan.altaf@seamless.se>
+Date: 3/26/2018 7:13 PM
+To: SDS NOC <sds.noc@seamless.se>
+CC: Muhammad Sabihullah <muhammad.sabihullah@seamless.se>, Nadeem Ahmad <nadeem.ahmad@seamless.se>, Shahrukh Mushtaq <shahrukh.mushtaq@seamless.se>
+
+﻿Hi,
+
+                Thanks for pointing the issue , I have replied to the customer on this .
+
+ 
+
+Regards,
+
+ 
+
+https://sds.seamless.se/email/sds-logo.png
+
+ 
+
+ 
+
+Ahsan Altaf - System Engineer
+
+Mobile: +92 322 4988881
+Address: Vasagatan 7, 111 20 Stockholm, Sweden
+Switchboard: +46 8 58 63 34 69
+Web: www.sds.seamless.se
+
+https://sds.seamless.se/email/linked.png https://sds.seamless.se/email/facebook.png https://sds.seamless.se/email/twitter.png
+
+ 
+
+From: SDS NOC <sds.noc@seamless.se>
+Date: Monday, 26 March 2018 at 7:09 PM
+To: Ahsan Altaf <ahsan.altaf@seamless.se>
+Cc: SDS NOC <sds.noc@seamless.se>, Muhammad Sabihullah <muhammad.sabihullah@seamless.se>, Nadeem Ahmad <nadeem.ahmad@seamless.se>, Shahrukh Mushtaq <shahrukh.mushtaq@seamless.se>
+Subject: Glo Ng: Timeouts calling payment gateway
+
+ 
+
+Hi Team,
+
+ 
+
+We have received the subjected critical ticket.Please do the needful accordingly.
+
+ 
+
+cid:ii_jf8b59jq0_16262a3826cf6083
+
+ 
+
+ 
+
+Image removed by sender.
+
+ 
+
+Salah Ud Din Saleem - Engineer Network Operations Center
+
+Mobile: +92 323 7055680
+Address: Vasagatan 7, 111 20 Stockholm, Sweden
+Switchboard: +46 8 58 63 34 69
+Web: www.sds.seamless.se
+
+Image removed by sender. Image removed by sender. Image removed by sender.
+
+ 
+
+image001.png
+
+
+Attachments:
+image001.png	123 KB

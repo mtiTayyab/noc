@@ -1,0 +1,20 @@
+Subject: ** PROBLEM alert - WARNING zmstg02/TOTAL-PROCS**
+From: MTN Zambia EVD Support <EVDAlerts.ZM@mtn.com>
+Date: 6/10/2018 9:41 PM
+To: <sds.noc@seamless.se>
+
+***MTN Zambia EVD System - NMS Notification***
+
+Notification Type: PROBLEM
+
+Service: TOTAL-PROCS
+Host: zmstg02
+Address: localhost
+State: WARNING
+
+Date/Time: Sun Jun 10 18:41:19 CAT 2018
+
+Additional Info:
+
+PROCS WARNING: 350 processes
+

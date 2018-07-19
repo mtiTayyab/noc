@@ -1,0 +1,21 @@
+Subject: MTN GC Critical alerts from TRS01A and TRS01B Server
+From: SDS NOC <sds.noc@seamless.se>
+Date: 4/17/2018 9:51 AM
+To: Samuel Bentil <samuel.bentil@seamless.se>
+CC: Michael Saade <michael.saade@seamless.se>, Emmanuel Avisseh <eli.avisseh@seamless.se>, Muhammad Sabihullah <muhammad.sabihullah@seamless.se>, SDS NOC <sds.noc@seamless.se>
+
+Hi Team,
+
+We are receiving the below mentioned critical alerts. Please do the needful. Thanks.
+
+    [GC-MTN] - PROBLEM alert - CRITICAL TRS01A-ERS-BUSYNESS
+
+    [GC-MTN] - PROBLEM alert - CRITICAL TRS01B-ERS-BUSYNESS
+
+ 
+SDS NOC - Network Operations Center
+Mobile: +92 333 9094234
+Address: St:Eriksgatan 121, 113 43 Stockholm, Sweden
+Switchboard: +46 8 564 878 00
+Web: www.sds.seamless.se
+  

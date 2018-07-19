@@ -1,0 +1,29 @@
+Subject: **Gosoft-Thailand RECOVERY Service Alert: OK goersdb04/MySQL-Replication **
+From: noreply <noreply@gosoft.co.th>
+Date: 5/16/2018 6:20 AM
+To: sds.noc@seamless.se
+
+***** Nagios *****
+
+Notification Type: RECOVERY
+
+Service: MySQL-Replication
+Host: goersdb04
+Address: 10.160.102.152
+State: OK
+
+Date/Time: Wed May 16 08:20:16 ICT 2018
+
+Additional Info:
+
+OK: Slave is 1 seconds behind master.
+<FONT face="Tahoma,Helvetica,Sans-Serif" color="gray" size="1"><BR>
+<STRONG>Disclaimer:</STRONG>
+************************************************************
+<STRONG>Important</STRONG>
+Confidentiality: This Information is intended for the above-named person and may contain confidential and/or legally privileged material. Any opinions expressed in this information are not necessarily those of the company. If it has come to you in error you must take no action based on it, nor must you copy or show it to anyone; please delete/destroy and inform the sender immediately.
+<STRONG>Monitoring/Viruses</STRONG>
+Gosoft reserves the right to monitor all incoming and outgoing emails via Gosoft system. Although we have security program to monitor and eliminate virus, we also advise that in keeping with good computing practice the recipient should ensure they are actually virus free.
+************************************************************
+</FONT>
+

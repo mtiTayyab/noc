@@ -1,0 +1,20 @@
+Subject: ** [YE-MTN] RECOVERY alert - OK YDDB01C - SYS_FREESWAP**
+From: nagios <nagios@YTRS02B.localdomain>
+Date: 3/30/2018 3:34 AM
+To: <sds.noc@seamless.se>
+
+***Seamless Support MTN YEMEN - Notification***
+
+Notification Type: RECOVERY
+
+Service: SYS_FREESWAP
+Host: YDDB01C
+Address: 172.27.203.21
+State: OK
+
+Date/Time: Fri Mar 30 01:34:48 AST 2018
+
+Additional Info:
+
+SWAP OK - 100% free (45055 MB out of 45055 MB)
+

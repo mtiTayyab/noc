@@ -1,0 +1,20 @@
+Subject: ** PROBLEM alert - WARNING gw02b/TOTAL-PROCS**
+From: MTN Zambia EVD Support <EVDAlerts.ZM@mtn.com>
+Date: 6/5/2018 12:26 AM
+To: <sds.noc@seamless.se>
+
+***MTN Zambia EVD System - NMS Notification***
+
+Notification Type: PROBLEM
+
+Service: TOTAL-PROCS
+Host: gw02b
+Address: 10.100.118.24
+State: WARNING
+
+Date/Time: Mon Jun 4 21:26:24 CAT 2018
+
+Additional Info:
+
+PROCS WARNING: 501 processes
+

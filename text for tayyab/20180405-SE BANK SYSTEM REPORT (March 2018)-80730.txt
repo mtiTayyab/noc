@@ -1,0 +1,29 @@
+Subject: SE BANK SYSTEM REPORT (March 2018)
+From: Salahuddin Saleem <salahuddin.saleem@seamless.se>
+Date: 4/5/2018 2:18 AM
+To: Robin Malmros <robin.malmros@seamless.se>, Robin <robin.malmros@eproducts.se>
+CC: Lars Sjölund <lars.sjolund@seamless.se>, Moazzam Ali <moazzam.ali@seamless.se>, Muhammad Sabihullah <muhammad.sabihullah@seamless.se>, Ayyaz Rasool <ayyaz.rasool@seamless.se>, SDS NOC <sds.noc@seamless.se>, Jonas Lundgren <jonas.lundgren@eproducts.se>
+
+Hi Robin ,
+
+Please find Nagios alerts and Support tickets summary for SE Bank System. 
+
+
+
+Section 1 : Nagios Alerts Statistics
+
+Section 2 : Support Tickets Statistics
+
+
+ 
+Salah Ud Din Saleem - Engineer Network Operations Center
+Mobile: +92 323 7055680
+Address: Vasagatan 7, 111 20 Stockholm, Sweden
+Switchboard: +46 8 58 63 34 69
+Web: www.sds.seamless.se
+  
+
+  
+
+Attachments:
+SE BANK SYSTEM (March 2018).pptx	1.4 MB

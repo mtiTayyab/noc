@@ -1,0 +1,29 @@
+Subject: **Gosoft-Thailand PROBLEM Service Alert: CRITICAL goersdb01/SYS-Ntp **
+From: noreply <noreply@gosoft.co.th>
+Date: 4/4/2018 12:21 PM
+To: sds.noc@seamless.se
+
+***** Nagios *****
+
+Notification Type: PROBLEM
+
+Service: SYS-Ntp
+Host: goersdb01
+Address: 10.160.102.165
+State: CRITICAL
+
+Date/Time: Wed Apr 4 14:21:46 ICT 2018
+
+Additional Info:
+
+NTP CRITICAL: No response from NTP server
+<BR><FONT face="Tahoma,Helvetica,Sans-Serif" color="gray" size="1"><BR>
+<STRONG>Disclaimer:</STRONG><BR>
+************************************************************
+<BR><STRONG>Important</STRONG><BR>
+Confidentiality: This Information is intended for the above-named person and may contain confidential and/or legally privileged material. Any opinions expressed in this information are not necessarily those of the company. If it has come to you in error you must take no action based on it, nor must you copy or show it to anyone; please delete/destroy and inform the sender immediately.
+<STRONG>Monitoring/Viruses</STRONG>
+Gosoft reserves the right to monitor all incoming and outgoing emails via Gosoft system. Although we have security program to monitor and eliminate virus, we also advise that in keeping with good computing practice the recipient should ensure they are actually virus free.
+<BR>************************************************************
+</FONT>
+

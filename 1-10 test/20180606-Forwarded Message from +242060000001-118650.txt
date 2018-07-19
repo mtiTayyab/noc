@@ -1,0 +1,7 @@
+Subject: Forwarded Message from +242060000001
+From: sds.noc.pk@gmail.com
+Date: 6/6/2018 9:13 AM
+To: sds.noc@seamless.se
+
+MTN-C-Service: Check Memory Utilizaton, Host: EDB01A, State: UNKNOWN, Date:06-06-2018-05:12:55
+

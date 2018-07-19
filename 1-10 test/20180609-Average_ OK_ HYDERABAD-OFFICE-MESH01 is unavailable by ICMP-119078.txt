@@ -1,0 +1,7 @@
+Subject: Average: OK: HYDERABAD-OFFICE-MESH01 is unavailable by ICMP
+From: zabbix@nagios01.infra.ts (Zabbix Monitoring System)
+Date: 6/9/2018 2:21 PM
+To: sds.noc@seamless.se
+
+
+	316 bytes

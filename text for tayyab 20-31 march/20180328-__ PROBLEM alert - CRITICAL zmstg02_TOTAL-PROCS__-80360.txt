@@ -1,0 +1,20 @@
+Subject: ** PROBLEM alert - CRITICAL zmstg02/TOTAL-PROCS**
+From: MTN Zambia EVD Support <EVDAlerts.ZM@mtn.com>
+Date: 3/28/2018 5:32 PM
+To: <sds.noc@seamless.se>
+
+***MTN Zambia EVD System - NMS Notification***
+
+Notification Type: PROBLEM
+
+Service: TOTAL-PROCS
+Host: zmstg02
+Address: 10.100.118.25
+State: CRITICAL
+
+Date/Time: Wed Mar 28 14:32:27 CAT 2018
+
+Additional Info:
+
+CHECK_NRPE: Error - Could not connect to 10.100.118.25: Connection reset by peer
+

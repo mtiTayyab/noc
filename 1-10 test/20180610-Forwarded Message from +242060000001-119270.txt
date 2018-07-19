@@ -1,0 +1,7 @@
+Subject: Forwarded Message from +242060000001
+From: sds.noc.pk@gmail.com
+Date: 6/10/2018 10:37 PM
+To: sds.noc@seamless.se
+
+MTN-C-Service: SYS-DiskSpace, Host: GW02B, State: OK, Date:06-10-2018-18:37:17
+

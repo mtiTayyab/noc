@@ -1,0 +1,20 @@
+Subject: ** PROBLEM Service Alert: KVM HOST/HDD temp is CRITICAL **
+From: nagios@localhost.localdomain
+Date: 5/6/2018 1:04 AM
+To: sds.noc.pk@gmail.com, omer.almas@seamless.se, wajahat.ali@seamless.se
+
+***** Nagios *****
+
+Notification Type: PROBLEM
+
+Service: HDD temp
+Host: KVM HOST
+Address: 192.168.1.25
+State: CRITICAL
+
+Date/Time: Sun May 6 01:04:09 PKT 2018
+
+Additional Info:
+
+Critical:Temperature is Critical. 40  45  44  47  46  46  45  42
+

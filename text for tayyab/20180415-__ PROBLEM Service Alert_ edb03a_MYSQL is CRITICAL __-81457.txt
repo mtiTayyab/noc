@@ -1,0 +1,20 @@
+Subject: ** PROBLEM Service Alert: edb03a/MYSQL is CRITICAL **
+From: nagios@newcoersstg01a.localdomain
+Date: 4/15/2018 10:07 AM
+To: sds.noc@seamless.se
+
+***** Nagios *****
+
+Notification Type: PROBLEM
+
+Service: MYSQL
+Host: edb03a
+Address: 10.160.39.14
+State: CRITICAL
+
+Date/Time: Sun Apr 15 01:07:49 EDT 2018
+
+Additional Info:
+
+Cant connect to local MySQL server through socket /var/lib/mysql/mysql.sock (111)
+

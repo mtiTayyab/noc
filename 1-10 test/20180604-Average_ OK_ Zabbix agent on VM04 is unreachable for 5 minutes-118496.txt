@@ -1,0 +1,7 @@
+Subject: Average: OK: Zabbix agent on VM04 is unreachable for 5 minutes
+From: zabbix@nagios01.infra.ts (Zabbix Monitoring System)
+Date: 6/4/2018 3:08 PM
+To: sds.noc@seamless.se
+
+
+	303 bytes

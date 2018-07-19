@@ -1,0 +1,20 @@
+Subject: **[ERS-BANKSYSTEM-NEW] ACKNOWLEDGEMENT alert - WARNING ATM1/ERS_handelsbanken-mqlink-logs**
+From: nagios@jrf-prd-banksystem-atm4.seamless.internal
+Date: 5/18/2018 9:41 PM
+To: sds.noc@seamless.se
+
+***Seamless Support - Notification for SE Bank System ***
+
+Notification Type: ACKNOWLEDGEMENT
+
+Service: ERS_handelsbanken-mqlink-logs
+Host: ATM1
+Address: 10.0.68.197
+State: WARNING
+
+Date/Time: Fri May 18 18:41:14 CEST 2018
+
+Additional Info:
+
+WARNING: Found 26 lines (limit=10/50): Caused by: java.net.SocketTimeoutException: Read timed out
+

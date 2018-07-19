@@ -1,0 +1,20 @@
+Subject: ** RECOVERY Service Alert: newcoersweb02a/ERS-MobileApp-LastTransaction is OK **
+From: nagios@newcoersstg01a.localdomain
+Date: 6/6/2018 1:56 PM
+To: sds.noc@seamless.se
+
+***** Nagios *****
+
+Notification Type: RECOVERY
+
+Service: ERS-MobileApp-LastTransaction
+Host: newcoersweb02a
+Address: 10.160.33.110
+State: OK
+
+Date/Time: Wed Jun 6 04:56:14 EDT 2018
+
+Additional Info:
+
+OK Working time elapsed=220
+

@@ -1,0 +1,20 @@
+Subject: ** PROBLEM Service Alert: newcoersap02b/ERS_BS_NEWCO_LINK_EXCEPTION is WARNING **
+From: nagios@newcoersstg01a.localdomain
+Date: 3/20/2018 7:33 PM
+To: sds.noc@seamless.se
+
+***** Nagios *****
+
+Notification Type: PROBLEM
+
+Service: ERS_BS_NEWCO_LINK_EXCEPTION
+Host: newcoersap02b
+Address: 10.160.33.117
+State: WARNING
+
+Date/Time: Tue Mar 20 10:33:04 EDT 2018
+
+Additional Info:
+
+Log errors: Payload: ?xml version=1.0 encoding=utf-8?soap:Envelope xmlns:soap=http://schemas.xmlsoap.org/soap/envelope/ xmlns:xsi=http://www.w3.org/2001/XMLSchema-instance xmlns:xsd=http://www.w3.org/2001/XMLSchemasoap:BodyTopUpWithProvisioningV3Response xmlns=http://Seamless.newcomobile.com/TopUpWithProvisioningV3ResultMessageTo Many Orders/MessageCode668/Code/TopUpWithProvisioningV3Result/TopUpWithProvisioningV3Response/soap:Body/soap:Envelope
+

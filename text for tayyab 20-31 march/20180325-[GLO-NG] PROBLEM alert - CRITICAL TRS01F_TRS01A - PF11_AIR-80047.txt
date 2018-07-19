@@ -1,0 +1,18 @@
+Subject: [GLO-NG] PROBLEM alert - CRITICAL TRS01F/TRS01A - PF11_AIR
+From: SDS NOC <sds.noc@seamless.se>
+Date: 3/25/2018 10:12 PM
+To: Ahsan Altaf <ahsan.altaf@seamless.se>
+CC: Nadeem Ahmad <nadeem.ahmad@seamless.se>, Shahrukh Mushtaq <shahrukh.mushtaq@seamless.se>, SDS NOC <sds.noc@seamless.se>, Muhammad Sabihullah <muhammad.sabihullah@seamless.se>
+
+Hi Team,
+
+We have received the subjected alerts.Please do the needful accordingly.
+
+
+ 
+Salah Ud Din Saleem - Engineer Network Operations Center
+Mobile: +92 323 7055680
+Address: Vasagatan 7, 111 20 Stockholm, Sweden
+Switchboard: +46 8 58 63 34 69
+Web: www.sds.seamless.se
+  
