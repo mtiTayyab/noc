@@ -1,5 +1,0 @@
-Subject: glo-nigeria VPN Tunnel unreachable PING-failed from jump01.ops.ts</EOM>
-From: root@jump01.ops.ts (root)
-Date: 6/1/2018 1:50 PM
-To: utpalendu.mondal@seamless.se, sds.noc@seamless.se, tapash.raha@seamless.se
-

@@ -1,7 +1,0 @@
-Subject: Average: OK: Tools02 is unavailable by ICMP
-From: zabbix@nagios01.infra.ts (Zabbix Monitoring System)
-Date: 5/17/2018 7:36 AM
-To: sds.noc@seamless.se
-
-
-	284 bytes

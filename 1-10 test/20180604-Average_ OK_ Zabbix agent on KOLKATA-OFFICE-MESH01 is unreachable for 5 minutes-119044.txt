@@ -1,7 +1,0 @@
-Subject: Average: OK: Zabbix agent on KOLKATA-OFFICE-MESH01 is unreachable for 5 minutes
-From: zabbix@nagios01.infra.ts (Zabbix Monitoring System)
-Date: 6/4/2018 3:29 PM
-To: sds.noc@seamless.se
-
-
-	337 bytes

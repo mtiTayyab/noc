@@ -1,7 +1,0 @@
-Subject: Forwarded Message from 590
-From: sds.noc.pk@gmail.com
-Date: 6/10/2018 6:18 PM
-To: sds.noc@seamless.se
-
-MTNZ: TOTAL-PROCS, Host: zmstg02, State: CRITICAL, Date:06-10-2018-15:18:00
-

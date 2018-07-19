@@ -1,7 +1,0 @@
-Subject: High: PROBLEM: Availability of Confluence
-From: zabbix@nagios01.infra.ts (Zabbix Monitoring System)
-Date: 5/16/2018 5:57 AM
-To: sds.noc@seamless.se
-
-
-	354 bytes

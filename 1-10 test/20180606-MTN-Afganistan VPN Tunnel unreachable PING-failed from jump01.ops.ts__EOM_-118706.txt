@@ -1,5 +1,0 @@
-Subject: MTN-Afganistan VPN Tunnel unreachable PING-failed from jump01.ops.ts</EOM>
-From: root@jump01.ops.ts (root)
-Date: 6/6/2018 4:59 PM
-To: saibal.dey@seamless.se, sds.noc@seamless.se, tapash.raha@seamless.se
-

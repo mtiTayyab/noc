@@ -1,7 +1,0 @@
-Subject: Forwarded Message from MTN-Benin
-From: sds.noc.pk@gmail.com
-Date: 5/8/2018 2:02 PM
-To: sds.noc@seamless.se
-
-MTN-Benin-Service: MySQL Galera Status, Host: bjmtn-edb02e, State: OK, Date:05-08-2018-09:56:53
-

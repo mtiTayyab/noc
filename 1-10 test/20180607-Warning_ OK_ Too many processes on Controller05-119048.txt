@@ -1,7 +1,0 @@
-Subject: Warning: OK: Too many processes on Controller05
-From: zabbix@nagios01.infra.ts (Zabbix Monitoring System)
-Date: 6/7/2018 3:04 PM
-To: sds.noc@seamless.se
-
-
-	302 bytes

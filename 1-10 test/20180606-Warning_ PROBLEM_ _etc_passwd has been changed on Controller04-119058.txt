@@ -1,7 +1,0 @@
-Subject: Warning: PROBLEM: /etc/passwd has been changed on Controller04
-From: zabbix@nagios01.infra.ts (Zabbix Monitoring System)
-Date: 6/6/2018 2:40 PM
-To: sds.noc@seamless.se
-
-
-	345 bytes

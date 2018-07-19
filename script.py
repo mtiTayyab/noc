@@ -89,8 +89,8 @@ for key in final:
         if (key1.__contains__('Date:') and d_f is False):
             t = key1.replace('Date:', '')
             t = t.replace(chr(10), '')
-            # t = t.split(" ")
-            # t=t[1]
+            t = t.split(" ")
+            t=t[1]
             date.append(t)
             d_f = True
     if(sub_f is False):

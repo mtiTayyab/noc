@@ -1,7 +1,0 @@
-Subject: Forwarded Message from +242060000001
-From: sds.noc.pk@gmail.com
-Date: 5/8/2018 2:08 PM
-To: sds.noc@seamless.se
-
-MTN-C-Service: PROMODB-ELK process, Host: ERSBZVPROMO01, State: OK, Date:05-08-2018-10:08:46
-

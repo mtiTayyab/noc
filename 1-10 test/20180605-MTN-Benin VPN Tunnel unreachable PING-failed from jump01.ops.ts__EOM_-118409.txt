@@ -1,5 +1,0 @@
-Subject: MTN-Benin VPN Tunnel unreachable PING-failed from jump01.ops.ts</EOM>
-From: root@jump01.ops.ts (root)
-Date: 6/5/2018 5:10 AM
-To: utpalendu.mondal@seamless.se, sds.noc@seamless.se, tapash.raha@seamless.se
-

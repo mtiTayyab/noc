@@ -1,7 +1,0 @@
-Subject: High: OK: Availability of NEXUS
-From: zabbix@nagios01.infra.ts (Zabbix Monitoring System)
-Date: 5/17/2018 8:31 AM
-To: sds.noc@seamless.se
-
-
-	334 bytes

@@ -1,7 +1,0 @@
-Subject: Forwarded Message from MTN-Benin
-From: sds.noc.pk@gmail.com
-Date: 5/8/2018 5:25 PM
-To: sds.noc@seamless.se
-
-MTN-Benin-Service: ERS Trx Replication, Host: TRS02A, State: CRITICAL, Date:05-08-2018-13:17:45
-

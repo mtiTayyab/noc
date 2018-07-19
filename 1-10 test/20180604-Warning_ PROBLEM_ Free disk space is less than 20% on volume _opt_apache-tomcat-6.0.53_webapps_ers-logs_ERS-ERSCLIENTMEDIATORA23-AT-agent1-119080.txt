@@ -1,7 +1,0 @@
-Subject: Warning: PROBLEM: Free disk space is less than 20% on volume /opt/apache-tomcat-6.0.53/webapps/ers-logs/ERS-ERSCLIENTMEDIATORA23-AT-agent1
-From: zabbix@nagios01.infra.ts (Zabbix Monitoring System)
-Date: 6/4/2018 3:43 PM
-To: sds.noc@seamless.se
-
-
-	567 bytes

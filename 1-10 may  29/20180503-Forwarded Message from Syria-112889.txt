@@ -1,7 +1,0 @@
-Subject: Forwarded Message from Syria
-From: sds.noc.pk@gmail.com
-Date: 5/3/2018 5:10 PM
-To: sds.noc@seamless.se
-
-MTN-SY-Service: SYS_HostReachable Host: stgtrs02a State: CRITICAL Date:05-03-2018-15:04:08
-

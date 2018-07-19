@@ -1,7 +1,0 @@
-Subject: Forwarded Message from MTN-Benin
-From: sds.noc.pk@gmail.com
-Date: 5/9/2018 3:43 PM
-To: sds.noc@seamless.se
-
-MTN-Benin-Service: ERS Businesslogic Port1, Host: TRS01B, State: OK, Date:05-09-2018-11:35:58
-

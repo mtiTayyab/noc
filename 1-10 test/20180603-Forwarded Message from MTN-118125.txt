@@ -1,7 +1,0 @@
-Subject: Forwarded Message from MTN
-From: sds.noc.pk@gmail.com
-Date: 6/3/2018 8:57 PM
-To: sds.noc@seamless.se
-
-MTN-GB-EVD-Service: SYS CPU Load Host: VMHOSTC State: CRITICAL Date:06-03-2018-15:57:46
-

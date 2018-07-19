@@ -1,7 +1,0 @@
-Subject: Forwarded Message from EVD
-From: sds.noc.pk@gmail.com
-Date: 5/1/2018 6:08 PM
-To: sds.noc@seamless.se
-
-MTN-LIB-Service: ERS Coreproxy Host: TRS01B State: CRITICAL Date:05-01-2018-12:07:07
-
