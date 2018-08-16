@@ -1,0 +1,20 @@
+Subject: ** [SY-MTN] - PROBLEM alert - CRITICAL syedb02b-MySQL_Replication**
+From: nagios@SYRIA.STG01 (nagios)
+Date: 8/8/2018 1:32 PM
+To: sds.noc@seamless.se
+
+***Seamless Support for MTN Syria - Notification***
+
+Notification Type: PROBLEM
+
+Service: MySQL_Replication
+Host: syedb02b
+Address: 10.10.50.22
+State: CRITICAL
+
+Date/Time: Wed Aug 8 11:32:43 EEST 2018
+
+Additional Info:
+
+SLOW_SLAVE CRITICAL: Slave IO: Yes Slave SQL: Yes Seconds Behind Master: 105
+

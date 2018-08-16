@@ -1,0 +1,7 @@
+Subject: Forwarded Message from MTN-Benin
+From: sds.noc.pk@gmail.com
+Date: 8/2/2018 7:54 AM
+To: sds.noc@seamless.se
+
+MTN-Benin-Service: SYS HOST Alive, Host: bjmtn-promo1a, State: CRITICAL, Date:08-02-2018-03:45:23
+

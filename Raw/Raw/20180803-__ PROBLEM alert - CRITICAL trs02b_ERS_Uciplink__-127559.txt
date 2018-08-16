@@ -1,0 +1,21 @@
+Subject: ** PROBLEM alert - CRITICAL trs02b/ERS_Uciplink**
+From: MTNCI EVD Support <evdinfo.ERS.CI@mtn.com>
+Date: 8/3/2018 12:04 PM
+To: <sds.noc@seamless.se>
+
+***MTN Cote d’Ivoire EVD System - NMS Notification***
+
+Notification Type: PROBLEM
+
+Service: ERS_Uciplink
+Host: trs02b
+Address: 10.18.57.22
+State: CRITICAL
+
+Date/Time: Fri Aug 3 07:04:50 GMT 2018
+
+Additional Info:
+
+ci-mtn-uciplink is stopped
+“The information contained in this message is intended solely for the individual to whom it is specifically and originally addressed. This message and its contents may contain confidential or privileged information from MTN Group. If you are not the intended recipient, you are hereby notified that any disclosure or distribution, is strictly prohibited. If you receive this email in error, please notify MTN Group immediately and delete it. MTN Group does not accept any liability or responsibility if action is taken in reliance on the contents of this information . Note that all personal emails are not authorized by MTN Group. ”
+

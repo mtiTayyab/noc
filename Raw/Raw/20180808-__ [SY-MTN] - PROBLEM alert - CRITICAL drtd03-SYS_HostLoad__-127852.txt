@@ -1,0 +1,20 @@
+Subject: ** [SY-MTN] - PROBLEM alert - CRITICAL drtd03-SYS_HostLoad**
+From: nagios@SYRIA.STG01 (nagios)
+Date: 8/8/2018 1:32 PM
+To: sds.noc@seamless.se
+
+***Seamless Support for MTN Syria - Notification***
+
+Notification Type: PROBLEM
+
+Service: SYS_HostLoad
+Host: drtd03
+Address: 10.10.50.10
+State: CRITICAL
+
+Date/Time: Wed Aug 8 11:32:43 EEST 2018
+
+Additional Info:
+
+CRITICAL - load average: 41.33, 17.73, 7.10
+

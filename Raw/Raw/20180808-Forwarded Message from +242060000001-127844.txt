@@ -1,0 +1,7 @@
+Subject: Forwarded Message from +242060000001
+From: sds.noc.pk@gmail.com
+Date: 8/8/2018 11:56 AM
+To: sds.noc@seamless.se
+
+MTN-C-Service: ERS-ReconciliationTDR, Host: GW02B, State: CRITICAL, Date:08-08-2018-07:56:02
+

@@ -1,0 +1,20 @@
+Subject: ** [SY-MTN] - PROBLEM alert - WARNING sytrs02a-SYS_TotalProc**
+From: nagios@SYRIA.STG01 (nagios)
+Date: 8/2/2018 10:04 AM
+To: sds.noc@seamless.se
+
+***Seamless Support for MTN Syria - Notification***
+
+Notification Type: PROBLEM
+
+Service: SYS_TotalProc
+Host: sytrs02a
+Address: 10.10.50.21
+State: WARNING
+
+Date/Time: Thu Aug 2 08:04:01 EEST 2018
+
+Additional Info:
+
+PROCS WARNING: 405 processes
+

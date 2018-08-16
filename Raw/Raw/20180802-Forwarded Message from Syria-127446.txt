@@ -1,0 +1,7 @@
+Subject: Forwarded Message from Syria
+From: sds.noc.pk@gmail.com
+Date: 8/2/2018 7:15 AM
+To: sds.noc@seamless.se
+
+MTN-SY-Service: SYS_TotalProc Host: sytrs02a State: WARNING Date:08-02-2018-03:31:00
+

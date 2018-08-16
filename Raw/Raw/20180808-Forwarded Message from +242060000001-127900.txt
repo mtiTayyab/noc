@@ -1,0 +1,7 @@
+Subject: Forwarded Message from +242060000001
+From: sds.noc.pk@gmail.com
+Date: 8/8/2018 6:54 PM
+To: sds.noc@seamless.se
+
+MTN-C-Service: check TOPUPSERVICE LOGS, Host: TRS02A, State: CRITICAL, Date:08-08-2018-14:53:48
+

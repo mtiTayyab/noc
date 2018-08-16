@@ -1,0 +1,20 @@
+Subject: ** [DNA-FINLAND] PROBLEM Service Alert: recs2-tr2/SYS_VSIP_Connectivity is CRITICAL **
+From: nagios@recs2-test.s.dnaip.fi
+Date: 8/7/2018 1:06 PM
+To: sds.noc@seamless.se
+
+***** Nagios *****
+
+Notification Type: PROBLEM
+
+Service: SYS_VSIP_Connectivity
+Host: recs2-tr2
+Address: 193.143.80.137
+State: CRITICAL
+
+Date/Time: Tue Aug 7 11:06:06 EEST 2018
+
+Additional Info:
+
+CRITICAL - Socket timeout after 10 seconds
+

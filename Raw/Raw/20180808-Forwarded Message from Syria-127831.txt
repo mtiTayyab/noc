@@ -1,0 +1,7 @@
+Subject: Forwarded Message from Syria
+From: sds.noc.pk@gmail.com
+Date: 8/8/2018 5:01 AM
+To: sds.noc@seamless.se
+
+MTN-SY-Service: MySQL_Replication Host: syedb02b State: CRITICAL Date:08-08-2018-03:01:43
+

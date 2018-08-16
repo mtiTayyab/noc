@@ -1,0 +1,7 @@
+Subject: Forwarded Message from +242060000001
+From: sds.noc.pk@gmail.com
+Date: 8/6/2018 12:44 PM
+To: sds.noc@seamless.se
+
+MTN-C-Service: Check ERS busyness, Host: TRS02A, State: CRITICAL, Date:08-06-2018-08:44:43
+

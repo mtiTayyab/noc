@@ -1,0 +1,29 @@
+Subject: **Gosoft-Thailand PROBLEM Service Alert: CRITICAL goersdb04/MySQL-LongQuery **
+From: noreply <noreply@gosoft.co.th>
+Date: 8/9/2018 1:45 AM
+To: sds.noc@seamless.se
+
+***** Nagios *****
+
+Notification Type: PROBLEM
+
+Service: MySQL-LongQuery
+Host: goersdb04
+Address: 10.160.102.152
+State: CRITICAL
+
+Date/Time: Thu Aug 9 03:45:38 ICT 2018
+
+Additional Info:
+
+MYSQL_LONGQUERIES CRITICAL - TIME: 1204 command=Query db=dataaggregator host=goersdb03:31641 id=405293 state=Sending data user=refill INFO=select agg.SUPPLIER_KEY, agg.SUPPLIER_NAME, agg.BATCH_ID, agg.SERIAL, agg.PRODUCT_SKU,
+<FONT face="Tahoma,Helvetica,Sans-Serif" color="gray" size="1"><BR>
+<STRONG>Disclaimer:</STRONG>
+************************************************************
+<STRONG>Important</STRONG>
+Confidentiality: This Information is intended for the above-named person and may contain confidential and/or legally privileged material. Any opinions expressed in this information are not necessarily those of the company. If it has come to you in error you must take no action based on it, nor must you copy or show it to anyone; please delete/destroy and inform the sender immediately.
+<STRONG>Monitoring/Viruses</STRONG>
+Gosoft reserves the right to monitor all incoming and outgoing emails via Gosoft system. Although we have security program to monitor and eliminate virus, we also advise that in keeping with good computing practice the recipient should ensure they are actually virus free.
+************************************************************
+</FONT>
+

@@ -1,0 +1,20 @@
+Subject: ** [DNA-FINLAND] PROBLEM Service Alert: recs2-tr2/ERS_Report-Engine_Process is CRITICAL **
+From: nagios@recs2-test.s.dnaip.fi
+Date: 8/7/2018 3:21 PM
+To: sds.noc@seamless.se
+
+***** Nagios *****
+
+Notification Type: PROBLEM
+
+Service: ERS_Report-Engine_Process
+Host: recs2-tr2
+Address: 193.143.80.137
+State: CRITICAL
+
+Date/Time: Tue Aug 7 13:21:07 EEST 2018
+
+Additional Info:
+
+PROCS CRITICAL: 0 processes with args /opt/seamless/conf/report-engine
+

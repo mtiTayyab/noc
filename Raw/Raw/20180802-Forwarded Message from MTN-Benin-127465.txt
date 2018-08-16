@@ -1,0 +1,7 @@
+Subject: Forwarded Message from MTN-Benin
+From: sds.noc.pk@gmail.com
+Date: 8/2/2018 9:49 AM
+To: sds.noc@seamless.se
+
+MTN-Benin-Service: ERS Charging System 2 Connectivity, Host: TRS01A, State: CRITICAL, Date:08-02-2018-05:41:53
+

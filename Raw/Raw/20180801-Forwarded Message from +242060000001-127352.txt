@@ -1,0 +1,7 @@
+Subject: Forwarded Message from +242060000001
+From: sds.noc.pk@gmail.com
+Date: 8/1/2018 6:35 AM
+To: sds.noc@seamless.se
+
+MTN-C-Service: StockAlert-SMS-Count offpeakhr, Host: ERSPNRPROMO02, State: CRITICAL, Date:08-01-2018-02:00:07
+

@@ -1,0 +1,7 @@
+Subject: Forwarded Message from Syria
+From: sds.noc.pk@gmail.com
+Date: 8/8/2018 1:37 PM
+To: sds.noc@seamless.se
+
+MTN-SY-Service: SYS_HostLoad Host: drtd02 State: OK Date:08-08-2018-11:37:43
+

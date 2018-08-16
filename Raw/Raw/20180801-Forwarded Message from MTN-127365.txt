@@ -1,0 +1,7 @@
+Subject: Forwarded Message from MTN
+From: sds.noc.pk@gmail.com
+Date: 8/1/2018 6:38 AM
+To: sds.noc@seamless.se
+
+MTN-GB-EVD-Service: ERS WebService Host: GW01B State: OK Date:08-01-2018-01:35:02
+
