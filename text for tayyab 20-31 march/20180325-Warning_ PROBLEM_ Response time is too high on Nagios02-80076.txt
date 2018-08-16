@@ -1,7 +1,0 @@
-Subject: Warning: PROBLEM: Response time is too high on Nagios02
-From: zabbix@nagios01.infra.ts (Zabbix Monitoring System)
-Date: 3/25/2018 7:46 PM
-To: sds.noc@seamless.se
-
-
-	308 bytes
