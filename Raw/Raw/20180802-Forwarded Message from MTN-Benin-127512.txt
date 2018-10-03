@@ -1,7 +1,0 @@
-Subject: Forwarded Message from MTN-Benin
-From: sds.noc.pk@gmail.com
-Date: 8/2/2018 2:06 PM
-To: sds.noc@seamless.se
-
-MTN-Benin-Service: ERS Check Regionsdb, Host: TRS01B, State: OK, Date:08-02-2018-09:59:17
-

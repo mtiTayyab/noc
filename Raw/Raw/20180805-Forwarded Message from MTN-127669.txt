@@ -1,7 +1,0 @@
-Subject: Forwarded Message from MTN
-From: sds.noc.pk@gmail.com
-Date: 8/5/2018 7:40 AM
-To: sds.noc@seamless.se
-
-MTN-GB-EVD-Service: HW Disk Space var Host: EDB01C State: CRITICAL Date:08-05-2018-02:40:06
-

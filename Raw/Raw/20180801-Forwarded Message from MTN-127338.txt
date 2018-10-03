@@ -1,7 +1,0 @@
-Subject: Forwarded Message from MTN
-From: sds.noc.pk@gmail.com
-Date: 8/1/2018 1:46 AM
-To: sds.noc@seamless.se
-
-MTN-GB-EVD-Service: MySQL ErrorLog Host: EDB01A State: CRITICAL Date:07-31-2018-20:46:26
-

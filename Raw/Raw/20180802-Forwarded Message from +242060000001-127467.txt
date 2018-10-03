@@ -1,7 +1,0 @@
-Subject: Forwarded Message from +242060000001
-From: sds.noc.pk@gmail.com
-Date: 8/2/2018 10:05 AM
-To: sds.noc@seamless.se
-
-MTN-C-Service: Mysql-LongQueries, Host: EDB01B, State: CRITICAL, Date:08-02-2018-06:04:07
-

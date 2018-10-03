@@ -1,7 +1,0 @@
-Subject: Forwarded Message from MTN
-From: sds.noc.pk@gmail.com
-Date: 8/10/2018 3:36 PM
-To: sds.noc@seamless.se
-
-MTN-GB-EVD-Service: SYS PING Host: GW01B State: OK Date:08-10-2018-10:36:37
-
