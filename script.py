@@ -277,20 +277,20 @@ for key in from_line:
         noc_dict['warning'].append(key)
     noc_dict[key[1].lower().replace(' ','_')].append(key)
 
-for key in range(len(noc_dict['mtn_bissau'])-1):
-    for key1 in range(key,len(noc_dict['mtn_bissau'])):
-        if key1<len(noc_dict['mtn_bissau']):
-            if noc_dict['mtn_bissau'][key][3]==noc_dict['mtn_bissau'][key1][3]:
-                if noc_dict['mtn_bissau'][key][4]==noc_dict['mtn_bissau'][key1][4]:
-                    if noc_dict['mtn_bissau'][key][6]==noc_dict['mtn_bissau'][key1][6]:
-                        if noc_dict['mtn_bissau'][key][7].day==noc_dict['mtn_bissau'][key1][7].day:
-                            if noc_dict['mtn_bissau'][key][7].month==noc_dict['mtn_bissau'][key1][7].month:
-                                if noc_dict['mtn_bissau'][key][7].year==noc_dict['mtn_bissau'][key1][7].year:
-                                    if noc_dict['mtn_bissau'][key][7].hour==noc_dict['mtn_bissau'][key1][7].hour:
-                                        if (noc_dict['mtn_bissau'][key][7].minute-noc_dict['mtn_bissau'][key1][7].minute)*-1<=5:
-                                            noc_dict['mtn_bissau'].remove(noc_dict['mtn_bissau'][key1])
-        else:
-            break
+# for key in range(len(noc_dict['mtn_bissau'])-1):
+#     for key1 in range(key,len(noc_dict['mtn_bissau'])):
+#         if key1<len(noc_dict['mtn_bissau']):
+#             if noc_dict['mtn_bissau'][key][3]==noc_dict['mtn_bissau'][key1][3]:
+#                 if noc_dict['mtn_bissau'][key][4]==noc_dict['mtn_bissau'][key1][4]:
+#                     if noc_dict['mtn_bissau'][key][6]==noc_dict['mtn_bissau'][key1][6]:
+#                         if noc_dict['mtn_bissau'][key][7].day==noc_dict['mtn_bissau'][key1][7].day:
+#                             if noc_dict['mtn_bissau'][key][7].month==noc_dict['mtn_bissau'][key1][7].month:
+#                                 if noc_dict['mtn_bissau'][key][7].year==noc_dict['mtn_bissau'][key1][7].year:
+#                                     if noc_dict['mtn_bissau'][key][7].hour==noc_dict['mtn_bissau'][key1][7].hour:
+#                                         if (noc_dict['mtn_bissau'][key][7].minute-noc_dict['mtn_bissau'][key1][7].minute)*-1<=5:
+#                                             noc_dict['mtn_bissau'].remove(noc_dict['mtn_bissau'][key1])
+#         else:
+#             break
 
 
 
