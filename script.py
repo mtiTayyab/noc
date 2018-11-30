@@ -310,9 +310,36 @@ row = 1
 
 site_list = get_site_by_count_desc()
 
-
 for key1 in site_list:
+    sheet1 = None
+    row1=1
     for key in noc_dict[key1[0].lower().replace(' ','_')]:
+        if sheet1 is not None:
+            sheet1.write(row1, 0, key[1])
+            sheet1.write(row1, 1, key[3])
+            sheet1.write(row1, 2, key[6])
+            sheet1.write(row1, 3, filter_characters(key[0]))
+            sheet1.write(row1, 4, key[4])
+            sheet1.write(row1, 5, key[5])
+            sheet1.write(row1, 6, key[7], date_format)
+            row1+=1
+        else:
+            sheet1= book.add_worksheet(name=key1[0])
+            sheet1.write(0, 0, 'Site / Region', cell_format)
+            sheet1.write(0, 1, 'Service', cell_format)
+            sheet1.write(0, 2, 'Alert Type', cell_format)
+            sheet1.write(0, 3, 'Alert', cell_format)
+            sheet1.write(0, 4, 'Host', cell_format)
+            sheet1.write(0, 5, 'Address', cell_format)
+            sheet1.write(0, 6, 'Date', cell_format)
+            sheet1.write(row1, 0, key[1])
+            sheet1.write(row1, 1, key[3])
+            sheet1.write(row1, 2, key[6])
+            sheet1.write(row1, 3, filter_characters(key[0]))
+            sheet1.write(row1, 4, key[4])
+            sheet1.write(row1, 5, key[5])
+            sheet1.write(row1, 6, key[7], date_format)
+            row1+=1
         sheet.write(row, 0, key[1])
         sheet.write(row, 1, key[3])
         sheet.write(row, 2, key[6])
