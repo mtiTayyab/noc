@@ -1,30 +1,11 @@
 import os
 import xlsxwriter
 from datetime import datetime
+import pymysql
+from db import get_site_by_count_desc,store_all_data,delete_data
+from miscellaneous import filter_characters
 
-
-def filter_characters(string):
-    # string = string.replace(" : ", "")
-    # string = string.replace(": ", "")
-    # string = string.replace(" :", "")
-    if not (string.lower().__contains__('am') or string.lower().__contains__('pm')):
-        string = string.replace(":", "")
-
-    # string = string.replace(" , ", "")
-    # string = string.replace(", ", "")
-    # string = string.replace(" ,", "")
-    string = string.replace(",", "")
-    string = string.replace("_", " ")
-    string = string.replace("-", " ")
-
-    string = string.replace(chr(10),"")
-    if(string[-1]==" "):
-        string= string[:-1]
-    if(string[0]==" "):
-        string= string[1:]
-    return string
-
-path = 'W:\\NOC Reporting System\\raw 1-10 sept\\'
+path = 'W:\\Work\\NOC Reporting System\\source\\'
 name_dest = '.\\Final_Data.xlsx'
 l = os.listdir(path)
 txt_name = []
@@ -171,9 +152,13 @@ for key in from_line:
         delete.append(key)
     if (key[0].lower().__contains__('acknowledgement')):
         delete.append(key)
+    if (key[3].lower().__contains__('acknowledgement')):
+        delete.append(key)
     if key[6].lower()=='ok':
         delete.append(key)
     if key[1].lower().__contains__('hospitall'):
+        delete.append(key)
+    if key[1].lower().__contains__('localhost'):
         delete.append(key)
     if key[1].lower().__contains__('jira'):
         delete.append(key)
@@ -192,9 +177,10 @@ for key in delete:
     if from_line.__contains__(key):
         from_line.remove(key)
     else:
+        print('Alert Not Found')
         print(key)
 
-otrs = ['ye-mtn', 'af-mtn', 'sy-mtn', 'glo-ng', 'starlink', 'newco', 'mtn-c', 'gosoft', 'dna-finland', 'atm', 'bjmtn', 'gc-mtn','mtnliberia', 'gh-mtn', 'telecelBF', 'mtnsouthsudan', 'globenin', 'Datora', 'mtnzambia', 'mtnci', 'mtnbissau','gloghana','glo-gh', 'swazimobile','mtn-gb','mtn-benin','mtn-sy','mtn zambia','mtn-southsudan','sudan-mtn']
+otrs = ['ye-mtn', 'af-mtn', 'sy-mtn', 'glo-ng', 'starlink', 'newco', 'mtn-c', 'gosoft', 'dna-finland', 'atm', 'bjmtn', 'gc-mtn','mtnliberia', 'gh-mtn', 'telecelBF', 'mtnsouthsudan', 'globenin', 'Datora', 'mtnzambia', 'mtnci', 'mtnbissau','gloghana','glo-gh', 'swazimobile','mtn-gb','mtn-benin','mtn-sy','mtn zambia','mtn-southsudan','sudan-mtn','ci@mtn']
 flag = 0
 for key in from_line:
     flag=0
@@ -230,7 +216,7 @@ site_f = ['MTN Yemen', 'MTN Afghanistan', 'MTN Syria', 'Glo Nigeria', 'Starlink 
 
 site_r = ['ye-mtn', 'af-mtn', ['sy-mtn', 'mtn-sy'], 'glo-ng', 'starlink', 'newco', 'mtn-c', 'gosoft', 'dna-finland', 'atm',
  ['bjmtn', 'mtn-benin'], 'gc-mtn', 'mtnliberia', 'gh-mtn', 'telecelBF', ['mtnsouthsudan', 'mtn-southsudan'], 'globenin',
- 'Datora', ['mtnzambia','mtn zambia'], 'mtnci', 'mtnbissau', ['gloghana', 'glo-gh'], 'swazimobile', 'mtn-gb', 'sudan-mtn']
+ 'Datora', ['mtnzambia','mtn zambia'], ['mtnci','ci@mtn'], 'mtnbissau', ['gloghana', 'glo-gh'], 'swazimobile', 'mtn-gb', 'sudan-mtn']
 for key in from_line:
     for key1 in range(len(site_r)):
         if site_r[key1].__contains__(key[1]):
@@ -275,8 +261,13 @@ for key in from_line:
         noc_dict['unknown'].append(key)
     if key[6].lower().__contains__('warning'):
         noc_dict['warning'].append(key)
-    noc_dict[key[1].lower().replace(' ','_')].append(key)
-
+    try:
+        noc_dict[key[1].lower().replace(' ','_')].append(key)
+    except KeyError:
+        print('Alert Not Added')
+        print(key)
+        f = input('Enter anything to pass.')
+        from_line.remove(key)
 # for key in range(len(noc_dict['mtn_bissau'])-1):
 #     for key1 in range(key,len(noc_dict['mtn_bissau'])):
 #         if key1<len(noc_dict['mtn_bissau']):
@@ -293,6 +284,8 @@ for key in from_line:
 #             break
 
 
+
+store_all_data(from_line)
 
 book = xlsxwriter.Workbook(name_dest)
 sheet = book.add_worksheet()
@@ -315,18 +308,21 @@ sheet.write(0, 6, 'Date',cell_format)
 
 row = 1
 
-for key in range(len(from_line)):
-    sheet.write(row, 0, from_line[key][1])
-    sheet.write(row, 1, from_line[key][3])
-    sheet.write(row, 2, from_line[key][6])
-    sheet.write(row, 3, filter_characters(from_line[key][0]))
-    sheet.write(row, 4, from_line[key][4])
-    sheet.write(row, 5, from_line[key][5])
-    sheet.write(row, 6, from_line[key][7],date_format)
-    row += 1
+site_list = get_site_by_count_desc()
 
 
-
-
+for key1 in site_list:
+    for key in noc_dict[key1[0].lower().replace(' ','_')]:
+        sheet.write(row, 0, key[1])
+        sheet.write(row, 1, key[3])
+        sheet.write(row, 2, key[6])
+        sheet.write(row, 3, filter_characters(key[0]))
+        sheet.write(row, 4, key[4])
+        sheet.write(row, 5, key[5])
+        sheet.write(row, 6, key[7],date_format)
+        row += 1
 book.close()
 
+
+delete_data()
+f = input('Everyhting was fine. Enter to close.')
