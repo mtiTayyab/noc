@@ -5,7 +5,7 @@ import pymysql
 from db import get_site_by_count_desc,store_all_data,delete_data
 from miscellaneous import filter_characters
 
-path = 'W:\\Work\\NOC Reporting System\\source\\'
+path = '.\\source\\'
 name_dest = '.\\Final_Data.xlsx'
 l = os.listdir(path)
 txt_name = []
