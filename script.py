@@ -96,8 +96,8 @@ for key in range(len(final)):
             t = filter_characters(t)
             state.append(t)
             stat_f = True
-        if (key1.__contains__('Date:') and d_f is False):
-            t = key1.replace('Date:', '')
+        if (key1.__contains__('Date: ') and d_f is False):
+            t = key1.split('Date:')[1]
             t = filter_characters(t)
             # t = t.split(" ")
             if t.split()[2].lower() == 'pm':
@@ -180,7 +180,7 @@ for key in delete:
         print('Alert Not Found')
         print(key)
 
-otrs = ['ye-mtn', 'af-mtn', 'sy-mtn', 'glo-ng', 'starlink', 'newco', 'mtn-c', 'gosoft', 'dna-finland', 'atm', 'bjmtn', 'gc-mtn','mtnliberia', 'gh-mtn', 'telecelBF', 'mtnsouthsudan', 'globenin', 'Datora', 'mtnzambia', 'mtnci', 'mtnbissau','gloghana','glo-gh', 'swazimobile','mtn-gb','mtn-benin','mtn-sy','mtn zambia','mtn-southsudan','sudan-mtn','ci@mtn']
+otrs = ['ye-mtn', 'af-mtn', 'sy-mtn', 'glo-ng', 'starlink', 'newco', 'mtn-c', 'gosoft', 'dna-finland', 'atm', 'bjmtn', 'gc-mtn','mtnliberia', 'gh-mtn', 'telecelBF', 'mtnsouthsudan', 'globenin', 'Datora', 'mtnzambia', 'mtnci', 'mtnbissau','gloghana','glo-gh', 'swazimobile','mtn-gb','mtn-benin','mtn-sy','mtn zambia','mtn-southsudan','sudan-mtn','ci@mtn','mtn-lib','mtn lib']
 flag = 0
 for key in from_line:
     flag=0
@@ -215,7 +215,7 @@ site_f = ['MTN Yemen', 'MTN Afghanistan', 'MTN Syria', 'Glo Nigeria', 'Starlink 
  'Glo Ghana', 'Swazi Mobile', 'MTN Bissau', 'MTN Sudan']
 
 site_r = ['ye-mtn', 'af-mtn', ['sy-mtn', 'mtn-sy'], 'glo-ng', 'starlink', 'newco', 'mtn-c', 'gosoft', 'dna-finland', 'atm',
- ['bjmtn', 'mtn-benin'], 'gc-mtn', 'mtnliberia', 'gh-mtn', 'telecelBF', ['mtnsouthsudan', 'mtn-southsudan'], 'globenin',
+ ['bjmtn', 'mtn-benin'], 'gc-mtn', ['mtnliberia','mtn-lib','mtn lib'], 'gh-mtn', 'telecelBF', ['mtnsouthsudan', 'mtn-southsudan'], 'globenin',
  'Datora', ['mtnzambia','mtn zambia'], ['mtnci','ci@mtn'], 'mtnbissau', ['gloghana', 'glo-gh'], 'swazimobile', 'mtn-gb', 'sudan-mtn']
 for key in from_line:
     for key1 in range(len(site_r)):
@@ -254,6 +254,7 @@ noc_dict = {
     'warning':[],
     'unknown':[]
 }
+delete = []
 for key in from_line:
     if key[6].lower().__contains__('critical'):
         noc_dict['critical'].append(key)
@@ -266,8 +267,7 @@ for key in from_line:
     except KeyError:
         print('Alert Not Added')
         print(key)
-        f = input('Enter anything to pass.')
-        from_line.remove(key)
+        delete.append(key)
 # for key in range(len(noc_dict['mtn_bissau'])-1):
 #     for key1 in range(key,len(noc_dict['mtn_bissau'])):
 #         if key1<len(noc_dict['mtn_bissau']):
@@ -284,7 +284,9 @@ for key in from_line:
 #             break
 
 
-
+for key in delete:
+    if from_line.__contains__(key):
+        from_line.remove(key)
 store_all_data(from_line)
 
 book = xlsxwriter.Workbook(name_dest)
@@ -352,4 +354,4 @@ book.close()
 
 
 delete_data()
-f = input('Everyhting was fine. Enter to close.')
+f = input('Enter to close.')
