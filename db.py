@@ -13,7 +13,7 @@ def store_all_data(data):
 
     lahore = ['mtn_yemen', 'mtn_afghanistan', 'mtn_syria', 'glo_nigeria', 'starlink_qatar', 'newco_bahamas' , 'mtn_sudan']
     kolkata = ['gosoft_thailand', 'dna_finland', 'se_bank_system']
-    accra = ['mtn_congo','mtn_ghana', 'mtn_south_sudan', 'glo_benin', 'mtn_zambia', 'mtn_ivory_coast', 'mtn_bissau', 'glo_ghana', 'swazi_mobile']
+    accra = ['mtn_congo','mtn_ghana', 'mtn_south_sudan','mtn_benin', 'glo_benin', 'mtn_zambia', 'mtn_ivory_coast', 'mtn_bissau', 'glo_ghana', 'swazi_mobile']
     team = ''
     for key in data:
         if lahore.__contains__(key[1].lower()):

@@ -615,6 +615,7 @@ try:
             sheet.write(row, 4, key[4],border_format)
             sheet.write(row, 5, key[5],border_format)
             sheet.write(row, 6, key[7],date_format)
+            sheet.write(row, 7, key[7],border_format)
             row += 1
 finally:
     # print('Bye')
