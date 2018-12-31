@@ -1,12 +1,12 @@
 import os
 import xlsxwriter
 from datetime import datetime
-import pymysql
-from db import get_site_by_count_desc,store_all_data,delete_data
+from db import get_site_by_count_desc,store_all_data,delete_data,get_service_host_by_site,get_service_by_site,get_alerts_by_type_and_site,get_alert_by_site,get_alert_by_alert_type,get_alert_by_team
 from miscellaneous import filter_characters
 
+
 path = '.\\source\\'
-name_dest = '.\\Final_Data.xlsx'
+name_dest = '.\\Final_Data(3).xlsx'
 l = os.listdir(path)
 txt_name = []
 for key in l:
@@ -38,7 +38,7 @@ for key in txt_name:
             os.remove(path+key)
             flag=0
 
-from_line = []
+final_data = []
 subject = []
 _from = []
 service = []
@@ -141,13 +141,13 @@ for key in range(len(final)):
     temp.append(address[key])
     temp.append(state[key])
     temp.append(date[key])
-    from_line.append(temp)
+    final_data.append(temp)
     temp = []
 
 
 
 delete = []
-for key in from_line:
+for key in final_data:
     if (key[2].lower().__contains__('sds.noc@seamless.se')):
         delete.append(key)
     if (key[0].lower().__contains__('acknowledgement')):
@@ -174,15 +174,12 @@ for key in from_line:
     #     delete.append(key)
 
 for key in delete:
-    if from_line.__contains__(key):
-        from_line.remove(key)
-    else:
-        print('Alert Not Found')
-        print(key)
+    if final_data.__contains__(key):
+        final_data.remove(key)
 
 otrs = ['ye-mtn', 'af-mtn', 'sy-mtn', 'glo-ng', 'starlink', 'newco', 'mtn-c', 'gosoft', 'dna-finland', 'atm', 'bjmtn', 'gc-mtn','mtnliberia', 'gh-mtn', 'telecelBF', 'mtnsouthsudan', 'globenin', 'Datora', 'mtnzambia', 'mtnci', 'mtnbissau','gloghana','glo-gh', 'swazimobile','mtn-gb','mtn-benin','mtn-sy','mtn zambia','mtn-southsudan','sudan-mtn','ci@mtn','mtn-lib','mtn lib']
 flag = 0
-for key in from_line:
+for key in final_data:
     flag=0
     for key1 in otrs:
         temp = key[1].lower()
@@ -209,15 +206,13 @@ for key in from_line:
     else:
         flag = 0
 
-site_f = ['MTN Yemen', 'MTN Afghanistan', 'MTN Syria', 'Glo Nigeria', 'Starlink Qatar', 'NewCo Bahamas', 'MTN Congo',
- 'Gosoft Thailand', 'DNA Finland', 'SE BANK SYSTEM', 'MTN Benin', 'MTN GC', 'MTN Liberia', 'MTN Ghana',
- 'Telecel Burkina Faso', 'MTN South Sudan', 'Glo Benin', 'Datora Brazil', 'MTN Zambia', 'MTN Ivory Coast', 'MTN Bissau',
- 'Glo Ghana', 'Swazi Mobile', 'MTN Bissau', 'MTN Sudan']
+site_f = ['MTN_Yemen', 'MTN_Afghanistan', 'MTN_Syria', 'Glo_Nigeria', 'Starlink_Qatar', 'NewCo_Bahamas', 'MTN_Congo',
+     'Gosoft_Thailand', 'DNA_Finland', 'SE_BANK_SYSTEM', 'MTN_Benin', 'MTN_GC', 'MTN_Liberia', 'MTN_Ghana','MTN_South_Sudan', 'Glo_Benin', 'MTN_Zambia', 'MTN_Ivory_Coast', 'MTN_Bissau','Glo_Ghana', 'Swazi_Mobile', 'MTN_Sudan']
 
 site_r = ['ye-mtn', 'af-mtn', ['sy-mtn', 'mtn-sy'], 'glo-ng', 'starlink', 'newco', 'mtn-c', 'gosoft', 'dna-finland', 'atm',
- ['bjmtn', 'mtn-benin'], 'gc-mtn', ['mtnliberia','mtn-lib','mtn lib'], 'gh-mtn', 'telecelBF', ['mtnsouthsudan', 'mtn-southsudan'], 'globenin',
- 'Datora', ['mtnzambia','mtn zambia'], ['mtnci','ci@mtn'], 'mtnbissau', ['gloghana', 'glo-gh'], 'swazimobile', 'mtn-gb', 'sudan-mtn']
-for key in from_line:
+ ['bjmtn', 'mtn-benin'], 'gc-mtn', ['mtnliberia','mtn-lib','mtn lib'], 'gh-mtn', ['mtnsouthsudan', 'mtn-southsudan'], 'globenin'
+ , ['mtnzambia','mtn zambia'], ['mtnci','ci@mtn'], ['mtnbissau','mtn-gb'], ['gloghana', 'glo-gh'], 'swazimobile', 'sudan-mtn']
+for key in final_data:
     for key1 in range(len(site_r)):
         if site_r[key1].__contains__(key[1]):
             key[1]=site_f[key1]
@@ -255,7 +250,7 @@ noc_dict = {
     'unknown':[]
 }
 delete = []
-for key in from_line:
+for key in final_data:
     if key[6].lower().__contains__('critical'):
         noc_dict['critical'].append(key)
     if key[6].lower().__contains__('unknown'):
@@ -268,90 +263,361 @@ for key in from_line:
         print('Alert Not Added')
         print(key)
         delete.append(key)
-# for key in range(len(noc_dict['mtn_bissau'])-1):
-#     for key1 in range(key,len(noc_dict['mtn_bissau'])):
-#         if key1<len(noc_dict['mtn_bissau']):
-#             if noc_dict['mtn_bissau'][key][3]==noc_dict['mtn_bissau'][key1][3]:
-#                 if noc_dict['mtn_bissau'][key][4]==noc_dict['mtn_bissau'][key1][4]:
-#                     if noc_dict['mtn_bissau'][key][6]==noc_dict['mtn_bissau'][key1][6]:
-#                         if noc_dict['mtn_bissau'][key][7].day==noc_dict['mtn_bissau'][key1][7].day:
-#                             if noc_dict['mtn_bissau'][key][7].month==noc_dict['mtn_bissau'][key1][7].month:
-#                                 if noc_dict['mtn_bissau'][key][7].year==noc_dict['mtn_bissau'][key1][7].year:
-#                                     if noc_dict['mtn_bissau'][key][7].hour==noc_dict['mtn_bissau'][key1][7].hour:
-#                                         if (noc_dict['mtn_bissau'][key][7].minute-noc_dict['mtn_bissau'][key1][7].minute)*-1<=5:
-#                                             noc_dict['mtn_bissau'].remove(noc_dict['mtn_bissau'][key1])
-#         else:
-#             break
-
 
 for key in delete:
-    if from_line.__contains__(key):
-        from_line.remove(key)
-store_all_data(from_line)
+    if final_data.__contains__(key):
+        final_data.remove(key)
+
+choice_f = 0
+while choice_f == 0:
+    choice = input('Enter [y\\n] to Filter SMS Duplication Alerts:')
+    if choice.lower() == 'y':
+        delete = []
+        for key2 in list(noc_dict.keys()):
+            if key2.lower().__contains__('bissau'):
+                continue
+            for key in range(len(noc_dict[key2]) - 1):
+                for key1 in range(key + 1, len(noc_dict[key2])):
+                    if key1 < len(noc_dict[key2]):
+                        if noc_dict[key2][key][3] == noc_dict[key2][key1][3]:
+                            if noc_dict[key2][key][4] == noc_dict[key2][key1][4]:
+                                if noc_dict[key2][key][5] != noc_dict[key2][key1][5]:
+                                    if noc_dict[key2][key][6] == noc_dict[key2][key1][6]:
+                                        temp_v = noc_dict[key2][key][7] - noc_dict[key2][key1][7]
+                                        if temp_v.seconds >= 0 and temp_v.seconds <= 300:
+                                            delete.append(noc_dict[key2][key1])
+                    else:
+                        break
+
+        for key in delete:
+            if noc_dict[key[1].lower()].__contains__(key):
+                noc_dict[key[1].lower()].remove(key)
+            if final_data.__contains__(key):
+                final_data.remove(key)
+        print('Duplicates Deleted')
+        choice_f = 1
+    elif choice.lower() == 'n':
+        break
+    else:
+        print('Please enter a proper option.')
+
 
 book = xlsxwriter.Workbook(name_dest)
-sheet = book.add_worksheet()
+try:
+
+    # Store all alerts data.
+    store_all_data(final_data)
+    sheet = book.add_worksheet()
+
+    # Defining all the formats needed in the script
+    cell_format = book.add_format()
+    border_format = book.add_format()
+    border_format.set_border(style=1)
+    service_cell_format = book.add_format()
+    date_format = book.add_format({'num_format':'dd/mmm/yy hh:mm:ss'})
+    date_format.set_border(style=1)
+    cell_format.set_bg_color('#000000')
+    service_cell_format.set_bg_color('#8db4e2')
+    cell_format.set_font_color('#FFFFFF')
+    service_cell_format.set_font_color('#000000')
+
+    # Writting Headings on the first sheet of all the data
+    sheet.write(0, 0, 'Site / Region',cell_format)
+    sheet.write(0, 1, 'Service',cell_format)
+    sheet.write(0, 2, 'Alert Type',cell_format)
+    sheet.write(0, 3, 'Alert',cell_format)
+    sheet.write(0, 4, 'Host',cell_format)
+    sheet.write(0, 5, 'Address',cell_format)
+    sheet.write(0, 6, 'Date',cell_format)
+
+    row = 1
+    sheet.hide_gridlines(2)
 
 
+    # Starting per site analysis sheet
 
-cell_format = book.add_format()
-date_format = book.add_format({'num_format':'dd/mmm/yy'})
-cell_format.set_bg_color('#000000')
-cell_format.set_font_color('#FFFFFF')
+    site_list = get_site_by_count_desc()
+    sheets = {}
+    sheet2 = book.add_worksheet('Per_Site_Stats')
+    sheet2.write(0, 0, 'Alert Type/Site', cell_format)
+    sheet2.write(1, 0, 'Critical',cell_format)
+    sheet2.write(2, 0, 'Warning',cell_format)
+    sheet2.write(3, 0, 'Unknown',cell_format)
+    sheet2.write(4, 0, '',cell_format)
+    sheet2.hide_gridlines(2)
 
-
-sheet.write(0, 0, 'Site / Region',cell_format)
-sheet.write(0, 1, 'Service',cell_format)
-sheet.write(0, 2, 'Alert Type',cell_format)
-sheet.write(0, 3, 'Alert',cell_format)
-sheet.write(0, 4, 'Host',cell_format)
-sheet.write(0, 5, 'Address',cell_format)
-sheet.write(0, 6, 'Date',cell_format)
-
-row = 1
-
-site_list = get_site_by_count_desc()
-
-for key1 in site_list:
-    sheet1 = None
-    row1=1
-    for key in noc_dict[key1[0].lower().replace(' ','_')]:
-        if sheet1 is not None:
-            sheet1.write(row1, 0, key[1])
-            sheet1.write(row1, 1, key[3])
-            sheet1.write(row1, 2, key[6])
-            sheet1.write(row1, 3, filter_characters(key[0]))
-            sheet1.write(row1, 4, key[4])
-            sheet1.write(row1, 5, key[5])
-            sheet1.write(row1, 6, key[7], date_format)
-            row1+=1
+    # getting data of per site analysis first data table (alert type and site)
+    result = get_alerts_by_type_and_site()
+    sites,temp = {'unknown':{},
+                  'critical':{},
+                  'warning':{},
+                  'down':{}
+                  },0
+    # Dividing them into all alert types
+    for key3 in result:
+        if list(sites[key3[1].lower()].keys()).__contains__(key3[0]):
+            sites[key3[1].lower()][key3[0]]+=key3[2]
         else:
-            sheet1= book.add_worksheet(name=key1[0])
-            sheet1.write(0, 0, 'Site / Region', cell_format)
-            sheet1.write(0, 1, 'Service', cell_format)
-            sheet1.write(0, 2, 'Alert Type', cell_format)
-            sheet1.write(0, 3, 'Alert', cell_format)
-            sheet1.write(0, 4, 'Host', cell_format)
-            sheet1.write(0, 5, 'Address', cell_format)
-            sheet1.write(0, 6, 'Date', cell_format)
-            sheet1.write(row1, 0, key[1])
-            sheet1.write(row1, 1, key[3])
-            sheet1.write(row1, 2, key[6])
-            sheet1.write(row1, 3, filter_characters(key[0]))
-            sheet1.write(row1, 4, key[4])
-            sheet1.write(row1, 5, key[5])
-            sheet1.write(row1, 6, key[7], date_format)
-            row1+=1
-        sheet.write(row, 0, key[1])
-        sheet.write(row, 1, key[3])
-        sheet.write(row, 2, key[6])
-        sheet.write(row, 3, filter_characters(key[0]))
-        sheet.write(row, 4, key[4])
-        sheet.write(row, 5, key[5])
-        sheet.write(row, 6, key[7],date_format)
-        row += 1
-book.close()
+            sites[key3[1].lower()].update({key3[0]:key3[2]})
+    # Adding the down count to critical count
+    for key in sites['down']:
+        sites['critical'][key]+=sites['down'][key]
+
+    # writting data of per site analysis first data table (alert type and site)
+    col = 0
+    for key in range(len(site_list)):
+        col = key + 1
+        if list(sites['critical'].keys()).__contains__(site_list[key][0]):
+            sheet2.write(1,col,sites['critical'][site_list[key][0]],border_format)
+        else:
+            sheet2.write(1,col,'',border_format)
+        if list(sites['warning'].keys()).__contains__(site_list[key][0]):
+            sheet2.write(2,col,sites['warning'][site_list[key][0]],border_format)
+        else:
+            sheet2.write(2,col,'',border_format)
+        if list(sites['unknown'].keys()).__contains__(site_list[key][0]):
+            sheet2.write(3,col,sites['unknown'][site_list[key][0]],border_format)
+        else:
+            sheet2.write(3,col,'',border_format)
+        sheet2.write(4,col,'=SUM('+chr(65+col)+'2:'+chr(65+col)+'4)',cell_format)
+        sheet2.write(0,col,site_list[key][0].replace('_',' '),cell_format)
+    chart = book.add_chart({'type': 'column'})
+    chart.add_series(
+        {
+            'values': ('=Per_Site_Stats!$' + chr(66) + '$2:$' + chr(65 + col) + '$2'),
+            'category': ('=Per_Site_Stats!$B$1:$M$1'),
+            'name': ('=Per_Site_Stats!$' + chr(65) + '$2'),
+            'data_labels': {
+                'value': True,
+            }
+        })
+    chart.add_series(
+        {
+            'values': ('=Per_Site_Stats!$' + chr(66) + '$3:$' + chr(65 + col) + '$3'),
+            'category': ('=Per_Site_Stats!$B$1:$M$1'),
+            'name': ('=Per_Site_Stats!$' + chr(65) + '$3'),
+            'data_labels': {
+                'value': True,
+            }
+        })
+    chart.add_series(
+        {
+            'values': ('=Per_Site_Stats!$' + chr(66) + '$4:$' + chr(65 + col) + '$4'),
+            'category': ('=Per_Site_Stats!$B$1:$M$1'),
+            'name': ('=Per_Site_Stats!$' + chr(65) + '$4'),
+            'data_labels': {
+                'value': True,
+            }
+        }
+    )
+        # chart.set_legend({'none': True})
+    chart.set_y_axis({'label_position': 'none'})
+    chart.set_title({'name': 'Per Site Stats(Severity Wise)'})
+
+    # Adding chart for per site analysis first data table
+    sheet2.insert_chart(chr(65 + 3) + str(7), chart)
 
 
-delete_data()
-f = input('Enter to close.')
+
+
+    # getting data of per site analysis second data table (site)
+    result = get_alert_by_site()
+    col +=2
+    row = 1
+    sheet2.write(row-1,col,'Site',cell_format)
+    sheet2.write(row-1,col+1,'Alert Count',cell_format)
+
+    # writting data of per site analysis second data table (site)
+    for key in result:
+        sheet2.write(row, col,key[0].replace('_',' '),border_format)
+        sheet2.write(row, col+1,key[1],border_format)
+        row+=1
+
+    # Adding chart for per site analysis second data table
+    chart = book.add_chart({'type': 'column'})
+
+    chart.add_series(
+        {
+            'values': ('=Per_Site_Stats!$' + chr(65+col+1) + '$2:$' + chr(65 + col+1) + '$'+str(row)),
+            'category': ('=Per_Site_Stats!$' + chr(65+col) + '$2:$' + chr(65 + col) + '$'+str(row)),
+            'name': ('=Per_Site_Stats!$' + chr(65+col+1) + '$1'),
+            'data_labels': {
+                'value': True,
+            }
+        })
+    chart.set_y_axis({'label_position': 'none'})
+    chart.set_title({'name': 'Per Site Alerts'})
+    sheet2.insert_chart(chr(65 + col) + str(row+3), chart)
+
+    # fetching data of per site analysis third data table (alert type)
+    result = get_alert_by_alert_type()
+
+    # Adding the down count to critical count
+    sites= {'unknown': 0,
+           'critical': 0,
+           'warning': 0
+           }
+    for key3 in result:
+        if key3[0].lower().__contains__('down'):
+            sites['critical'] += key3[1]
+        else:
+            sites[key3[0].lower()]=key3[1]
+
+
+    # Writting headings of per site analysis third data table
+    col +=3
+    row = 1
+    sheet2.write(row-1,col,'Alert Type',cell_format)
+    sheet2.write(row-1,col+1,'Count',cell_format)
+
+    # writting data of per site analysis third data table (site)
+    for key in result:
+        if key[0].lower().__contains__('down'):
+            continue
+        sheet2.write(row, col,key[0],border_format)
+        sheet2.write(row, col+1,sites[key[0].lower()],border_format)
+        row+=1
+
+    # Adding chart for per site analysis third data table
+    chart = book.add_chart({'type': 'pie'})
+
+    chart.add_series(
+        {
+            'values': ('=Per_Site_Stats!$' + chr(65 + col + 1) + '$2:$' + chr(65 + col + 1) + '$' + str(row)),
+            'category': ('=Per_Site_Stats!$' + chr(65 + col) + '$2:$' + chr(65 + col) + '$' + str(row)),
+            'name': ('=Per_Site_Stats!$' + chr(65 + col + 1) + '$1'),
+            'data_labels': {
+                'value': True,
+            }
+        })
+    chart.set_y_axis({'label_position': 'none'})
+    chart.set_title({'name': 'Total Site Alerts'})
+    sheet2.insert_chart(chr(65 + col) + str(row + 3), chart)
+
+
+
+    # fetching data of per site analysis fourth data table (team)
+    result = get_alert_by_team()
+
+    # Writting headings of per site analysis fourth data table (team)
+    col +=3
+    row = 1
+    sheet2.write(row-1,col,'Teams',cell_format)
+    sheet2.write(row-1,col+1,'Count',cell_format)
+
+    # writting data of per site analysis fourth data table (team)
+    for key in result:
+        sheet2.write(row, col,key[0],border_format)
+        sheet2.write(row, col+1,key[1],border_format)
+        row+=1
+
+    # Adding chart for per site analysis fourth data table (team)
+    chart = book.add_chart({'type': 'pie'})
+
+    chart.add_series(
+        {
+            'values': ('=Per_Site_Stats!$' + chr(65 + col + 1) + '$2:$' + chr(65 + col + 1) + '$' + str(row)),
+            'category': ('=Per_Site_Stats!$' + chr(65 + col) + '$2:$' + chr(65 + col) + '$' + str(row)),
+            'name': ('=Per_Site_Stats!$' + chr(65 + col + 1) + '$1'),
+            'data_labels': {
+                'value': True,
+            }
+        })
+    chart.set_y_axis({'label_position': 'none'})
+    chart.set_title({'name': 'Total Team Alerts'})
+    sheet2.insert_chart(chr(65 + col) + str(row + 3), chart)
+
+
+
+    # Writting data of all other sheets.
+    row = 1
+    for key1 in site_list:
+        sheets[key1[0]] = [book.add_worksheet(name=key1[0])]
+        sheets[key1[0]][0].hide_gridlines(2)
+        result = get_service_host_by_site(key1[0])
+        services = {}
+        hosts = {}
+        service_row = 1
+        host_row = 1
+        sheets[key1[0]][0].write(0,0,'Host/Service',service_cell_format)
+        for key2 in result:
+
+            for key3 in key2:
+                if not services.__contains__(key3[0]):
+                    services.update({key3[0]: service_row})
+                    sheets[key1[0]][0].write(0,service_row,key3[0],service_cell_format)
+                    service_row += 1
+                if not hosts.__contains__(key3[1]):
+                    hosts.update({key3[1]: host_row})
+                    sheets[key1[0]][0].write(host_row,0,key3[1],service_cell_format)
+                    host_row += 1
+                sheets[key1[0]][0].write( hosts[key3[1]],services[key3[0]], key3[2])
+        result = get_service_by_site(key1[0])
+        sheets[key1[0]][0].write(host_row+2,0,'Services',cell_format)
+        sheets[key1[0]][0].write(host_row+2,1,'Count',cell_format)
+        sheets[key1[0]].append([host_row,service_row])
+        service_row1 =host_row+3
+        for key2 in result:
+            sheets[key1[0]][0].write(service_row1,0,key2[0],border_format)
+            sheets[key1[0]][0].write(service_row1,1,key2[1],border_format)
+            service_row1+=1
+        # for key3 in result:
+        #     for key2 in key3:
+        sheets[key1[0]].append(service_row1)
+        chart = book.add_chart({'type': 'column','subtype':'percent_stacked'})
+        for key4 in range(service_row):
+            if key4==0:
+                continue
+            chart.add_series({
+                'values':('='+key1[0]+'!$'+chr(65+key4)+'$2:$'+chr(65+key4)+'$'+str(host_row)),
+                'category':('='+key1[0]+'!$'+chr(66)+'$1'),
+                'name':('='+key1[0]+'!$'+chr(65+key4)+'$1'),
+                'data_labels':{
+                    'value':True,
+                    'font':{'color':'#FFFFFF'}
+                }
+            })
+        # chart.set_legend({'none': True})
+        chart.set_y_axis({'label_position': 'none'})
+        chart.set_title({'name':key1[0].replace('_',' ')+'(Per Host Alerts)'})
+        sheets[key1[0]][0].insert_chart(chr(65+3)+str(host_row+3),chart)
+        chart = book.add_chart({'type': 'column'})
+        chart.add_series({
+            'values':('='+key1[0]+'!$'+chr(66)+'$'+str(host_row+4)+':$'+chr(66)+'$'+str(service_row1)),
+            'category':('='+key1[0]+'!$'+chr(65)+'$'+str(host_row+4)+':$'+chr(65)+'$'+str(service_row1)),
+            'name':('='+key1[0]+'!$'+chr(66)+'$'+str(host_row+3)),
+            'data_labels':{
+                'value':True
+            }
+        })
+        # chart.set_legend({'none': True})
+        chart.set_y_axis({'label_position': 'none'})
+        chart.set_title({'name':key1[0].replace('_',' ')+' (Services)'})
+        sheets[key1[0]][0].insert_chart(chr(65+12)+str(host_row+3),chart)
+        # chart = book.add_chart({'type': 'column','subtype':'percent_stacked'})
+        # for key4 in range(service_row):
+        #     if key4==0:
+        #         continue
+        #     chart.add_series({
+        #         'values':('='+key1[0]+'!$'+chr(65+key4)+'$2:$'+chr(65+key4)+'$'+str(host_row)),
+        #         'category':('='+key1[0]+'!$'+chr(66)+'$1'),
+        #         'name':('='+key1[0]+'!$'+chr(65+key4)+'$1'),
+        #         'data_labels':{'value':True}
+        #     })
+        # # chart.set_legend({'none': True})
+        # chart.set_y_axis({'label_position': 'none'})
+        sheets[key1[0]][0].insert_chart('E20',chart)
+        for key in noc_dict[key1[0].lower().replace(' ','_')]:
+            sheet.write(row, 0, key[1],border_format)
+            sheet.write(row, 1, key[3],border_format)
+            sheet.write(row, 2, key[6],border_format)
+            sheet.write(row, 3, filter_characters(key[0]),border_format)
+            sheet.write(row, 4, key[4],border_format)
+            sheet.write(row, 5, key[5],border_format)
+            sheet.write(row, 6, key[7],date_format)
+            row += 1
+finally:
+    # print('Bye')
+    book.close()
+    delete_data()
+f = input(' Enter to close.')

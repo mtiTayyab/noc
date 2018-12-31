@@ -3,3 +3,9 @@ Final_Data.xlsx
 .idea/
 __pycache__/
 source/
+*.xlsx
+Monthly_KPI_Report/__init__.py
+Monthly_KPI_Report/NOC_Created_2018-10-01_16-28.csv
+Monthly KPI September 2018/Raw Data/NOC_Created_2018-10-01_16-28.csv
+Monthly KPI September 2018-20181220T073411Z-001/Monthly KPI September 2018/Raw Data/NOC_Created_2018-10-01_16-28.csv
+Monthly KPI September 2018-20181220T073411Z-001.zip
