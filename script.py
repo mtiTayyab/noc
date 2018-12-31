@@ -6,7 +6,7 @@ from miscellaneous import filter_characters
 
 
 path = '.\\source\\'
-name_dest = '.\\Final_Data(3).xlsx'
+name_dest = '.\\Final_Data.xlsx'
 l = os.listdir(path)
 txt_name = []
 for key in l:
@@ -211,7 +211,7 @@ site_f = ['MTN_Yemen', 'MTN_Afghanistan', 'MTN_Syria', 'Glo_Nigeria', 'Starlink_
 
 site_r = ['ye-mtn', 'af-mtn', ['sy-mtn', 'mtn-sy'], 'glo-ng', 'starlink', 'newco', 'mtn-c', 'gosoft', 'dna-finland', 'atm',
  ['bjmtn', 'mtn-benin'], 'gc-mtn', ['mtnliberia','mtn-lib','mtn lib'], 'gh-mtn', ['mtnsouthsudan', 'mtn-southsudan'], 'globenin'
- , ['mtnzambia','mtn zambia'], ['mtnci','ci@mtn'], ['mtnbissau','mtn-gb'], ['gloghana', 'glo-gh'], 'swazimobile', 'sudan-mtn']
+ , ['mtnzambia','mtn zambia','zm'], ['mtnci','ci@mtn'], ['mtnbissau','mtn-gb'], ['gloghana', 'glo-gh'], 'swazimobile', 'sudan-mtn']
 for key in final_data:
     for key1 in range(len(site_r)):
         if site_r[key1].__contains__(key[1]):
