@@ -177,7 +177,7 @@ for key in delete:
     if final_data.__contains__(key):
         final_data.remove(key)
 
-otrs = ['ye-mtn', 'af-mtn', 'sy-mtn', 'glo-ng', 'starlink', 'newco', 'mtn-c', 'gosoft', 'dna-finland', 'atm', 'bjmtn', 'gc-mtn','mtnliberia', 'gh-mtn', 'telecelBF', 'mtnsouthsudan', 'globenin', 'Datora', 'mtnzambia', 'mtnci', 'mtnbissau','gloghana','glo-gh', 'swazimobile','mtn-gb','mtn-benin','mtn-sy','mtn zambia','mtn-southsudan','sudan-mtn','ci@mtn','mtn-lib','mtn lib']
+otrs = ['ye-mtn', 'af-mtn', 'sy-mtn', 'glo-ng', 'starlink', 'newco', 'mtn-c', 'gosoft', 'dna-finland', 'atm', 'bjmtn', 'gc-mtn','mtnliberia', 'gh-mtn', 'telecelBF', 'mtnsouthsudan', 'globenin', 'Datora', 'mtnzambia', 'mtnci', 'mtnbissau','gloghana','glo-gh', 'swazimobile','mtn-gb','mtn-benin','mtn-sy','mtn zambia','zm','mtn-southsudan','sudan-mtn','ci@mtn','mtn-lib','mtn lib']
 flag = 0
 for key in final_data:
     flag=0
