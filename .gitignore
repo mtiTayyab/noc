@@ -9,3 +9,10 @@ Monthly_KPI_Report/NOC_Created_2018-10-01_16-28.csv
 Monthly KPI September 2018/Raw Data/NOC_Created_2018-10-01_16-28.csv
 Monthly KPI September 2018-20181220T073411Z-001/Monthly KPI September 2018/Raw Data/NOC_Created_2018-10-01_16-28.csv
 Monthly KPI September 2018-20181220T073411Z-001.zip
+24-30/
+alerts/20181201-MTN-Benin VPN Tunnel unreachable PING-failed from jump01.ops.ts__EOM_-147876.txt
+alerts/*
+kdc_script.py
+.pytest_cache/
+Monthly_KPI_Report/script.py
+.vscode/settings.json

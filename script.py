@@ -152,9 +152,13 @@ for key in final_data:
         delete.append(key)
     if (key[0].lower().__contains__('acknowledgement')):
         delete.append(key)
+    if (key[0].lower().__contains__('recovery')):
+        delete.append(key)
     if (key[3].lower().__contains__('acknowledgement')):
         delete.append(key)
     if key[6].lower()=='ok':
+        delete.append(key)
+    if key[6].lower()=='up':
         delete.append(key)
     if key[1].lower().__contains__('hospitall'):
         delete.append(key)
@@ -170,14 +174,14 @@ for key in final_data:
         delete.append(key)
     if key[4].lower().__contains__('server 25'):
         delete.append(key)
-    # if key[1].lower().__contains__('local'):
-    #     delete.append(key)
+    if key[1].lower().__contains__('local'):
+        delete.append(key)
 
 for key in delete:
     if final_data.__contains__(key):
         final_data.remove(key)
 
-otrs = ['ye-mtn', 'af-mtn', 'sy-mtn', 'glo-ng', 'starlink', 'newco', 'mtn-c', 'gosoft', 'dna-finland', 'atm', 'bjmtn', 'gc-mtn','mtnliberia', 'gh-mtn', 'telecelBF', 'mtnsouthsudan', 'globenin', 'Datora', 'mtnzambia', 'mtnci', 'mtnbissau','gloghana','glo-gh', 'swazimobile','mtn-gb','mtn-benin','mtn-sy','mtn zambia','zm','mtn-southsudan','sudan-mtn','ci@mtn','mtn-lib','mtn lib']
+otrs = ['ye-mtn', 'af-mtn', 'sy-mtn', 'glo-ng', 'starlink', 'newco', 'mtn-c', 'gosoft', 'dna-finland', 'atm', 'bjmtn', 'gc-mtn','mtnliberia', 'gh-mtn', 'telecelBF', 'mtnsouthsudan', 'globenin', 'Datora', 'mtnzambia', 'mtnci', 'mtnbissau','gloghana','glo-gh', 'swazimobile','mtn-gb','mtn-benin','mtn-sy','mtn zambia','mtn-southsudan','sudan-mtn','ci@mtn','mtn-lib','mtn lib','zm']
 flag = 0
 for key in final_data:
     flag=0
@@ -264,9 +268,9 @@ for key in final_data:
         print(key)
         delete.append(key)
 
-for key in delete:
-    if final_data.__contains__(key):
-        final_data.remove(key)
+# for key in delete:
+#     if final_data.__contains__(key):
+#         final_data.remove(key)
 
 choice_f = 0
 while choice_f == 0:
@@ -303,6 +307,8 @@ while choice_f == 0:
 
 
 book = xlsxwriter.Workbook(name_dest)
+
+
 try:
 
     # Store all alerts data.
@@ -514,18 +520,32 @@ try:
     # Adding chart for per site analysis fourth data table (team)
     chart = book.add_chart({'type': 'pie'})
 
-    chart.add_series(
-        {
-            'values': ('=Per_Site_Stats!$' + chr(65 + col + 1) + '$2:$' + chr(65 + col + 1) + '$' + str(row)),
-            'category': ('=Per_Site_Stats!$' + chr(65 + col) + '$2:$' + chr(65 + col) + '$' + str(row)),
-            'name': ('=Per_Site_Stats!$' + chr(65 + col + 1) + '$1'),
-            'data_labels': {
-                'value': True,
-            }
-        })
-    chart.set_y_axis({'label_position': 'none'})
-    chart.set_title({'name': 'Total Team Alerts'})
-    sheet2.insert_chart(chr(65 + col) + str(row + 3), chart)
+    if col<26:
+        chart.add_series(
+            {
+                'values': ('=Per_Site_Stats!$' + chr(65 + col + 1) + '$2:$' + chr(65 + col + 1) + '$' + str(row)),
+                'category': ('=Per_Site_Stats!$' + chr(65 + col) + '$2:$' + chr(65 + col) + '$' + str(row)),
+                'name': ('=Per_Site_Stats!$' + chr(65 + col + 1) + '$1'),
+                'data_labels': {
+                    'value': True,
+                }
+            })
+        chart.set_y_axis({'label_position': 'none'})
+        chart.set_title({'name': 'Total Team Alerts'})
+        sheet2.insert_chart(chr(65 + col) + str(row + 3), chart)
+    else:
+        chart.add_series(
+            {
+                'values': ('=Per_Site_Stats!$' + chr(65) +chr(65 + col-26 + 1) + '$2:$' + chr(65) + chr(65 + col-26 + 1) + '$' + str(row)),
+                'category': ('=Per_Site_Stats!$' + chr(65)+ chr(65 + col-26) + '$2:$' + chr(65)+ chr(65 + col-26) + '$' + str(row)),
+                'name': ('=Per_Site_Stats!$' + chr(65)+ chr(65 + col-26 + 1) + '$1'),
+                'data_labels': {
+                    'value': True,
+                }
+            })
+        chart.set_y_axis({'label_position': 'none'})
+        chart.set_title({'name': 'Total Team Alerts'})
+        sheet2.insert_chart(chr(65) +chr(65 + col-26) + str(row + 3), chart)
 
 
 
@@ -594,18 +614,18 @@ try:
         chart.set_y_axis({'label_position': 'none'})
         chart.set_title({'name':key1[0].replace('_',' ')+' (Services)'})
         sheets[key1[0]][0].insert_chart(chr(65+12)+str(host_row+3),chart)
-        # chart = book.add_chart({'type': 'column','subtype':'percent_stacked'})
-        # for key4 in range(service_row):
-        #     if key4==0:
-        #         continue
-        #     chart.add_series({
-        #         'values':('='+key1[0]+'!$'+chr(65+key4)+'$2:$'+chr(65+key4)+'$'+str(host_row)),
-        #         'category':('='+key1[0]+'!$'+chr(66)+'$1'),
-        #         'name':('='+key1[0]+'!$'+chr(65+key4)+'$1'),
-        #         'data_labels':{'value':True}
-        #     })
-        # # chart.set_legend({'none': True})
-        # chart.set_y_axis({'label_position': 'none'})
+        chart = book.add_chart({'type': 'column','subtype':'percent_stacked'})
+        for key4 in range(service_row):
+            if key4==0:
+                continue
+            chart.add_series({
+                'values':('='+key1[0]+'!$'+chr(65+key4)+'$2:$'+chr(65+key4)+'$'+str(host_row)),
+                'category':('='+key1[0]+'!$'+chr(66)+'$1'),
+                'name':('='+key1[0]+'!$'+chr(65+key4)+'$1'),
+                'data_labels':{'value':True}
+            })
+        # chart.set_legend({'none': True})
+        chart.set_y_axis({'label_position': 'none'})
         sheets[key1[0]][0].insert_chart('E20',chart)
         for key in noc_dict[key1[0].lower().replace(' ','_')]:
             sheet.write(row, 0, key[1],border_format)
@@ -615,10 +635,10 @@ try:
             sheet.write(row, 4, key[4],border_format)
             sheet.write(row, 5, key[5],border_format)
             sheet.write(row, 6, key[7],date_format)
-            sheet.write(row, 7, key[7],border_format)
             row += 1
 finally:
     # print('Bye')
+    # try:
     book.close()
     delete_data()
 f = input(' Enter to close.')
