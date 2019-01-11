@@ -1,9 +1,6 @@
 import os
 import xlsxwriter
 from datetime import datetime
-from db import get_site_by_count_desc,store_all_data,delete_data,get_service_host_by_site,get_service_by_site,get_alerts_by_type_and_site,get_alert_by_site,get_alert_by_alert_type,get_alert_by_team
-from miscellaneous import filter_characters
-
 
 path = '.\\alerts\\'
 name_dest = '.\\KDC_Final_Data.xlsx'
