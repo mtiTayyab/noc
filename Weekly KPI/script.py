@@ -278,20 +278,24 @@ while choice_f == 0:
     if choice.lower() == 'y':
         delete = []
         for key2 in list(noc_dict.keys()):
-            if key2.lower().__contains__('bissau'):
+            if key2.lower().__contains__('bissau') or key2.lower().__contains__('critical')or key2.lower().__contains__('warning')or key2.lower().__contains__('unknown'):
                 continue
             for key in range(len(noc_dict[key2]) - 1):
                 for key1 in range(key + 1, len(noc_dict[key2])):
-                    if key1 < len(noc_dict[key2]):
-                        if noc_dict[key2][key][3] == noc_dict[key2][key1][3]:
-                            if noc_dict[key2][key][4] == noc_dict[key2][key1][4]:
-                                if noc_dict[key2][key][5] != noc_dict[key2][key1][5]:
-                                    if noc_dict[key2][key][6] == noc_dict[key2][key1][6]:
-                                        temp_v = noc_dict[key2][key][7] - noc_dict[key2][key1][7]
-                                        if temp_v.seconds >= 0 and temp_v.seconds <= 300:
+                    if noc_dict[key2][key][3] == noc_dict[key2][key1][3]:
+                        if noc_dict[key2][key][4] == noc_dict[key2][key1][4]:
+                            if noc_dict[key2][key][5] != noc_dict[key2][key1][5]:
+                                if noc_dict[key2][key][6] == noc_dict[key2][key1][6]:
+                                    temp_v = noc_dict[key2][key][7] - noc_dict[key2][key1][7]
+                                    if temp_v.seconds >= 0 and temp_v.seconds <= 300:
+                                        print('key: '+str(key))
+                                        print('key1: '+str(key1))
+                                        print('key2: '+str(key2))
+                                        if noc_dict[key2][key1][5]=='' or not len(noc_dict[key2][key1][5].split('.'))==4:
                                             delete.append(noc_dict[key2][key1])
-                    else:
-                        break
+                                        else:
+                                            delete.append(noc_dict[key2][key])
+
 
         for key in delete:
             if noc_dict[key[1].lower()].__contains__(key):

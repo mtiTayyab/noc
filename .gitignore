@@ -16,3 +16,6 @@ kdc_script.py
 .pytest_cache/
 Monthly_KPI_Report/script.py
 .vscode/settings.json
+Monthly KPI/__init__.py
+*.csv
+Weekly KDC/alerts/
