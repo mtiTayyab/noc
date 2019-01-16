@@ -1,3 +1,4 @@
+
 import os
 import xlsxwriter
 from datetime import datetime
@@ -268,46 +269,46 @@ for key in final_data:
         print(key)
         delete.append(key)
 
-# for key in delete:
-#     if final_data.__contains__(key):
-#         final_data.remove(key)
-
-choice_f = 0
-while choice_f == 0:
-    choice = input('Enter [y\\n] to Filter SMS Duplication Alerts:')
-    if choice.lower() == 'y':
-        delete = []
-        for key2 in list(noc_dict.keys()):
-            if key2.lower().__contains__('bissau') or key2.lower().__contains__('critical')or key2.lower().__contains__('warning')or key2.lower().__contains__('unknown'):
-                continue
-            for key in range(len(noc_dict[key2]) - 1):
-                for key1 in range(key + 1, len(noc_dict[key2])):
-                    if noc_dict[key2][key][3] == noc_dict[key2][key1][3]:
-                        if noc_dict[key2][key][4] == noc_dict[key2][key1][4]:
-                            if noc_dict[key2][key][5] != noc_dict[key2][key1][5]:
-                                if noc_dict[key2][key][6] == noc_dict[key2][key1][6]:
-                                    temp_v = noc_dict[key2][key][7] - noc_dict[key2][key1][7]
-                                    if temp_v.seconds >= 0 and temp_v.seconds <= 300:
-                                        print('key: '+str(key))
-                                        print('key1: '+str(key1))
-                                        print('key2: '+str(key2))
-                                        if noc_dict[key2][key1][5]=='' or not len(noc_dict[key2][key1][5].split('.'))==4:
-                                            delete.append(noc_dict[key2][key1])
-                                        else:
-                                            delete.append(noc_dict[key2][key])
-
-
-        for key in delete:
-            if noc_dict[key[1].lower()].__contains__(key):
-                noc_dict[key[1].lower()].remove(key)
-            if final_data.__contains__(key):
-                final_data.remove(key)
-        print('Duplicates Deleted')
-        choice_f = 1
-    elif choice.lower() == 'n':
-        break
-    else:
-        print('Please enter a proper option.')
+for key in delete:
+    if final_data.__contains__(key):
+        final_data.remove(key)
+#
+# choice_f = 0
+# while choice_f == 0:
+#     choice = input('Enter [y\\n] to Filter SMS Duplication Alerts:')
+#     if choice.lower() == 'y':
+#         delete = []
+#         for key2 in list(noc_dict.keys()):
+#             if key2.lower().__contains__('bissau') or key2.lower().__contains__('critical')or key2.lower().__contains__('warning')or key2.lower().__contains__('unknown'):
+#                 continue
+#             for key in range(len(noc_dict[key2]) - 1):
+#                 for key1 in range(key + 1, len(noc_dict[key2])):
+#                     if noc_dict[key2][key][3] == noc_dict[key2][key1][3]:
+#                         if noc_dict[key2][key][4] == noc_dict[key2][key1][4]:
+#                             if noc_dict[key2][key][5] != noc_dict[key2][key1][5]:
+#                                 if noc_dict[key2][key][6] == noc_dict[key2][key1][6]:
+#                                     temp_v = noc_dict[key2][key][7] - noc_dict[key2][key1][7]
+#                                     if temp_v.seconds >= 0 and temp_v.seconds <= 300:
+#                                         print('key: '+str(key))
+#                                         print('key1: '+str(key1))
+#                                         print('key2: '+str(key2))
+#                                         if noc_dict[key2][key1][5]=='' or not len(noc_dict[key2][key1][5].split('.'))==4:
+#                                             delete.append(noc_dict[key2][key1])
+#                                         else:
+#                                             delete.append(noc_dict[key2][key])
+#
+#
+#         for key in delete:
+#             if noc_dict[key[1].lower()].__contains__(key):
+#                 noc_dict[key[1].lower()].remove(key)
+#             if final_data.__contains__(key):
+#                 final_data.remove(key)
+#         print('Duplicates Deleted')
+#         choice_f = 1
+#     elif choice.lower() == 'n':
+#         break
+#     else:
+#         print('Please enter a proper option.')
 
 
 book = xlsxwriter.Workbook(name_dest)
@@ -375,6 +376,7 @@ try:
 
     # writting data of per site analysis first data table (alert type and site)
     col = 0
+    row = 4
     for key in range(len(site_list)):
         col = key + 1
         if list(sites['critical'].keys()).__contains__(site_list[key][0]):
@@ -389,13 +391,19 @@ try:
             sheet2.write(3,col,sites['unknown'][site_list[key][0]],border_format)
         else:
             sheet2.write(3,col,'',border_format)
-        sheet2.write(4,col,'=SUM('+chr(65+col)+'2:'+chr(65+col)+'4)',cell_format)
+        sheet2.write(row,col,'=SUM('+chr(65+col)+'2:'+chr(65+col)+'4)',cell_format)
         sheet2.write(0,col,site_list[key][0].replace('_',' '),cell_format)
+    sheet2.write(0,col+1,'Total',cell_format)
+    sheet2.write(1,col+1,'=SUM('+chr(65)+'2:'+chr(65+col)+'2)',cell_format)
+    sheet2.write(2,col+1,'=SUM('+chr(65)+'3:'+chr(65+col)+'3)',cell_format)
+    sheet2.write(3,col+1,'=SUM('+chr(65)+'4:'+chr(65+col)+'4)',cell_format)
+    sheet2.write(4,col+1,'=SUM('+chr(65+col+1)+'2:'+chr(65+col+1)+'4)',cell_format)
+    chart_col = col-4
     chart = book.add_chart({'type': 'column'})
     chart.add_series(
         {
             'values': ('=Per_Site_Stats!$' + chr(66) + '$2:$' + chr(65 + col) + '$2'),
-            'category': ('=Per_Site_Stats!$B$1:$M$1'),
+            'categories': ('=Per_Site_Stats!$' + chr(66) + '$1:$' + chr(65 + col) + '$1'),
             'name': ('=Per_Site_Stats!$' + chr(65) + '$2'),
             'data_labels': {
                 'value': True,
@@ -404,7 +412,7 @@ try:
     chart.add_series(
         {
             'values': ('=Per_Site_Stats!$' + chr(66) + '$3:$' + chr(65 + col) + '$3'),
-            'category': ('=Per_Site_Stats!$B$1:$M$1'),
+            'categories': ('=Per_Site_Stats!$' + chr(66) + '$1:$' + chr(65 + col) + '$1'),
             'name': ('=Per_Site_Stats!$' + chr(65) + '$3'),
             'data_labels': {
                 'value': True,
@@ -413,7 +421,7 @@ try:
     chart.add_series(
         {
             'values': ('=Per_Site_Stats!$' + chr(66) + '$4:$' + chr(65 + col) + '$4'),
-            'category': ('=Per_Site_Stats!$B$1:$M$1'),
+            'categories': ('=Per_Site_Stats!$' + chr(66) + '$1:$' + chr(65 + col) + '$1'),
             'name': ('=Per_Site_Stats!$' + chr(65) + '$4'),
             'data_labels': {
                 'value': True,
@@ -421,19 +429,21 @@ try:
         }
     )
         # chart.set_legend({'none': True})
-    chart.set_y_axis({'label_position': 'none'})
+    chart.set_y_axis({'visible': False})
     chart.set_title({'name': 'Per Site Stats(Severity Wise)'})
 
     # Adding chart for per site analysis first data table
-    sheet2.insert_chart(chr(65 + 3) + str(7), chart)
+    chart1_row = row + 4
+    sheet2.insert_chart(chr(65 + 2) + str(chart1_row), chart)
 
 
 
 
     # getting data of per site analysis second data table (site)
     result = get_alert_by_site()
-    col +=2
-    row = 1
+    col = 0
+    row +=3
+    row_s = row
     sheet2.write(row-1,col,'Site',cell_format)
     sheet2.write(row-1,col+1,'Alert Count',cell_format)
 
@@ -443,21 +453,26 @@ try:
         sheet2.write(row, col+1,key[1],border_format)
         row+=1
 
+    sheet2.write(row,col,'Total',cell_format)
+    sheet2.write(row,col+1,'=SUM('+chr(65+col+1)+str(row_s)+':'+chr(65+col+1)+str(row)+')',cell_format)
+
     # Adding chart for per site analysis second data table
     chart = book.add_chart({'type': 'column'})
 
     chart.add_series(
         {
-            'values': ('=Per_Site_Stats!$' + chr(65+col+1) + '$2:$' + chr(65 + col+1) + '$'+str(row)),
-            'category': ('=Per_Site_Stats!$' + chr(65+col) + '$2:$' + chr(65 + col) + '$'+str(row)),
+            'values': ('=Per_Site_Stats!$' + chr(65+col+1) + '$'+str(row_s+1)+':$' + chr(65 + col+1) + '$'+str(row)),
+            'categories': ('=Per_Site_Stats!$' + chr(65+col) + '$'+str(row_s+1)+':$' + chr(65 + col) + '$'+str(row)),
             'name': ('=Per_Site_Stats!$' + chr(65+col+1) + '$1'),
             'data_labels': {
                 'value': True,
             }
         })
-    chart.set_y_axis({'label_position': 'none'})
+    chart.set_y_axis({'visible': False})
     chart.set_title({'name': 'Per Site Alerts'})
-    sheet2.insert_chart(chr(65 + col) + str(row+3), chart)
+
+    chart2_row = row
+    sheet2.insert_chart(chr(65 + 2) + str(row), chart)
 
     # fetching data of per site analysis third data table (alert type)
     result = get_alert_by_alert_type()
@@ -475,8 +490,9 @@ try:
 
 
     # Writting headings of per site analysis third data table
-    col +=3
-    row = 1
+    col = 0
+    row += 3
+    row_s = row
     sheet2.write(row-1,col,'Alert Type',cell_format)
     sheet2.write(row-1,col+1,'Count',cell_format)
 
@@ -488,21 +504,24 @@ try:
         sheet2.write(row, col+1,sites[key[0].lower()],border_format)
         row+=1
 
+    sheet2.write(row,col,'Total',cell_format)
+    sheet2.write(row,col+1,'=SUM('+chr(65+col+1)+str(row_s)+':'+chr(65+col+1)+str(row)+')',cell_format)
+
+
     # Adding chart for per site analysis third data table
     chart = book.add_chart({'type': 'pie'})
 
     chart.add_series(
         {
-            'values': ('=Per_Site_Stats!$' + chr(65 + col + 1) + '$2:$' + chr(65 + col + 1) + '$' + str(row)),
-            'category': ('=Per_Site_Stats!$' + chr(65 + col) + '$2:$' + chr(65 + col) + '$' + str(row)),
+            'values': ('=Per_Site_Stats!$' + chr(65 + col + 1) + '$'+str(row_s+1)+':$' + chr(65 + col + 1) + '$' + str(row)),
+            'categories': ('=Per_Site_Stats!$' + chr(65 + col) + '$'+str(row_s+1)+':$' + chr(65 + col) + '$' + str(row)),
             'name': ('=Per_Site_Stats!$' + chr(65 + col + 1) + '$1'),
             'data_labels': {
                 'value': True,
             }
         })
-    chart.set_y_axis({'label_position': 'none'})
     chart.set_title({'name': 'Total Site Alerts'})
-    sheet2.insert_chart(chr(65 + col) + str(row + 3), chart)
+    sheet2.insert_chart(chr(65 +chart_col) + str(chart1_row), chart)
 
 
 
@@ -510,8 +529,9 @@ try:
     result = get_alert_by_team()
 
     # Writting headings of per site analysis fourth data table (team)
-    col +=3
-    row = 1
+    col = 0
+    row += 3
+    row_s = row
     sheet2.write(row-1,col,'Teams',cell_format)
     sheet2.write(row-1,col+1,'Count',cell_format)
 
@@ -521,37 +541,24 @@ try:
         sheet2.write(row, col+1,key[1],border_format)
         row+=1
 
+    sheet2.write(row, col, 'Total', cell_format)
+    sheet2.write(row, col + 1, '=SUM(' + chr(65 + col + 1) + str(row_s) + ':' + chr(65 + col + 1) + str(row) + ')',cell_format)
+
     # Adding chart for per site analysis fourth data table (team)
     chart = book.add_chart({'type': 'pie'})
 
-    if col<26:
-        chart.add_series(
-            {
-                'values': ('=Per_Site_Stats!$' + chr(65 + col + 1) + '$2:$' + chr(65 + col + 1) + '$' + str(row)),
-                'category': ('=Per_Site_Stats!$' + chr(65 + col) + '$2:$' + chr(65 + col) + '$' + str(row)),
-                'name': ('=Per_Site_Stats!$' + chr(65 + col + 1) + '$1'),
-                'data_labels': {
-                    'value': True,
-                }
-            })
-        chart.set_y_axis({'label_position': 'none'})
-        chart.set_title({'name': 'Total Team Alerts'})
-        sheet2.insert_chart(chr(65 + col) + str(row + 3), chart)
-    else:
-        chart.add_series(
-            {
-                'values': ('=Per_Site_Stats!$' + chr(65) +chr(65 + col-26 + 1) + '$2:$' + chr(65) + chr(65 + col-26 + 1) + '$' + str(row)),
-                'category': ('=Per_Site_Stats!$' + chr(65)+ chr(65 + col-26) + '$2:$' + chr(65)+ chr(65 + col-26) + '$' + str(row)),
-                'name': ('=Per_Site_Stats!$' + chr(65)+ chr(65 + col-26 + 1) + '$1'),
-                'data_labels': {
-                    'value': True,
-                }
-            })
-        chart.set_y_axis({'label_position': 'none'})
-        chart.set_title({'name': 'Total Team Alerts'})
-        sheet2.insert_chart(chr(65) +chr(65 + col-26) + str(row + 3), chart)
-
-
+    chart.add_series(
+        {
+            'values': ('=Per_Site_Stats!$' + chr(65 + col + 1) + '$'+str(row_s+1)+':$' + chr(65 + col + 1) + '$' + str(row)),
+            'categories': ('=Per_Site_Stats!$' + chr(65 + col) + '$'+str(row_s+1)+':$' + chr(65 + col) + '$' + str(row)),
+            'name': ('=Per_Site_Stats!$' + chr(65 + col + 1) + '$1'),
+            'data_labels': {
+                'value': True,
+            }
+        })
+    chart.set_y_axis({'label_position': 'none'})
+    chart.set_title({'name': 'Total Team Alerts'})
+    sheet2.insert_chart(chr(65 + chart_col) + str(chart2_row), chart)
 
     # Writting data of all other sheets.
     row = 1
@@ -565,7 +572,6 @@ try:
         host_row = 1
         sheets[key1[0]][0].write(0,0,'Host/Service',service_cell_format)
         for key2 in result:
-
             for key3 in key2:
                 if not services.__contains__(key3[0]):
                     services.update({key3[0]: service_row})
@@ -576,6 +582,12 @@ try:
                     sheets[key1[0]][0].write(host_row,0,key3[1],service_cell_format)
                     host_row += 1
                 sheets[key1[0]][0].write( hosts[key3[1]],services[key3[0]], key3[2])
+
+        sheets[key1[0]][0].write(0,service_row,'Total',service_cell_format)
+        sheets[key1[0]][0].write(1,service_row,'=SUM('+chr(65+1)+str(2)+':'+chr(65+service_row-1)+str(2)+')',service_cell_format)
+        sheets[key1[0]][0].write(host_row,0,'Total',service_cell_format)
+        sheets[key1[0]][0].write(host_row,1,'=SUM('+chr(65+1)+str(2)+':'+chr(65+1)+str(host_row)+')',service_cell_format)
+
         result = get_service_by_site(key1[0])
         sheets[key1[0]][0].write(host_row+2,0,'Services',cell_format)
         sheets[key1[0]][0].write(host_row+2,1,'Count',cell_format)
@@ -585,8 +597,9 @@ try:
             sheets[key1[0]][0].write(service_row1,0,key2[0],border_format)
             sheets[key1[0]][0].write(service_row1,1,key2[1],border_format)
             service_row1+=1
-        # for key3 in result:
-        #     for key2 in key3:
+
+        sheets[key1[0]][0].write(service_row1,0,'Total',cell_format)
+        sheets[key1[0]][0].write(service_row1,1,'=SUM('+chr(65+1)+str(host_row+3)+':'+chr(65+1)+str(service_row1)+')' ,cell_format)
         sheets[key1[0]].append(service_row1)
         chart = book.add_chart({'type': 'column','subtype':'percent_stacked'})
         for key4 in range(service_row):
@@ -594,7 +607,7 @@ try:
                 continue
             chart.add_series({
                 'values':('='+key1[0]+'!$'+chr(65+key4)+'$2:$'+chr(65+key4)+'$'+str(host_row)),
-                'category':('='+key1[0]+'!$'+chr(66)+'$1'),
+                'categories':('='+key1[0]+'!$'+chr(65)+'$2:$'+chr(65)+'$'+str(host_row)),
                 'name':('='+key1[0]+'!$'+chr(65+key4)+'$1'),
                 'data_labels':{
                     'value':True,
@@ -602,35 +615,21 @@ try:
                 }
             })
         # chart.set_legend({'none': True})
-        chart.set_y_axis({'label_position': 'none'})
+        chart.set_y_axis({'visible':False})
         chart.set_title({'name':key1[0].replace('_',' ')+'(Per Host Alerts)'})
         sheets[key1[0]][0].insert_chart(chr(65+3)+str(host_row+3),chart)
         chart = book.add_chart({'type': 'column'})
         chart.add_series({
             'values':('='+key1[0]+'!$'+chr(66)+'$'+str(host_row+4)+':$'+chr(66)+'$'+str(service_row1)),
-            'category':('='+key1[0]+'!$'+chr(65)+'$'+str(host_row+4)+':$'+chr(65)+'$'+str(service_row1)),
+            'categories':('='+key1[0]+'!$'+chr(65)+'$'+str(host_row+4)+':$'+chr(65)+'$'+str(service_row1)),
             'name':('='+key1[0]+'!$'+chr(66)+'$'+str(host_row+3)),
             'data_labels':{
                 'value':True
             }
         })
-        # chart.set_legend({'none': True})
-        chart.set_y_axis({'label_position': 'none'})
+        chart.set_y_axis({'visible':False})
         chart.set_title({'name':key1[0].replace('_',' ')+' (Services)'})
         sheets[key1[0]][0].insert_chart(chr(65+12)+str(host_row+3),chart)
-        chart = book.add_chart({'type': 'column','subtype':'percent_stacked'})
-        for key4 in range(service_row):
-            if key4==0:
-                continue
-            chart.add_series({
-                'values':('='+key1[0]+'!$'+chr(65+key4)+'$2:$'+chr(65+key4)+'$'+str(host_row)),
-                'category':('='+key1[0]+'!$'+chr(66)+'$1'),
-                'name':('='+key1[0]+'!$'+chr(65+key4)+'$1'),
-                'data_labels':{'value':True}
-            })
-        # chart.set_legend({'none': True})
-        chart.set_y_axis({'label_position': 'none'})
-        sheets[key1[0]][0].insert_chart('E20',chart)
         for key in noc_dict[key1[0].lower().replace(' ','_')]:
             sheet.write(row, 0, key[1],border_format)
             sheet.write(row, 1, key[3],border_format)

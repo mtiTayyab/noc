@@ -1,8 +1,8 @@
 import os
 import xlsxwriter
 from datetime import datetime
-
-path = '.\\alerts\\'
+from miscellaneous import filter_characters
+path = '.\\source\\'
 name_dest = '.\\KDC_Final_Data.xlsx'
 l = os.listdir(path)
 txt_name = []
@@ -90,8 +90,7 @@ final_data = {
     'type':[],
     'from':[],
     'date':[],
-    'site':[],
-    'category':[],
+    'category':[]
 }
 
 for key in range(len(final)):
@@ -100,19 +99,21 @@ for key in range(len(final)):
     final_data['type'].append(_type[key])
     final_data['from'].append(_from[key])
     final_data['date'].append(date[key])
-    final_data['site'] .append('')
-    final_data['category'] .append('')
+    if final[key].lower().__contains__('zabbix'):
+        final_data['category'].append('Zabbix')
+    elif final[key].lower().__contains__('vpn'):
+        final_data['category'].append('VPN')
 
 
-otrs = ['glo nigeria','benin','yemen','swazi mobile','mtn sudan','mtnsudan','ng glo','nigeria','newco bahamas','ivorycoast','zambia','afghanistan','suthsudan','rwanda','']
-for key in range(len(final_data['final'])):
-    flag=0
-    for key1 in otrs:
-        temp = final_data['subject'][key].lower()
-        if (temp.__contains__(key1)):
-            final_data['site'][key] = key1
-            flag = 1
-            break
+# otrs = ['glo nigeria','benin','yemen','swazi mobile','mtn sudan','mtnsudan','ng glo','nigeria','newco bahamas','ivorycoast','zambia','afghanistan','suthsudan','rwanda','']
+# for key in range(len(final_data['final'])):
+#     flag=0
+#     for key1 in otrs:
+#         temp = final_data['subject'][key].lower()
+#         if (temp.__contains__(key1)):
+#             final_data['site'][key] = key1
+#             flag = 1
+#             break
     # if (flag == 0):
     #     for key1 in otrs:
     #         temp = final_data['from'][key].lower()
@@ -132,31 +133,56 @@ for key in range(len(final_data['final'])):
     # else:
     #   flag = 0
 
-site_f = ['MTN_Yemen', 'MTN_Afghanistan', 'MTN_Syria', 'Glo_Nigeria', 'Starlink_Qatar', 'NewCo_Bahamas', 'MTN_Congo',
-     'Gosoft_Thailand', 'DNA_Finland', 'SE_BANK_SYSTEM', 'MTN_Benin', 'MTN_GC', 'MTN_Liberia', 'MTN_Ghana','MTN_South_Sudan', 'Glo_Benin', 'MTN_Zambia', 'MTN_Ivory_Coast', 'MTN_Bissau','Glo_Ghana', 'Swazi_Mobile', 'MTN_Sudan']
+site_f = [' Glo Nigeria',' MTN Afganistan','MTN Benin','MTN IvoryCoast','MTN Nigeria','MTN Rwanda','MTN SouthSudan','MTN Sudan','MTN Yemen','MTN Zambia','NewCo Bahamas','Swazi Mobile']
 
-site_r = ['ye-mtn', 'af-mtn', ['sy-mtn', 'mtn-sy'], 'glo-ng', 'starlink', 'newco', 'mtn-c', 'gosoft', 'dna-finland', 'atm',
- ['bjmtn', 'mtn-benin'], 'gc-mtn', ['mtnliberia','mtn-lib','mtn lib'], 'gh-mtn', ['mtnsouthsudan', 'mtn-southsudan'], 'globenin'
- , ['mtnzambia','mtn zambia','zm'], ['mtnci','ci@mtn'], ['mtnbissau','mtn-gb'], ['gloghana', 'glo-gh'], 'swazimobile', 'sudan-mtn']
-for key in final_data:
-    for key1 in range(len(site_r)):
-        if site_r[key1].__contains__(key[1]):
-            key[1]=site_f[key1]
+otrs = [['glo nigeria','ng glo'],'mtn afganistan','mtn benin','mtn ivorycoast','mtn nigeria','mtn rwanda','mtn southsudan',['mtn sudan','mtnsudan'],'mtn yemen','mtn zambia','newco bahamas','swazi mobile']
 
+# otrs = ['glo nigeria','benin','yemen','swazi mobile','mtn sudan','mtnsudan','ng glo','nigeria','newco bahamas','ivorycoast','zambia','afghanistan','suthsudan','rwanda','']
+
+# site_r = ['ye-mtn', 'af-mtn', ['sy-mtn', 'mtn-sy'], 'glo-ng', 'starlink', 'newco', 'mtn-c', 'gosoft', 'dna-finland', 'atm',
+#  ['bjmtn', 'mtn-benin'], 'gc-mtn', ['mtnliberia','mtn-lib','mtn lib'], 'gh-mtn', ['mtnsouthsudan', 'mtn-southsudan'], 'globenin'
+#  , ['mtnzambia','mtn zambia','zm'], ['mtnci','ci@mtn'], ['mtnbissau','mtn-gb'], ['gloghana', 'glo-gh'], 'swazimobile', 'sudan-mtn']
+for key in range(len(final_data['subject'])):
+    for key1 in range(len(otrs)):
+        if type(otrs[key1]) is list:
+            for key2 in range(len(otrs[key1])):
+                if final_data['subject'][key].lower().__contains__(otrs[key1][key2]):
+                    final_data['type'][key]=site_f[key1]
+                    break
+        else:
+            if final_data['subject'][key].lower().__contains__(otrs[key1]):
+                final_data['type'][key]=site_f[key1]
+                break
 
 
 
 book = xlsxwriter.Workbook(name_dest)
 
 sheet = book.add_worksheet()
+sheet.hide_gridlines(2)
+date_format = book.add_format({'num_format': 'dd/mmm/yy hh:mm:ss'})
+date_format.set_border(style=1)
+border_format = book.add_format()
+border_format.set_border(style=1)
+cell_format = book.add_format({'bg_color':'#000000','font_color':'#FFFFFF'})
+
+format = {
+    'date':date_format,
+    'final':border_format,
+    'subject':border_format,
+    'type':border_format,
+    'from':border_format,
+    'category':border_format,
+    'heading': cell_format
+    }
 
 
 column = 0
 for key in final_data:
     row = 1
-    sheet.write(0, column, key)
+    sheet.write(0, column, key,format['heading'])
     for key1 in range(len(final_data[key])):
-        sheet.write(row,column,final_data[key][key1])
+        sheet.write(row,column,final_data[key][key1],format[key])
         row+=1
 
     column+=1
