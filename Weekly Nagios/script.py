@@ -274,10 +274,22 @@ for key in final_data:
     try:
         noc_dict[key[1].lower().replace(' ','_')].append(key)
     except KeyError:
-        print('Alert Not Added')
         print(key)
-        delete.append(key)
-
+        site_name = input('Enter the site name of the this alert : ')
+        if list(noc_dict.keys()).__contains__(site_name.lower()):
+            noc_dict[site_name.lower().replace(' ', '_')].append(key)
+            key[1] = site_name.lower()
+        elif site_name:
+            print('Enter any of the above:')
+            print(site_f)
+            site_name = input('Enter the site name of the this alert: ')
+            if list(noc_dict.keys()).__contains__(site_name.lower()):
+                noc_dict[site_name.lower().replace(' ', '_')].append(key)
+                key[1] = site_name.lower()
+            else:
+                delete.append(key)
+        else:
+            delete.append(key)
 for key in delete:
     if final_data.__contains__(key):
         final_data.remove(key)
