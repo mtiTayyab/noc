@@ -44,7 +44,7 @@ def get_service_host_by_site(site):
     try:
         db = pymysql.connect(host=host, user=user, password=password, database=database)
         cur = db.cursor()
-        query = "select distinct(host) from nagios_data where site=%s;"
+        query = "select distinct(host) from weekly_nagios_data where site=%s;"
         cur.execute(query,[site])
         hosts = cur.fetchall()
         result = []
