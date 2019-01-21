@@ -5,6 +5,8 @@
       <sourceFolder url="file://$MODULE_DIR$/Weekly KPI" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Weekly KDC" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Monthly KPI" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Weekly Nagios" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/KDC" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

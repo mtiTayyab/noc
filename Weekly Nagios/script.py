@@ -1,13 +1,22 @@
 
 import os
 import xlsxwriter
-from datetime import datetime
+from datetime import datetime,date
 from db import get_site_by_count_desc,store_all_data,delete_data,get_service_host_by_site,get_service_by_site,get_alerts_by_type_and_site,get_alert_by_site,get_alert_by_alert_type,get_alert_by_team
 from miscellaneous import filter_characters
-
+from math import floor
 
 path = '.\\source\\'
-name_dest = '.\\Final_Data.xlsx'
+
+date_s = date.today()
+date_s = floor(date_s.day/10)*10
+if date_s<10:
+    week = 'Week 3'
+elif 10<=date_s<20:
+    week = 'Week 1'
+else:
+    week = 'Week 2'
+name_dest = '.\\Weekly Nagios Report '+week+'.xlsx'
 l = os.listdir(path)
 txt_name = []
 for key in l:
