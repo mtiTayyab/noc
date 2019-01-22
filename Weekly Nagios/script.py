@@ -2,8 +2,7 @@
 import os
 import xlsxwriter
 from datetime import datetime,date
-from db import get_site_by_count_desc,store_all_data,delete_data,get_service_host_by_site,get_service_by_site,get_alerts_by_type_and_site,get_alert_by_site,get_alert_by_alert_type,get_alert_by_team
-from miscellaneous import filter_characters
+from db import get_site_by_count_desc,store_all_data,delete_data,get_service_host_by_site,get_service_by_site,get_alerts_by_type_and_site,get_alert_by_site,get_alert_by_alert_type,get_alert_by_team,filter_characters
 from math import floor
 
 path = '.\\source\\'
@@ -625,9 +624,7 @@ try:
         sheets[key1[0]][0].write(service_row1,1,'=SUM('+chr(65+1)+str(host_row+3)+':'+chr(65+1)+str(service_row1)+')' ,cell_format)
         sheets[key1[0]].append(service_row1)
         chart = book.add_chart({'type': 'column','subtype':'percent_stacked'})
-        for key4 in range(service_row):
-            if key4==0:
-                continue
+        for key4 in range(1,service_row):
             chart.add_series({
                 'values':('='+key1[0]+'!$'+chr(65+key4)+'$2:$'+chr(65+key4)+'$'+str(host_row)),
                 'categories':('='+key1[0]+'!$'+chr(65)+'$2:$'+chr(65)+'$'+str(host_row)),

@@ -2,8 +2,8 @@ import os
 import xlsxwriter
 from math import floor
 from datetime import datetime,date
-from miscellaneous import filter_characters
-from db import store_all_data,delete_all_data,filter_characters
+from db import store_all_data,delete_all_data,filter_characters,get_all_zabix_alerts,get_all_vpn_alerts,get_site_by_count_desc,filter_characters,get_zabix_alerts_by_issue,get_vpn_alerts_by_site
+
 path = '.\\source\\'
 
 date_s = date.today()
@@ -117,11 +117,10 @@ for key in range(len(final)):
         temp.update({'subject': subject[key].split(_type[key])[1]})
     else:
         temp.update({'subject': subject[key]})
-    if final[key].lower().__contains__('zabbix'):
-        temp.update({'category':'Zabbix'})
-
+    if final[key].lower().__contains__('zabbix') or _from[key].lower().__contains__('zabbix'):
+        temp.update({'category':'zabbix'})
     elif final[key].lower().__contains__('vpn'):
-        temp.update({'category':'VPN'})
+        temp.update({'category':'vpn'})
         temp.update({'subject': subject[key]})
     final_data.append(temp)
 
@@ -140,6 +139,24 @@ for key in delete:
 
 site_f = ['Glo Nigeria','MTN Afganistan','MTN Benin','MTN IvoryCoast','MTN Nigeria','MTN Rwanda','MTN SouthSudan','MTN Sudan','MTN Yemen','MTN Zambia','NewCo Bahamas','Swazi Mobile','KDC Data Centre']
 
+noc_dict ={
+    'glo_nigeria': [],
+    'mtn_afganistan': [],
+    'mtn_benin': [],
+    'mtn_ivorycoast': [],
+    'mtn_nigeria': [],
+    'mtn_rwanda': [],
+    'mtn_southsudan': [],
+    'mtn_sudan': [],
+    'mtn_yemen': [],
+    'mtn_zambia': [],
+    'newco_bahamas': [],
+    'swazi_mobile': [],
+    'kdc_data_centre': [],
+    'average':[],
+    'high':[],
+    'information':[]
+}
 otrs = [['glo nigeria','ng glo'],'mtn afganistan','mtn benin','mtn ivorycoast','mtn nigeria','mtn rwanda','mtn southsudan',['mtn sudan','mtnsudan'],'mtn yemen','mtn zambia','newco bahamas','swazi mobile','sds']
 
 for key in final_data:
@@ -154,36 +171,168 @@ for key in final_data:
                 key['site']=site_f[key1]
                 break
 
+for key in final_data:
+    try:
+        noc_dict[key['site'].lower().replace(' ', '_')].append(key)
+    except KeyError:
+        print(key)
+
 book = xlsxwriter.Workbook(name_dest)
 try:
     store_all_data(final_data)
-    sheet = book.add_worksheet()
-    sheet.hide_gridlines(2)
+
     date_format = book.add_format({'num_format': 'dd/mmm/yy hh:mm:ss'})
     date_format.set_border(style=1)
     border_format = book.add_format()
     border_format.set_border(style=1)
-    cell_format = book.add_format({'bg_color':'#000000','font_color':'#FFFFFF'})
-
+    cell_format = book.add_format({'bg_color': '#000000', 'font_color': '#FFFFFF'})
     format = {
-        'date':date_format,
-        'border':border_format,
+        'date': date_format,
+        'border': border_format,
         'heading': cell_format
-        }
+    }
+    sheet0 = book.add_worksheet()
 
-    sheet.write(0,0,'Site/Type', format['heading'])
-    sheet.write(0,1,'Severity',format['heading'])
-    sheet.write(0,2,'Subject',format['heading'])
+
+
+    result = get_all_zabix_alerts()
+    sheet = book.add_worksheet('Zabbix')
+    sheet.hide_gridlines(2)
+
+    sheet.write(0,0,'Severity',format['heading'])
+    sheet.write(0,1,'Types',format['heading'])
+    sheet.write(0,2,'Alerts',format['heading'])
     sheet.write(0,3,'From',format['heading'])
     sheet.write(0,4,'Date',format['heading'])
+
+    row = 1
+    for key in result:
+        sheet.write(row, 0, key[0], format['border'])
+        sheet.write(row, 1, key[1], format['border'])
+        sheet.write(row, 2, key[2], format['border'])
+        sheet.write(row, 3, key[3], format['border'])
+        sheet.write(row, 4, key[4], format['date'])
+        row += 1
+
+
+    result = get_zabix_alerts_by_issue()
+
+    sheet = book.add_worksheet('Zabbix_Graph')
+    sheet.hide_gridlines(2)
+    severity = {}
+    issue = {}
+    severity_row = 1
+    issue_row = 1
+    sheet.write(0, 0, 'Issue/Severity', format['heading'])
+    for key in result:
+        if not severity.__contains__(key[0]):
+            severity.update({key[0]: severity_row})
+            sheet.write(severity_row, 0, key[0],format['border'])
+            severity_row += 1
+        if not issue.__contains__(key[1]):
+            issue.update({key[1]: issue_row})
+            sheet.write(0, issue_row, key[1],format['heading'])
+            issue_row += 1
+        sheet.write(severity[key[0]],issue[key[1]], key[2])
+
+    sheet.write(severity_row,0,'Total',format['heading'])
+    sheet.write(severity_row,1,'=SUM('+chr(65+1)+str(2)+':'+chr(65+1)+str(severity_row)+')',format['heading'])
+    sheet.write(0,issue_row,'Grand Total',format['heading'])
+    sheet.write(1,issue_row,'=SUM('+chr(65+1)+str(2)+':'+chr(65+issue_row-1)+str(2)+')',format['border'])
+
+    chart = book.add_chart({'type':'bar'})
+    for key2 in range(1,issue_row):
+        chart.add_series({
+            'values':('=Zabbix_Graph!$'+chr(65+key2)+'$2:$'+chr(65+key2)+'$'+str(severity_row)),
+            'name':('=Zabbix_Graph!$'+chr(65+key2)+'$1'),
+            'categories':('=Zabbix_Graph!$A$2:$A$'+str(severity_row)),
+            'data_labels':{
+                'value':True,
+                'font':{
+                    'color':'#000000'
+                }
+            }
+        })
+    sheet.insert_chart('G8',chart)
+
+
+
+
+
+
+
+
+
+
+    result = get_all_vpn_alerts()
+    sheet = book.add_worksheet('Root')
+    sheet.hide_gridlines(2)
+
+    sheet.write(0,0,'Site',format['heading'])
+    sheet.write(0,1,'Issue',format['heading'])
+    sheet.write(0,2,'From',format['heading'])
+    sheet.write(0,3,'Date',format['heading'])
+
+    row = 1
+    for key in result:
+        sheet.write(row, 0, key[0], format['border'])
+        sheet.write(row, 1, key[1], format['border'])
+        sheet.write(row, 2, key[2], format['border'])
+        sheet.write(row, 3, key[3], format['date'])
+        row += 1
+
+
+
+    result = get_vpn_alerts_by_site()
+    sheet = book.add_worksheet('Root_Graph')
+    sheet.hide_gridlines(2)
+
+    sheet.write(0, 0, 'Sites', format['heading'])
+    sheet.write(0, 1, 'Count', format['heading'])
+
+    row = 1
+    for key in result:
+        sheet.write(row, 0, key[0], format['border'])
+        sheet.write(row, 1, key[1], format['border'])
+        row += 1
+
+    sheet.write(row,0,'Total',format['heading'])
+    sheet.write(row,1,'=SUM(Root_Graph!$B$'+str(1)+':$B'+str(row)+')',format['heading'])
+
+    chart = book.add_chart({'type':'bar'})
+
+    chart.add_series({
+        'values':('=Root_Graph!$B$2:$B$'+str(row)),
+        'name':('=Root_Graph!$B$1'),
+        'categories':('=Root_Graph!$A$2:$A$'+str(row)),
+        'data_labels':{
+            'value':True,
+            'font':{
+                'color':'#000000'
+            }
+        }
+    })
+    sheet.insert_chart('D5',chart)
+
+
+
+    sheet0.hide_gridlines(2)
+
+    sheet0.write(0,0,'Site/Type', format['heading'])
+    sheet0.write(0,1,'Severity',format['heading'])
+    sheet0.write(0,2,'Subject',format['heading'])
+    sheet0.write(0,3,'From',format['heading'])
+    sheet0.write(0,4,'Date',format['heading'])
     row=1
-    for key in final_data:
-        sheet.write(row,0,key['site'],format['border'])
-        sheet.write(row,1,key['type'],format['border'])
-        sheet.write(row,2,filter_characters(key['subject']),format['border'])
-        sheet.write(row,3,key['from'],format['border'])
-        sheet.write(row,4,key['date'],format['date'])
-        row+=1
+    site_list = get_site_by_count_desc()
+    for key1 in site_list:
+        for key in noc_dict[key1[0].lower().replace(' ','_')]:
+            sheet0.write(row,0,key['site'],format['border'])
+            sheet0.write(row,1,key['type'],format['border'])
+            sheet0.write(row,2,filter_characters(key['subject']),format['border'])
+            sheet0.write(row,3,key['from'],format['border'])
+            sheet0.write(row,4,key['date'],format['date'])
+            row+=1
 
 
 finally:
