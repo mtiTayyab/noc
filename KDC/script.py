@@ -253,15 +253,8 @@ try:
                 }
             }
         })
+    chart.set_x_axis({'visible': False})
     sheet.insert_chart('G8',chart)
-
-
-
-
-
-
-
-
 
 
     result = get_all_vpn_alerts()
@@ -312,6 +305,7 @@ try:
             }
         }
     })
+    chart.set_x_axis({'visible': False})
     sheet.insert_chart('D5',chart)
 
 

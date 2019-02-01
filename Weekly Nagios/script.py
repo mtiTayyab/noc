@@ -277,7 +277,7 @@ for key in final_data:
         site_name = input('Enter the site name of the this alert : ')
         if list(noc_dict.keys()).__contains__(site_name.lower()):
             noc_dict[site_name.lower().replace(' ', '_')].append(key)
-            key[1] = site_name.lower()
+            key[1] = site_name
             print('Alert Added')
         elif site_name:
             print('Enter any of the above:')
@@ -664,4 +664,4 @@ finally:
     # try:
     book.close()
     delete_data()
-f = input(' Enter to close.')
+input(' Enter to close.')
