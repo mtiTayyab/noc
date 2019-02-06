@@ -1,16 +1,24 @@
 import xlsxwriter
-import openpyxl
+from datetime import date,datetime
+from math import floor
 import csv
+from db import delete_all_data,store_all_data,get_alerts_by_sla,get_alerts_by_state,get_alerts_by_priority,get_alerts_by_type,get_alerts_by_severity,get_alerts_by_owner
 
 
-
-name_dest = 'Monthly KPI Repo rt.xlsx'
+date_s = date.today()
+date_s = floor(date_s.day/10)*10
+if date_s<10:
+    week = 'Week 3'
+elif 10<=date_s<20:
+    week = 'Week 1'
+else:
+    week = 'Week 2'
+name_dest = '.\\Monthly KPI  Report '+week+'.xlsx'
 csv_reader, file_flag = 0,0
 while file_flag==0:
     try:
-
         # file = input('Enter the path or name of you file: ')
-        file = 'NOC_Created_2018-10-01_16-28.csv'
+        file = 'test2.csv'
         data_file = open(file=file)
         csv_reader = csv.reader(data_file,delimiter=',')
         file_flag=1
@@ -20,50 +28,282 @@ while file_flag==0:
         print('Enter a Valid Path or Name.')
 
 
-data={}
+data=[]
 flag = 0
 header = []
 for key in csv_reader:
+    temp = {}
     if flag ==0:
         for key1 in key:
-            header.append(key1)
-            data.update({key1:[]})
+            header.append(key1.lower())
         flag=1
         continue
     for key1 in range(len(key)):
-            data[header[key1]].append(key[key1])
+        if key[key1].__contains__('-') and key[key1].__contains__(':'):
+            temp2 = key[key1].split('-')
+            try:
+                temp1 = datetime(day=int(temp2[0]),month=int(temp2[1]),year=int('20'+temp2[2].split()[0]),hour=int(temp2[2].split(':')[0].split()[1]),minute=int(temp2[2].split(':')[1]))
+                temp.update({header[key1]:temp1})
+            except:
+                temp.update({header[key1]:key[key1]})
+        else:
+            temp.update({header[key1]:key[key1]})
+    data.append(temp)
 
-ignore = ['Number','CustomerID','FirstResponseTimeWorkingTime','FirstResponseTime','Impact','Review Required','Decision Result','Decision Date','Due Date']
-for key in ignore:
-    data.__delitem__(key)
+ignore = ['number','customerid','firstresponsetimeworkingtime','firstresponsetime','impact','review required','decision result','decision date','due date']
+for key in data:
+    for key1 in ignore:
+        key.__delitem__(key1)
 
+service = {
+    'atm': 'Gold',
+    'gloghana': 'Gold',
+    'glonigeria': 'Gold',
+    'gosoft': 'Gold',
+    'mtnaf': 'Platinum',
+    'mtnbenin': 'Platinum',
+    'mtnci': 'Platinum',
+    'mtncongob': 'Platinum',
+    'mtngc': 'Gold',
+    'mtnghana': 'Platinum',
+    'mtnliberia': 'Silver',
+    'mtnsouthsudan': 'Gold',
+    'mtnsyria': 'Platinum',
+    'mtnye': 'Platinum',
+    'mtnzambia': 'Platinum',
+    'newcobahamas': 'Platinum',
+    'other': 'Others',
+    'starlink': 'Gold',
+    'swazimobile': 'Platinum',
+    'mtnbissau': 'Platinum',
+    'mtnsudan' : 'Platinum'
+}
+sites = {
+    'atm' : 'Sweden ATM',
+    'gloghana' : 'Glo Ghana',
+    'glonigeria' : 'Glo Nigeria',
+    'gosoft' : 'Gosoft Thailand',
+    'mtnaf' : 'MTN Afghanistan',
+    'mtnbenin' : 'MTN Benin',
+    'mtnci' : 'MTN Ivory Coast',
+    'mtncongob' : 'MTN Congo',
+    'mtngc' : 'MTN GC',
+    'mtnghana' : 'MTN Ghana',
+    'mtnliberia' : 'MTN Liberia',
+    'mtnsouthsudan' : 'MTN South Sudan',
+    'mtnsyria' : 'MTN Syria',
+    'mtnye' : 'MTN Yemen',
+    'mtnzambia' : 'MTN Zambia',
+    'newcobahamas' : 'Newco Bahamas',
+    'other' : 'Others',
+    'starlink' : 'Starlink Qatar',
+    'swazimobile' : 'Swazi Mobile',
+    'mtnbissau' : 'MTN Bissau',
+    'mtnsudan' : 'MTN Sudan'
+}
 
-for key in range(len(data['Ticket#'])):
-    data['Queue'][key]=data['Queue'][key].split(':')[-1]
+delete = []
+for key in data:
+    if key['queue'].split(':')[-1].lower().__contains__('inbox'):
+        key['queue']= 'other'
+        key['customer origin'] = sites['other']
+    else:
+        key['queue'] = key['queue'].split(':')[-1].lower().replace(' ','')
+        if key['queue']=='it':
+            delete.append(key)
+        else:
+            key['customer origin'] = sites[key['queue']]
+    try:
+        key['service'] = service[key['queue']] + ' SLA'
+        key['sla'] = service[key['queue']]
+    except:
+        if not delete.__contains__(key):
+            print(key['ticket#']+'Not Added')
+    key['severity'] = key['priority']
 
 
 book = xlsxwriter.Workbook(name_dest)
+try:
+    store_all_data(data,delete)
+    sheet0 = book.add_worksheet(name='Data')
+    format = {
+            'number': book.add_format({'num_format':'0','align':'center','border':1}),
+            'border': book.add_format({'align':'center','border':1}),
+            'heading': book.add_format({'bg_color': '#000000','align':'center', 'font_color': '#FFFFFF'}),
+            'date': book.add_format({'num_format':'dd/mmm/yy hh:mm','border':1})
+        }
+    sheet = book.add_worksheet(name='State')
+    sheet.hide_gridlines(2)
 
-sheet = book.add_worksheet(name='Data')
-
-
-col =0
-header = {}
-for key in list(data.keys()):
-    sheet.write(0,col,key)
-    header.update({key:col})
-    col+=1
-
-row = 1
-for key in range(len(data['Ticket#'])):
-    for key1 in list(header.keys()):
-        try:
-            sheet.write(row,header[key1],int(data[key1][key]))
-        except ValueError:
-            sheet.write(row,header[key1],data[key1][key])
-    print(key)
-    row+=1
+    result = get_alerts_by_state()
+    sheet.write(0,0,'States',format['heading'])
+    sheet.write(0,1,'Count',format['heading'])
+    row = 1
+    for key in result:
+        sheet.write(row, 0, key[0], format['border'])
+        sheet.write(row, 1, key[1], format['border'])
+        row+=1
+    sheet.write(row,0,'Total',format['heading'])
+    sheet.write(row,1,'=SUM($B$2:$B$'+str(row   )+')',format['heading'])
 
 
 
-book.close()
+    sheet = book.add_worksheet(name='Priority')
+    sheet.hide_gridlines(2)
+
+    result = get_alerts_by_priority()
+    sheet.write(0,0,'Priority',format['heading'])
+    sheet.write(0,1,'Count',format['heading'])
+    row = 1
+    for key in result:
+        sheet.write(row, 0, key[0], format['border'])
+        sheet.write(row, 1, key[1], format['border'])
+        row+=1
+    sheet.write(row,0,'Total',format['heading'])
+    sheet.write(row,1,'=SUM($B$2:$B$'+str(row)+')',format['heading'])
+
+
+    sheet = book.add_worksheet(name='SLA')
+    sheet.hide_gridlines(2)
+
+    result = get_alerts_by_sla()
+    sheet.write(0,0,'SLA Labels',format['heading'])
+    sheet.write(0,1,'Count',format['heading'])
+    row = 1
+    for key in result:
+        sheet.write(row, 0, key[0], format['border'])
+        sheet.write(row, 1, key[1], format['border'])
+        row+=1
+    sheet.write(row,0,'Total',format['heading'])
+    sheet.write(row,1,'=SUM($B$2:$B$'+str(row)+')',format['heading'])
+
+
+    sheet = book.add_worksheet(name='Type')
+    sheet.hide_gridlines(2)
+
+    result = get_alerts_by_type()
+    sheet.write(0,0,'Type Lables',format['heading'])
+    sheet.write(0,1,'Count',format['heading'])
+    row = 1
+    for key in result:
+        sheet.write(row, 0, key[0], format['border'])
+        sheet.write(row, 1, key[1], format['border'])
+        row+=1
+    sheet.write(row,0,'Total',format['heading'])
+    sheet.write(row,1,'=SUM($B$2:$B$'+str(row)+')',format['heading'])
+
+    sheet = book.add_worksheet(name='Severity')
+    sheet.hide_gridlines(2)
+
+    result = get_alerts_by_severity()
+    sheet.write(0,0,'Type Lables',format['heading'])
+    sheet.write(0,1,'Count',format['heading'])
+    row = 1
+    for key in result:
+        sheet.write(row, 0, key[0], format['border'])
+        sheet.write(row, 1, key[1], format['border'])
+        row+=1
+    sheet.write(row,0,'Total',format['heading'])
+    sheet.write(row,1,'=SUM($B$2:$B$'+str(row)+')',format['heading'])
+
+
+
+
+
+    agents = {
+        'noc': 'NOC',
+        'nouman': 'Nouman',
+        'abdullah': 'Abdullah',
+        'arslan': 'Arslan',
+        'mohsin': 'Mohsin',
+        'samuel': 'Samuel',
+        'latifa': 'Queen',
+        'prince': 'Prince',
+        'essien': 'Essien',
+        'dine': 'Dine',
+        'zeeshan': 'Zeeshan',
+        'duchet': 'Duchet',
+        'omer': 'Omer',
+        'salahuddin': 'Salahuddin',
+        'yapo': 'Yapo',
+        'nadeem': 'Nadeem',
+        'ahmed': 'Ahmed',
+        'ayyaz': 'Ayyaz',
+        'ahsan': 'Ahsan',
+        'michael': 'Michael',
+        'peter': 'Peter',
+        'omair': 'Omair',
+        'barun': 'Barun',
+        'emmanuel': 'Emmanuel',
+        'amarendra': 'Amarendra',
+        'debadrita': 'Debadrita',
+    }
+
+
+    sheet = book.add_worksheet(name='Agent Owner')
+    sheet.hide_gridlines(2)
+
+    result = list(get_alerts_by_owner())
+    sheet.write(0,0,'Type Lables',format['heading'])
+    sheet.write(0,1,'Count',format['heading'])
+    row = 1
+    for key in result:
+        key = list(key)
+        for key1 in agents:
+            if key[0].lower().__contains__(key1):
+                key[0] = agents[key1]
+        sheet.write(row, 0, key[0], format['border'])
+        sheet.write(row, 1, key[1], format['border'])
+        row+=1
+    sheet.write(row,0,'Total',format['heading'])
+    sheet.write(row,1,'=SUM($B$2:$B$'+str(row)+')',format['heading'])
+
+
+
+
+
+
+
+
+    sheet0.hide_gridlines(2)
+    col =0
+    header = {}
+    for key in list(data[0].keys()):
+        temp = ''
+        if key=='sla':
+            temp='SLA'
+        elif key=='firstresponse':
+            temp='First Response'
+        elif key=='solutiontime':
+            temp='Solution Time'
+        elif key=='agent/owner':
+            temp='Agent/Owner'
+        else:
+            for key1 in key.split():
+                temp += ' '+key1[0].upper() + key1[1:]
+        if key.lower().__contains__('queue'):
+            sheet0.write(0,len(list(data[0].keys()))-1,temp,format['heading'])
+            header.update({key:len(list(data[0].keys()))-1})
+        else:
+            sheet0.write(0,col,temp,format['heading'])
+            header.update({key:col})
+            col+=1
+
+    row = 1
+    for key in data:
+        if not delete.__contains__(key):
+            for key1 in header:
+                try:
+                    if type(key[key1]) is datetime:
+                        sheet0.write(row,header[key1],key[key1],format['date'])
+                    else:
+                        sheet0.write(row,header[key1],int(key[key1]),format['number'])
+                except:
+                    sheet0.write(row,header[key1],key[key1],format['border'])
+            # print(key)
+            row+=1
+
+
+finally:
+    # delete_all_data()
+    book.close()
