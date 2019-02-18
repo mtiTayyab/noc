@@ -6,12 +6,16 @@
       <sourceFolder url="file://$MODULE_DIR$/Weekly KDC" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Monthly KPI" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Weekly Nagios" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/KDC" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/KDC/source" isTestSource="false" />
+      <excludeFolder url="file://$MODULE_DIR$/venv" />
     </content>
-    <orderEntry type="inheritedJdk" />
+    <orderEntry type="jdk" jdkName="Python 3.7 (NOC)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="R User Library" level="project" />
     <orderEntry type="library" name="R Skeletons" level="application" />
+  </component>
+  <component name="PyDocumentationSettings">
+    <option name="renderExternalDocumentation" value="true" />
   </component>
   <component name="TestRunnerService">
     <option name="PROJECT_TEST_RUNNER" value="Unittests" />
