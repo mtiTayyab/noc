@@ -186,11 +186,11 @@ book = xlsxwriter.Workbook(name_dest)
 try:
     store_all_data(final_data,delete)
 
-    date_format = book.add_format({'num_format': 'dd/mmm/yy hh:mm:ss'})
+    date_format = book.add_format({'num_format': 'dd/mmm/yy hh:mm:ss', 'align': 'center'})
     date_format.set_border(style=1)
-    border_format = book.add_format()
+    border_format = book.add_format({'align': 'center'})
     border_format.set_border(style=1)
-    cell_format = book.add_format({'bg_color': '#000000', 'font_color': '#FFFFFF'})
+    cell_format = book.add_format({'bg_color': '#000000', 'font_color': '#FFFFFF', 'align': 'center'})
     formats = {
         'date': date_format,
         'border': border_format,

@@ -343,11 +343,11 @@ try:
     sheet = book.add_worksheet()
 
     # Defining all the formats needed in the script
-    cell_format = book.add_format()
-    border_format = book.add_format()
+    cell_format = book.add_format({'align': 'center'})
+    border_format = book.add_format({ 'align': 'center'})
     border_format.set_border(style=1)
-    service_cell_format = book.add_format()
-    date_format = book.add_format({'num_format':'dd/mmm/yy hh:mm:ss'})
+    service_cell_format = book.add_format({'align': 'center'})
+    date_format = book.add_format({'num_format':'dd/mmm/yy hh:mm:ss', 'align': 'center'})
     date_format.set_border(style=1)
     cell_format.set_bg_color('#000000')
     service_cell_format.set_bg_color('#8db4e2')
