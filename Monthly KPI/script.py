@@ -18,8 +18,8 @@ name_dest = 'Monthly KPI Report ' + week + '.xlsx'
 file, file_flag = 0, 0
 while file_flag == 0:
     try:
-        # file = input('Enter the path or name of you file: ')
-        file = 'Monthly KPI Data Week 1.xlsx'
+        file = input('Enter the path or name of you file: ')
+        # file = 'Monthly KPI Data Week 1.xlsx'
         # if file.__contains__('\\'):
         #     file = file.replace('\\','\\\\')
         book = openpyxl.load_workbook(filename=file)
