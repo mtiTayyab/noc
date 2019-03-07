@@ -36,7 +36,7 @@ for key in txt_name:
         else:
             flag=1
             # os.remove(path + key)
-    elif (data.__contains__('Service:') and data.__contains__('Host:') and data.__contains__('State:')):
+    elif (data.__contains__('Service:') or (data.__contains__('Host:') and data.__contains__('State:'))):
             final.append(key)
     else:
         flag=1
