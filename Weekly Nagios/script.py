@@ -5,7 +5,7 @@ from datetime import datetime,date
 from db import get_site_by_count_desc,store_all_data,delete_data,get_service_host_by_site,get_service_by_site,get_alerts_by_type_and_site,get_alert_by_site,get_alert_by_alert_type,get_alert_by_team,filter_characters
 from math import floor
 
-path = '.\\source\\'
+path = './/source//'
 
 date_s = date.today()
 date_s = floor(date_s.day/10)*10
@@ -15,7 +15,7 @@ elif 10<=date_s<20:
     week = 'Week 1'
 else:
     week = 'Week 2'
-name_dest = '.\\Weekly Nagios Report '+week+'.xlsx'
+name_dest = './/Weekly Nagios Report '+week+'.xlsx'
 l = os.listdir(path)
 txt_name = []
 for key in l:
@@ -90,11 +90,21 @@ for key in range(len(final)):
             service.append(t)
             serv_f = True
         if (key1.__contains__('Host:') and h_f is False) :
-            # t = key1.replace('Host:', '')
-            t = key1.split('Host:')[1].split('State:')[0]
-            t = filter_characters(t)
-            host.append(t)
-            h_f = True
+            if key1.lower().__contains__('se-bank-system') and key1.lower().__contains__('atm'):
+                t = key1.split('Host:')[1].split('State:')[0]
+                t = t.split()
+                t[0] = filter_characters(t[0])
+                t[1] = filter_characters(t[1])
+                host.append(t[0])
+                service.append(t[1])
+                h_f = True
+                serv_f = True
+            else:
+                # t = key1.replace('Host:', '')
+                t = key1.split('Host:')[1].split('State:')[0]
+                t = filter_characters(t)
+                host.append(t)
+                h_f = True
         if (key1.__contains__('Address:') and a_f is False):
             t = key1.replace('Address:', '')
             t = filter_characters(t)
