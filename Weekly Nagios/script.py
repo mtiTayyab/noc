@@ -89,7 +89,7 @@ for key in range(len(final)):
                 t = filter_characters(t)
             service.append(t)
             serv_f = True
-        if (key1.__contains__('Host:') and h_f is False) :
+        if key1.__contains__('Host:') and h_f is False:
             if key1.lower().__contains__('se-bank-system') and key1.lower().__contains__('atm'):
                 t = key1.split('Host:')[1].split('State:')[0]
                 t = t.split()
@@ -97,6 +97,16 @@ for key in range(len(final)):
                 t[1] = filter_characters(t[1])
                 host.append(t[0])
                 service.append(t[1])
+                h_f = True
+                serv_f = True
+            elif key1.lower().__contains__('mtnz'):
+                t = key1.split('Host:')[1].split('State:')[0]
+                t = filter_characters(t)
+                t = filter_characters(t)
+                host.append(t)
+                t = key1.split('MTNZ:')[1].split('Host:')[0]
+                t = filter_characters(t)
+                service.append(t)
                 h_f = True
                 serv_f = True
             else:
@@ -224,6 +234,15 @@ for key in final_data:
                     key[1] = key1
                     flag = 1
                     break
+            if(flag == 0):
+                for key1 in otrs:
+                    temp = key[4].lower()
+                    if (temp.__contains__(key1)):
+                        key[1] = key1
+                        flag = 1
+                        break
+            else:
+                flag = 0
         else:
             flag = 0
     else:
