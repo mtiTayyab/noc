@@ -217,7 +217,7 @@ otrs = ['ye-mtn', 'af-mtn', 'sy-mtn', 'glo-ng', 'starlink', 'newco', 'mtn-c', 'g
         'gc-mtn', 'mtnliberia', 'gh-mtn', 'telecelBF', 'mtnsouthsudan', 'globenin', 'Datora', 'mtnzambia', 'mtnci',
         'mtnbissau', 'gloghana', 'glo-gh', 'swazimobile', 'mtn-gb', 'mtn-benin', 'mtn-sy', 'mtn zambia',
         'mtn-southsudan', 'sudan-mtn', 'ci@mtn', 'mtn-lib', 'mtn lib', 'zm', 'lr mtn', 'syria', 'banksystem', 'mtnz',
-        'evdnms', 'et sdt', 'mtnrw evd', 'mtnnevd', 'evd.ss', 'mtn-esw', 'mtnng', 'mtnrw']
+        'evdnms', 'et sdt', 'mtnrw evd', 'mtnnevd', 'evd.ss', 'mtn-esw', 'mtnng', 'mtnrw', 'expressotelecom']
 
 flag = 0
 for key in final_data:
@@ -268,7 +268,7 @@ for key in final_data:
 site_f = ['MTN_Yemen', 'MTN_Afghanistan', 'MTN_Syria', 'Glo_Nigeria', 'Starlink_Qatar', 'NewCo_Bahamas', 'MTN_Congo',
           'Gosoft_Thailand', 'DNA_Finland', 'SE_BANK_SYSTEM', 'MTN_Benin', 'MTN_GC', 'MTN_Liberia', 'MTN_Ghana',
           'MTN_South_Sudan', 'Glo_Benin', 'MTN_Zambia', 'MTN_Ivory_Coast', 'MTN_Bissau', 'Glo_Ghana', 'Eswatini_Mobile',
-          'MTN_Sudan', 'SDT_Ethiopia', 'MTN_Rwanda', 'MTN_Nigeria', 'MTN_Eswatini']
+          'MTN_Sudan', 'SDT_Ethiopia', 'MTN_Rwanda', 'MTN_Nigeria', 'MTN_Eswatini', 'Expresso_Senegal']
 
 site_r = ['ye-mtn', 'af-mtn',
           ['sy-mtn', 'mtn-sy', 'syria'],
@@ -286,7 +286,7 @@ site_r = ['ye-mtn', 'af-mtn',
           ['gloghana', 'glo-gh', 'evdnms'],
           'swazimobile', 'sudan-mtn', 'et sdt',
           ['mtnrw evd', 'mtnrw'],
-          ['mtnnevd', 'mtnng'], 'mtn-esw']
+          ['mtnnevd', 'mtnng'], 'mtn-esw', 'expressotelecom']
 for key in final_data:
     for key1 in range(len(site_r)):
         if site_r[key1].__contains__(key[1]):
