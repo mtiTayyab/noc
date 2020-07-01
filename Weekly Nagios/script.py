@@ -321,6 +321,7 @@ noc_dict = {
     'sdt_ethiopia': [],
     'mtn_nigeria': [],
     'mtn_eswatini': [],
+    'expresso_senegal': [],
     'critical': [],
     'warning': [],
     'unknown': []
