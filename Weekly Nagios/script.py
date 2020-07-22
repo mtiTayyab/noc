@@ -218,15 +218,15 @@ otrs = ['ye-mtn', 'af-mtn', 'sy-mtn', 'glo-ng', 'starlink', 'newco', 'mtn-c', 'g
         'mtnbissau', 'gloghana', 'glo-gh', 'swazimobile', 'mtn-gb', 'mtn-benin', 'mtn-sy', 'mtn zambia',
         'mtn-southsudan', 'sudan-mtn', 'ci@mtn', 'mtn-lib', 'mtn lib', 'zm', 'lr mtn', 'syria', 'banksystem', 'mtnz',
         'evdnms', 'et sdt', 'mtnrw evd', 'mtnnevd', 'evd.ss', 'mtn-esw', 'mtnng', 'mtnrw', 'expressotelecom', 'zain-iraq', 'zain-ksa', 'tashicell',
-        'btcl', 'ooa-drc']
+        'btcl', 'ooa-drc', 'indosat']
 
 flag = 0
 for key in final_data:
     flag = 0
 
-    #if key[0].lower().__contains__("-sms from mtn-"):
-     #   key[1] = "mtnbissau"
-     #   flag = 1
+    # if key[0].lower().__contains__("-sms from mtn-"):
+    #   key[1] = "mtnbissau"
+    #   flag = 1
 
     if key[0].lower().__contains__("-sms from evd-") or key[0].lower().__contains__("-sms from 761665-"):
         key[1] = "mtn lib"
@@ -270,7 +270,7 @@ site_f = ['MTN_Yemen', 'MTN_Afghanistan', 'MTN_Syria', 'Glo_Nigeria', 'Starlink_
           'Gosoft_Thailand', 'DNA_Finland', 'SE_BANK_SYSTEM', 'MTN_Benin', 'MTN_GC', 'MTN_Liberia', 'MTN_Ghana',
           'MTN_South_Sudan', 'Glo_Benin', 'MTN_Zambia', 'MTN_Ivory_Coast', 'MTN_Bissau', 'Glo_Ghana', 'Eswatini_Mobile',
           'MTN_Sudan', 'SDT_Ethiopia', 'MTN_Rwanda', 'MTN_Nigeria', 'MTN_Eswatini', 'Expresso_Senegal', 'Zain_Iraq', 'Zain_KSA', 'Tashicell', 'BTCL',
-          'OOA_DRC']
+          'OOA_DRC', 'Indosat']
 
 site_r = ['ye-mtn', 'af-mtn',
           ['sy-mtn', 'mtn-sy', 'syria'],
@@ -288,7 +288,7 @@ site_r = ['ye-mtn', 'af-mtn',
           ['gloghana', 'glo-gh', 'evdnms'],
           'swazimobile', 'sudan-mtn', 'et sdt',
           ['mtnrw evd', 'mtnrw'],
-          ['mtnnevd', 'mtnng'], 'mtn-esw', 'expressotelecom', 'zain-iraq', 'zain-ksa', 'tashicell', 'btcl', 'ooa-drc']
+          ['mtnnevd', 'mtnng'], 'mtn-esw', 'expressotelecom', 'zain-iraq', 'zain-ksa', 'tashicell', 'btcl', 'ooa-drc', 'indosat']
 for key in final_data:
     for key1 in range(len(site_r)):
         if site_r[key1].__contains__(key[1]):
@@ -329,6 +329,7 @@ noc_dict = {
     'tashicell': [],
     'btcl': [],
     'ooa_drc': [],
+    'indosat': [],
     'critical': [],
     'warning': [],
     'unknown': []
@@ -353,7 +354,7 @@ for key in final_data:
             delete.append(key)
             continue
 
-        #if key[0].lower().__contains__("-sms from mtnrw-"):
+        # if key[0].lower().__contains__("-sms from mtnrw-"):
         #    delete.append(key)
         #    continue
 

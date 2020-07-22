@@ -34,7 +34,9 @@ def store_all_data(data):
 
     lahore = ['mtn_yemen', 'mtn_afghanistan', 'mtn_syria', 'glo_nigeria', 'starlink_qatar', 'newco_bahamas', 'mtn_sudan', 'sdt_ethiopia']
     kolkata = ['gosoft_thailand', 'dna_finland', 'se_bank_system']
-    accra = ['mtn_congo', 'mtn_ghana', 'mtn_south_sudan', 'mtn_benin', 'glo_benin', 'mtn_zambia', 'mtn_ivory_coast', 'mtn_bissau', 'glo_ghana', 'swazi_mobile', 'mtn_rwanda', 'mtn_nigeria', 'expresso_senegal']
+    accra = ['mtn_congo', 'mtn_ghana', 'mtn_south_sudan', 'mtn_benin', 'glo_benin', 'mtn_zambia', 'mtn_ivory_coast', 'mtn_bissau', 'glo_ghana', 'swazi_mobile', 'mtn_rwanda', 'mtn_nigeria',
+             'expresso_senegal']
+    romania = ['tashicell', 'btcl', 'ooa_drc', 'indosat']
     team = ''
     for key in data:
         if lahore.__contains__(key[1].lower()):
@@ -43,6 +45,8 @@ def store_all_data(data):
             team = 'OPS Accra'
         if kolkata.__contains__(key[1].lower()):
             team = 'OPS Kolkata'
+        if romania.__contains__(key[1].lower()):
+            team = 'OPS Romania'
         cur.execute(
             "INSERT INTO weekly_nagios_data(site,service,alert_type,alert,host,address,alert_date,team) values(%s,%s,%s,%s,%s,%s,%s,%s);",
             [key[1], key[3], key[6], filter_characters(key[0]), key[4], key[5], key[7], team])
