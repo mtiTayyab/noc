@@ -32,11 +32,13 @@ def store_all_data(data):
     db = pymysql.connect(host='192.168.1.220', user='root', password='refill', db='noc_db')
     cur = db.cursor()
 
-    lahore = ['mtn_yemen', 'mtn_afghanistan', 'mtn_syria', 'glo_nigeria', 'starlink_qatar', 'newco_bahamas', 'mtn_sudan', 'sdt_ethiopia']
+    lahore = ['mtn_yemen', 'mtn_afghanistan', 'mtn_syria', 'glo_nigeria', 'starlink_qatar', 'newco_bahamas',
+              'mtn_sudan', 'sdt_ethiopia']
     kolkata = ['gosoft_thailand', 'dna_finland', 'se_bank_system']
-    accra = ['mtn_congo', 'mtn_ghana', 'mtn_south_sudan', 'mtn_benin', 'glo_benin', 'mtn_zambia', 'mtn_ivory_coast', 'mtn_bissau', 'glo_ghana', 'swazi_mobile', 'mtn_rwanda', 'mtn_nigeria',
+    accra = ['mtn_congo', 'mtn_ghana', 'mtn_south_sudan', 'mtn_benin', 'glo_benin', 'mtn_zambia', 'mtn_ivory_coast',
+             'mtn_bissau', 'glo_ghana', 'swazi_mobile', 'mtn_rwanda', 'mtn_nigeria',
              'expresso_senegal']
-    romania = ['tashicell', 'btcl', 'ooa_drc', 'indosat']
+    romania = ['tashicell', 'btcl', 'ooa_drc', 'indosat', 'ooa-pr']
     team = ''
     for key in data:
         if lahore.__contains__(key[1].lower()):
