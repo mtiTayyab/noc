@@ -2,4 +2,5 @@ git_status.bat
 git_pull.bat
 __pycache__/
 Weekly Nagios/source/
-.idea/
+.idea
+/Weekly Nagios/exclude/
