@@ -41,7 +41,6 @@ for key in txt_name:
         final.append(key)
     else:
         flag = 1
-        # os.remove(path + key)
     if not data_f._checkClosed():
         data_f.close()
         if flag == 1:
@@ -206,6 +205,10 @@ for key in final_data:
         delete.append(key)
     if key[4].lower().__contains__('server 25'):
         delete.append(key)
+    if key[3].lower().__contains__('current'):
+        delete.append(key)
+    if key[3].lower().__contains__('total'):
+        delete.append(key)
     if key[1].lower().__contains__(' local '):
         delete.append(key)
 
@@ -218,7 +221,7 @@ otrs = ['ye-mtn', 'af-mtn', 'sy-mtn', 'glo-ng', 'starlink', 'newco', 'mtn-c', 'g
         'mtnbissau', 'gloghana', 'glo-gh', 'swazimobile', 'mtn-gb', 'mtn-benin', 'mtn-sy', 'mtn zambia',
         'mtn-southsudan', 'sudan-mtn', 'ci@mtn', 'mtn-lib', 'mtn lib', 'zm', 'lr mtn', 'syria', 'banksystem', 'mtnz',
         'evdnms', 'et sdt', 'mtnrw evd', 'mtnnevd', 'evd.ss', 'mtn-esw', 'mtnng', 'mtnrw', 'expressotelecom', 'zain-iraq', 'zain-ksa', 'tashicell',
-        'btcl', 'ooa-drc', 'indosat', 'ooa-pr']
+        'btcl', 'ooa-drc', 'indosat', 'ooa-pr', 'za@mtn']
 
 flag = 0
 for key in final_data:
@@ -270,7 +273,7 @@ site_f = ['MTN_Yemen', 'MTN_Afghanistan', 'MTN_Syria', 'Glo_Nigeria', 'Starlink_
           'Gosoft_Thailand', 'DNA_Finland', 'SE_BANK_SYSTEM', 'MTN_Benin', 'MTN_GC', 'MTN_Liberia', 'MTN_Ghana',
           'MTN_South_Sudan', 'Glo_Benin', 'MTN_Zambia', 'MTN_Ivory_Coast', 'MTN_Bissau', 'Glo_Ghana', 'Eswatini_Mobile',
           'MTN_Sudan', 'SDT_Ethiopia', 'MTN_Rwanda', 'MTN_Nigeria', 'MTN_Eswatini', 'Expresso_Senegal', 'Zain_Iraq', 'Zain_KSA', 'Tashicell', 'BTCL',
-          'OOA_DRC', 'Indosat','OOA-PR']
+          'OOA_DRC', 'Indosat','OOA-PR', 'MTN_South_Africa']
 
 site_r = ['ye-mtn', 'af-mtn',
           ['sy-mtn', 'mtn-sy', 'syria'],
@@ -289,7 +292,7 @@ site_r = ['ye-mtn', 'af-mtn',
           'swazimobile', 'sudan-mtn', 'et sdt',
           ['mtnrw evd', 'mtnrw'],
           ['mtnnevd', 'mtnng'], 'mtn-esw', 'expressotelecom', 'zain-iraq', 'zain-ksa', 'tashicell', 'btcl', 'ooa-drc',
-          'indosat', 'ooa-pr']
+          'indosat', 'ooa-pr', 'za@mtn']
 for key in final_data:
     for key1 in range(len(site_r)):
         if site_r[key1].__contains__(key[1]):
@@ -332,9 +335,11 @@ noc_dict = {
     'ooa_drc': [],
     'indosat': [],
     'ooa-pr': [],
+    'mtn_south_africa': [],
     'critical': [],
     'warning': [],
-    'unknown': []
+    'unknown': [],
+    'current': []
 }
 delete = []
 for key in final_data:
@@ -443,7 +448,6 @@ for key in delete:
 book = xlsxwriter.Workbook(name_dest)
 
 try:
-
     # Store all alerts data.
     store_all_data(final_data)
     sheet = book.add_worksheet()
@@ -779,5 +783,5 @@ finally:
     # print('Bye')
     # try:
     book.close()
-    delete_data()
+    # delete_data()
 input(' Enter to close.')

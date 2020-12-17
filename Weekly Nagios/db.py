@@ -37,7 +37,7 @@ def store_all_data(data):
     kolkata = ['gosoft_thailand', 'dna_finland', 'se_bank_system']
     accra = ['mtn_congo', 'mtn_ghana', 'mtn_south_sudan', 'mtn_benin', 'glo_benin', 'mtn_zambia', 'mtn_ivory_coast',
              'mtn_bissau', 'glo_ghana', 'swazi_mobile', 'mtn_rwanda', 'mtn_nigeria',
-             'expresso_senegal']
+             'expresso_senegal', 'mtn_liberia', 'mtn_south_africa']
     romania = ['tashicell', 'btcl', 'ooa_drc', 'indosat', 'ooa-pr']
     team = ''
     for key in data:
