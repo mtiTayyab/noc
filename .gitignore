@@ -4,3 +4,4 @@ __pycache__/
 Weekly Nagios/source/
 .idea
 /Weekly Nagios/exclude/
+venv
