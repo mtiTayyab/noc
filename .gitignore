@@ -5,3 +5,4 @@ Weekly Nagios/source/
 .idea
 /Weekly Nagios/exclude/
 venv
+*.xls;xlsx;csv
