@@ -275,8 +275,7 @@ site_f = ['MTN_Yemen', 'MTN_Afghanistan', 'MTN_Syria', 'Glo_Nigeria', 'Starlink_
           'Gosoft_Thailand', 'DNA_Finland', 'SE_BANK_SYSTEM', 'MTN_Benin', 'MTN_GC', 'MTN_Liberia', 'MTN_Ghana',
           'MTN_South_Sudan', 'Glo_Benin', 'MTN_Zambia', 'MTN_Ivory_Coast', 'MTN_Bissau', 'Glo_Ghana', 'Eswatini_Mobile',
           'MTN_Sudan', 'SDT_Ethiopia', 'MTN_Rwanda', 'MTN_Nigeria', 'MTN_Eswatini', 'Expresso_Senegal', 'Zain_Iraq',
-          'Zain_KSA', 'Tashicell', 'BTCL',
-          'OOA_DRC', 'Indosat', 'OOA-PR', 'MTN_South_Africa', 'Zain Kuwait']
+          'Zain_KSA', 'Tashicell', 'BTCL', 'OOA_DRC', 'Indosat', 'OOA-PR', 'MTN_South_Africa', 'Zain Kuwait']
 
 site_r = ['ye-mtn', 'af-mtn',
           ['sy-mtn', 'mtn-sy', 'syria'],
