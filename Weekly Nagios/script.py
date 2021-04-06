@@ -222,12 +222,8 @@ otrs = ['ye-mtn', 'af-mtn', 'sy-mtn', 'glo-ng', 'starlink', 'newco', 'mtn-c', 'g
         'mtnbissau', 'gloghana', 'glo-gh', 'swazimobile', 'mtn-gb', 'mtn-benin', 'mtn-sy', 'mtn zambia',
         'mtn-southsudan', 'sudan-mtn', 'ci@mtn', 'mtn-lib', 'mtn lib', 'zm', 'lr mtn', 'syria', 'banksystem', 'mtnz',
         'evdnms', 'et sdt', 'mtnrw evd', 'mtnnevd', 'evd.ss', 'mtn-esw', 'mtnng', 'mtnrw', 'expressotelecom',
-        'zain-iraq', 'zain-ksa', 'tashicell',
-<<<<<<< HEAD
-        'btcl', 'ooa-drc', 'indosat', 'ooa-pr', 'za@mtn']
-=======
-        'btcl', 'ooa-drc', 'indosat', 'ooa-pr', 'za@mtn', 'kw.zain', 'ora', 'cmstb']
->>>>>>> feature/new_site-20210405-1
+        'zain-iraq', 'zain-ksa', 'tashicell', 'btcl', 'ooa-drc', 'indosat', 'ooa-pr', 'za@mtn', 'kw.zain', 'ora',
+        'cmstb']
 
 flag = 0
 for key in final_data:
@@ -279,12 +275,7 @@ site_f = ['MTN_Yemen', 'MTN_Afghanistan', 'MTN_Syria', 'Glo_Nigeria', 'Starlink_
           'Gosoft_Thailand', 'DNA_Finland', 'SE_BANK_SYSTEM', 'MTN_Benin', 'MTN_GC', 'MTN_Liberia', 'MTN_Ghana',
           'MTN_South_Sudan', 'Glo_Benin', 'MTN_Zambia', 'MTN_Ivory_Coast', 'MTN_Bissau', 'Glo_Ghana', 'Eswatini_Mobile',
           'MTN_Sudan', 'SDT_Ethiopia', 'MTN_Rwanda', 'MTN_Nigeria', 'MTN_Eswatini', 'Expresso_Senegal', 'Zain_Iraq',
-<<<<<<< HEAD
-          'Zain_KSA', 'Tashicell', 'BTCL',
-          'OOA_DRC', 'Indosat', 'OOA-PR', 'MTN_South_Africa']
-=======
           'Zain_KSA', 'Tashicell', 'BTCL', 'OOA_DRC', 'Indosat', 'OOA-PR', 'MTN_South_Africa', 'Zain Kuwait']
->>>>>>> feature/new_site-20210405-1
 
 site_r = ['ye-mtn', 'af-mtn',
           ['sy-mtn', 'mtn-sy', 'syria'],
