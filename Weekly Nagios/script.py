@@ -783,8 +783,8 @@ try:
             sheet.write(row, 6, key[7], date_format)
             row += 1
 finally:
-    # print('Bye')
+    print('Bye')
     # try:
     book.close()
-    # delete_data()
+    delete_data()
 input(' Enter to close.')
