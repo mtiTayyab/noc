@@ -22,9 +22,6 @@ for key in l:
     if (key.__contains__('CRITICAL') or key.__contains__('PROBLEM') or key.__contains__('WARNING') or key.__contains__(
             'UNKNOWN') or key.__contains__('DOWN') or key.__contains__('Forwarded') or key.__contains__("SMS")):
         txt_name.append(key)
-    # else:
-    #     print()
-    # os.remove(path+key)
 
 final = []
 flag = 0
@@ -36,7 +33,6 @@ for key in txt_name:
             final.append(key)
         else:
             flag = 1
-            # os.remove(path + key)
     elif data.__contains__('Service:') or (data.__contains__('Host:') and data.__contains__('State:')):
         final.append(key)
     else:
@@ -79,13 +75,9 @@ for key in range(len(final)):
         if ((key1.__contains__('Service:') or (
                 (final[key].__contains__("DOWN")) and key1.__contains__('Notification Type:'))) and serv_f is False):
             if key1.__contains__('Service:'):
-                # if (final[key].lower().__contains__('forward')):
-                #     final[key] = key1
-                # t = key1.replace('Service:', '')
                 t = key1.split('Service:')[1].split('Host:')[0]
                 t = filter_characters(t)
             else:
-                # t = key1.replace('Notification Type:', '')
                 t = key1.split('Notification Type:')[1].split('State:')[0]
                 t = filter_characters(t)
             service.append(t)
@@ -229,10 +221,6 @@ flag = 0
 for key in final_data:
     flag = 0
 
-    # if key[0].lower().__contains__("-sms from mtn-"):
-    #   key[1] = "mtnbissau"
-    #   flag = 1
-
     if key[0].lower().__contains__("-sms from evd-") or key[0].lower().__contains__("-sms from 761665-"):
         key[1] = "mtn lib"
         flag = 1
@@ -364,10 +352,6 @@ for key in final_data:
             delete.append(key)
             continue
 
-        # if key[0].lower().__contains__("-sms from mtnrw-"):
-        #    delete.append(key)
-        #    continue
-
         if key[0].lower().__contains__("-sms from 654233-"):
             delete.append(key)
             continue
@@ -409,43 +393,6 @@ for key in final_data:
 for key in delete:
     if final_data.__contains__(key):
         final_data.remove(key)
-#
-# choice_f = 0
-# while choice_f == 0:
-#     choice = input('Enter [y\\n] to Filter SMS Duplication Alerts:')
-#     if choice.lower() == 'y':
-#         delete = []
-#         for key2 in list(noc_dict.keys()):
-#             if key2.lower().__contains__('bissau') or key2.lower().__contains__('critical')or key2.lower().__contains__('warning')or key2.lower().__contains__('unknown'):
-#                 continue
-#             for key in range(len(noc_dict[key2]) - 1):
-#                 for key1 in range(key + 1, len(noc_dict[key2])):
-#                     if noc_dict[key2][key][3] == noc_dict[key2][key1][3]:
-#                         if noc_dict[key2][key][4] == noc_dict[key2][key1][4]:
-#                             if noc_dict[key2][key][5] != noc_dict[key2][key1][5]:
-#                                 if noc_dict[key2][key][6] == noc_dict[key2][key1][6]:
-#                                     temp_v = noc_dict[key2][key][7] - noc_dict[key2][key1][7]
-#                                     if temp_v.seconds >= 0 and temp_v.seconds <= 300:
-#                                         print('key: '+str(key))
-#                                         print('key1: '+str(key1))
-#                                         print('key2: '+str(key2))
-#                                         if noc_dict[key2][key1][5]=='' or not len(noc_dict[key2][key1][5].split('.'))==4:
-#                                             delete.append(noc_dict[key2][key1])
-#                                         else:
-#                                             delete.append(noc_dict[key2][key])
-#
-#
-#         for key in delete:
-#             if noc_dict[key[1].lower()].__contains__(key):
-#                 noc_dict[key[1].lower()].remove(key)
-#             if final_data.__contains__(key):
-#                 final_data.remove(key)
-#         print('Duplicates Deleted')
-#         choice_f = 1
-#     elif choice.lower() == 'n':
-#         break
-#     else:
-#         print('Please enter a proper option.')
 
 
 book = xlsxwriter.Workbook(name_dest)
@@ -506,7 +453,10 @@ try:
             sites[key3[1].lower()].update({key3[0]: key3[2]})
     # Adding the down count to critical count
     for key in sites['down']:
-        sites['critical'][key] += sites['down'][key]
+        if key in list(sites['critical'].keys()):
+            sites['critical'][key] += sites['down'][key]
+        else:
+            sites['critical'].update({key: sites['down'][key]})
 
     # writting data of per site analysis first data table (alert type and site)
     col = 0
