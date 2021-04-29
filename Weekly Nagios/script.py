@@ -7,6 +7,17 @@ from math import floor
 
 path = './/source//'
 
+
+def update_get_updated(current, finalized_lists, seach_from, update_index):
+    for key1 in finalized_lists:
+        for key2 in seach_from:
+            temp = current[key2].lower()
+            if temp.__contains__(key1):
+                current[update_index] = key1
+                return current[update_index]
+    return current[update_index]
+
+
 date_s = date.today()
 date_s = floor(date_s.day / 10) * 10
 if date_s < 10:
@@ -217,6 +228,8 @@ otrs = ['ye-mtn', 'af-mtn', 'sy-mtn', 'glo-ng', 'starlink', 'newco', 'mtn-c', 'g
         'zain-iraq', 'zain-ksa', 'tashicell', 'btcl', 'ooa-drc', 'indosat', 'ooa-pr', 'za@mtn', 'kw.zain', 'ora',
         'cmstb']
 
+alert_type = ['critical', 'down', 'unknow', 'warning']
+
 flag = 0
 for key in final_data:
     flag = 0
@@ -225,39 +238,9 @@ for key in final_data:
         key[1] = "mtn lib"
         flag = 1
 
-    for key1 in otrs:
-        temp = key[1].lower()
-        if temp.__contains__(key1):
-            key[1] = key1
-            flag = 1
-            break
-    if flag == 0:
-        for key1 in otrs:
-            temp = key[2].lower()
-            if temp.__contains__(key1):
-                key[1] = key1
-                flag = 1
-                break
-        if flag == 0:
-            for key1 in otrs:
-                temp = key[0].lower()
-                if temp.__contains__(key1):
-                    key[1] = key1
-                    flag = 1
-                    break
-            if flag == 0:
-                for key1 in otrs:
-                    temp = key[4].lower()
-                    if temp.__contains__(key1):
-                        key[1] = key1
-                        flag = 1
-                        break
-            else:
-                flag = 0
-        else:
-            flag = 0
-    else:
-        flag = 0
+    key[1] = update_get_updated(key, otrs, [1, 2, 0, 4], 1)
+    if key[6] == "":
+        key[6] = update_get_updated(key, alert_type, [1, 2, 0, 4], 6)
 
 site_f = ['MTN_Yemen', 'MTN_Afghanistan', 'MTN_Syria', 'Glo_Nigeria', 'Starlink_Qatar', 'NewCo_Bahamas', 'MTN_Congo',
           'Gosoft_Thailand', 'DNA_Finland', 'SE_BANK_SYSTEM', 'MTN_Benin', 'MTN_GC', 'MTN_Liberia', 'MTN_Ghana',
@@ -283,6 +266,8 @@ site_r = ['ye-mtn', 'af-mtn',
           ['mtnrw evd', 'mtnrw'],
           ['mtnnevd', 'mtnng'], 'mtn-esw', 'expressotelecom', 'zain-iraq', 'zain-ksa', 'tashicell', 'btcl', 'ooa-drc',
           'indosat', 'ooa-pr', 'za@mtn', ['kw.zain', 'ora', 'cmstb']]
+
+
 for key in final_data:
     for key1 in range(len(site_r)):
         if site_r[key1].__contains__(key[1]):
@@ -734,7 +719,6 @@ try:
             row += 1
 finally:
     print('Bye')
-    # try:
     book.close()
     delete_data()
 input(' Enter to close.')
