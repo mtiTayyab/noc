@@ -7,6 +7,17 @@ from math import floor
 
 path = './/source//'
 
+
+def update_get_updated(current, finalized_lists, seach_from, update_index):
+    for key1 in finalized_lists:
+        for key2 in seach_from:
+            temp = current[key2].lower()
+            if temp.__contains__(key1):
+                current[update_index] = key1
+                return current[update_index]
+    return current[update_index]
+
+
 date_s = date.today()
 date_s = floor(date_s.day / 10) * 10
 if date_s < 10:
@@ -22,9 +33,6 @@ for key in l:
     if (key.__contains__('CRITICAL') or key.__contains__('PROBLEM') or key.__contains__('WARNING') or key.__contains__(
             'UNKNOWN') or key.__contains__('DOWN') or key.__contains__('Forwarded') or key.__contains__("SMS")):
         txt_name.append(key)
-    # else:
-    #     print()
-    # os.remove(path+key)
 
 final = []
 flag = 0
@@ -36,7 +44,6 @@ for key in txt_name:
             final.append(key)
         else:
             flag = 1
-            # os.remove(path + key)
     elif data.__contains__('Service:') or (data.__contains__('Host:') and data.__contains__('State:')):
         final.append(key)
     else:
@@ -79,13 +86,9 @@ for key in range(len(final)):
         if ((key1.__contains__('Service:') or (
                 (final[key].__contains__("DOWN")) and key1.__contains__('Notification Type:'))) and serv_f is False):
             if key1.__contains__('Service:'):
-                # if (final[key].lower().__contains__('forward')):
-                #     final[key] = key1
-                # t = key1.replace('Service:', '')
                 t = key1.split('Service:')[1].split('Host:')[0]
                 t = filter_characters(t)
             else:
-                # t = key1.replace('Notification Type:', '')
                 t = key1.split('Notification Type:')[1].split('State:')[0]
                 t = filter_characters(t)
             service.append(t)
@@ -225,51 +228,19 @@ otrs = ['ye-mtn', 'af-mtn', 'sy-mtn', 'glo-ng', 'starlink', 'newco', 'mtn-c', 'g
         'zain-iraq', 'zain-ksa', 'tashicell', 'btcl', 'ooa-drc', 'indosat', 'ooa-pr', 'za@mtn', 'kw.zain', 'ora',
         'cmstb']
 
+alert_type = ['critical', 'down', 'unknow', 'warning']
+
 flag = 0
 for key in final_data:
     flag = 0
-
-    # if key[0].lower().__contains__("-sms from mtn-"):
-    #   key[1] = "mtnbissau"
-    #   flag = 1
 
     if key[0].lower().__contains__("-sms from evd-") or key[0].lower().__contains__("-sms from 761665-"):
         key[1] = "mtn lib"
         flag = 1
 
-    for key1 in otrs:
-        temp = key[1].lower()
-        if temp.__contains__(key1):
-            key[1] = key1
-            flag = 1
-            break
-    if flag == 0:
-        for key1 in otrs:
-            temp = key[2].lower()
-            if temp.__contains__(key1):
-                key[1] = key1
-                flag = 1
-                break
-        if flag == 0:
-            for key1 in otrs:
-                temp = key[0].lower()
-                if temp.__contains__(key1):
-                    key[1] = key1
-                    flag = 1
-                    break
-            if flag == 0:
-                for key1 in otrs:
-                    temp = key[4].lower()
-                    if temp.__contains__(key1):
-                        key[1] = key1
-                        flag = 1
-                        break
-            else:
-                flag = 0
-        else:
-            flag = 0
-    else:
-        flag = 0
+    key[1] = update_get_updated(key, otrs, [1, 2, 0, 4], 1)
+    if key[6] == "":
+        key[6] = update_get_updated(key, alert_type, [1, 2, 0, 4], 6)
 
 site_f = ['MTN_Yemen', 'MTN_Afghanistan', 'MTN_Syria', 'Glo_Nigeria', 'Starlink_Qatar', 'NewCo_Bahamas', 'MTN_Congo',
           'Gosoft_Thailand', 'DNA_Finland', 'SE_BANK_SYSTEM', 'MTN_Benin', 'MTN_GC', 'MTN_Liberia', 'MTN_Ghana',
@@ -295,6 +266,8 @@ site_r = ['ye-mtn', 'af-mtn',
           ['mtnrw evd', 'mtnrw'],
           ['mtnnevd', 'mtnng'], 'mtn-esw', 'expressotelecom', 'zain-iraq', 'zain-ksa', 'tashicell', 'btcl', 'ooa-drc',
           'indosat', 'ooa-pr', 'za@mtn', ['kw.zain', 'ora', 'cmstb']]
+
+
 for key in final_data:
     for key1 in range(len(site_r)):
         if site_r[key1].__contains__(key[1]):
@@ -364,10 +337,6 @@ for key in final_data:
             delete.append(key)
             continue
 
-        # if key[0].lower().__contains__("-sms from mtnrw-"):
-        #    delete.append(key)
-        #    continue
-
         if key[0].lower().__contains__("-sms from 654233-"):
             delete.append(key)
             continue
@@ -409,43 +378,6 @@ for key in final_data:
 for key in delete:
     if final_data.__contains__(key):
         final_data.remove(key)
-#
-# choice_f = 0
-# while choice_f == 0:
-#     choice = input('Enter [y\\n] to Filter SMS Duplication Alerts:')
-#     if choice.lower() == 'y':
-#         delete = []
-#         for key2 in list(noc_dict.keys()):
-#             if key2.lower().__contains__('bissau') or key2.lower().__contains__('critical')or key2.lower().__contains__('warning')or key2.lower().__contains__('unknown'):
-#                 continue
-#             for key in range(len(noc_dict[key2]) - 1):
-#                 for key1 in range(key + 1, len(noc_dict[key2])):
-#                     if noc_dict[key2][key][3] == noc_dict[key2][key1][3]:
-#                         if noc_dict[key2][key][4] == noc_dict[key2][key1][4]:
-#                             if noc_dict[key2][key][5] != noc_dict[key2][key1][5]:
-#                                 if noc_dict[key2][key][6] == noc_dict[key2][key1][6]:
-#                                     temp_v = noc_dict[key2][key][7] - noc_dict[key2][key1][7]
-#                                     if temp_v.seconds >= 0 and temp_v.seconds <= 300:
-#                                         print('key: '+str(key))
-#                                         print('key1: '+str(key1))
-#                                         print('key2: '+str(key2))
-#                                         if noc_dict[key2][key1][5]=='' or not len(noc_dict[key2][key1][5].split('.'))==4:
-#                                             delete.append(noc_dict[key2][key1])
-#                                         else:
-#                                             delete.append(noc_dict[key2][key])
-#
-#
-#         for key in delete:
-#             if noc_dict[key[1].lower()].__contains__(key):
-#                 noc_dict[key[1].lower()].remove(key)
-#             if final_data.__contains__(key):
-#                 final_data.remove(key)
-#         print('Duplicates Deleted')
-#         choice_f = 1
-#     elif choice.lower() == 'n':
-#         break
-#     else:
-#         print('Please enter a proper option.')
 
 
 book = xlsxwriter.Workbook(name_dest)
@@ -784,7 +716,6 @@ try:
             row += 1
 finally:
     print('Bye')
-    # try:
     book.close()
     delete_data()
 input(' Enter to close.')
